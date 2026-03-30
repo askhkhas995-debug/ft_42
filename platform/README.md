@@ -48,6 +48,7 @@ From `platform/`:
 python3 -m pytest
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main home
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main curriculum
+PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main examples --workspace-root /tmp/nexus42-examples
 ```
 
 Practice flow:

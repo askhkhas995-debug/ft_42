@@ -40,6 +40,12 @@ python3 -m platform_cli.main exam shell /tmp/ft42-exam
 python3 -m platform_cli.main exam submit /tmp/ft42-exam
 ```
 
+### Command Examples Helper
+
+```bash
+python3 -m platform_cli.main examples --workspace-root /tmp/ft42-examples
+```
+
 ## Important Notes
 
 - Canonical source content is under `platform/datasets/**`.

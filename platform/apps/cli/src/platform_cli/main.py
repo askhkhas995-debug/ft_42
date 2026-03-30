@@ -24,10 +24,13 @@ def _platform_root() -> Path:
 
 
 def _now() -> str:
-    from datetime import UTC, datetime
+    from datetime import datetime, timezone
 
     return (
-        datetime.now(tz=UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        datetime.now(tz=timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
     )
 
 
@@ -279,6 +282,14 @@ def _build_parser() -> argparse.ArgumentParser:
     history.add_argument(
         "--limit", type=int, default=10, help="Maximum recent items to show."
     )
+    examples = subparsers.add_parser(
+        "examples", help="Print copy/paste command examples."
+    )
+    examples.add_argument(
+        "--workspace-root",
+        default="/tmp/nexus42-examples",
+        help="Root folder used to render example workspace paths.",
+    )
 
     exam = subparsers.add_parser("exam", help="Exam simulation commands.")
     exam_subparsers = exam.add_subparsers(dest="exam_command", required=True)
@@ -518,6 +529,31 @@ def _render_history(progression: ProgressionService, user_id: str, limit: int) -
             )
     else:
         lines.append("- none")
+    _print_lines(lines)
+
+
+def _render_examples(workspace_root: str) -> None:
+    workspace = Path(workspace_root).resolve()
+    practice_workspace = workspace / "practice-ft-putchar"
+    exam_workspace = workspace / "exam00-session"
+    lines = [
+        "CLI Examples",
+        "============",
+        "Copy/paste starter commands for local practice and exam simulation.",
+        "",
+        "Practice example:",
+        f"- python3 -m platform_cli.main start --exercise-id piscine.c00.ft_putchar --workspace {practice_workspace}",
+        f"- python3 -m platform_cli.main submit {practice_workspace}",
+        "",
+        "Exam example:",
+        f"- python3 -m platform_cli.main exam start --pool-id exams.exam00.starter --workspace {exam_workspace}",
+        f"- python3 -m platform_cli.main exam shell {exam_workspace}",
+        f"- python3 -m platform_cli.main exam submit {exam_workspace}",
+        "",
+        "Catalog discovery:",
+        "- python3 -m platform_cli.main list-exercises --track piscine",
+        "- python3 -m platform_cli.main list-pools --track exams",
+    ]
     _print_lines(lines)
 
 
@@ -771,6 +807,10 @@ def main() -> int:
 
     if args.command == "history":
         _render_history(progression, args.user_id, args.limit)
+        return 0
+
+    if args.command == "examples":
+        _render_examples(args.workspace_root)
         return 0
 
     if args.command == "exam":
