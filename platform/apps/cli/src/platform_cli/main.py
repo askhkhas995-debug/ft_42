@@ -24,10 +24,13 @@ def _platform_root() -> Path:
 
 
 def _now() -> str:
-    from datetime import UTC, datetime
+    from datetime import datetime, timezone
 
     return (
-        datetime.now(tz=UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        datetime.now(tz=timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
     )
 
 
@@ -279,6 +282,14 @@ def _build_parser() -> argparse.ArgumentParser:
     history.add_argument(
         "--limit", type=int, default=10, help="Maximum recent items to show."
     )
+    examples = subparsers.add_parser(
+        "examples", help="Print copy/paste command examples."
+    )
+    examples.add_argument(
+        "--workspace-root",
+        default="/tmp/nexus42-examples",
+        help="Root folder used to render example workspace paths.",
+    )
 
     exam = subparsers.add_parser("exam", help="Exam simulation commands.")
     exam_subparsers = exam.add_subparsers(dest="exam_command", required=True)
@@ -294,6 +305,12 @@ def _build_parser() -> argparse.ArgumentParser:
         "submit", help="Submit the active exam workspace."
     )
     exam_submit.add_argument(
+        "workspace", nargs="?", default=".", help="Exam workspace directory."
+    )
+    exam_shell = exam_subparsers.add_parser(
+        "shell", help="Show a local 42-style exam workspace helper."
+    )
+    exam_shell.add_argument(
         "workspace", nargs="?", default=".", help="Exam workspace directory."
     )
 
@@ -515,6 +532,31 @@ def _render_history(progression: ProgressionService, user_id: str, limit: int) -
     _print_lines(lines)
 
 
+def _render_examples(workspace_root: str) -> None:
+    workspace = Path(workspace_root).resolve()
+    practice_workspace = workspace / "practice-ft-putchar"
+    exam_workspace = workspace / "exam00-session"
+    lines = [
+        "CLI Examples",
+        "============",
+        "Copy/paste starter commands for local practice and exam simulation.",
+        "",
+        "Practice example:",
+        f"- python3 -m platform_cli.main start --exercise-id piscine.c00.ft_putchar --workspace {practice_workspace}",
+        f"- python3 -m platform_cli.main submit {practice_workspace}",
+        "",
+        "Exam example:",
+        f"- python3 -m platform_cli.main exam start --pool-id exams.exam00.starter --workspace {exam_workspace}",
+        f"- python3 -m platform_cli.main exam shell {exam_workspace}",
+        f"- python3 -m platform_cli.main exam submit {exam_workspace}",
+        "",
+        "Catalog discovery:",
+        "- python3 -m platform_cli.main list-exercises --track piscine",
+        "- python3 -m platform_cli.main list-pools --track exams",
+    ]
+    _print_lines(lines)
+
+
 def _start_practice_flow(
     platform_root: Path, exercise_id: str, workspace: str | None
 ) -> int:
@@ -696,6 +738,47 @@ def _submit_exam_flow(platform_root: Path, workspace: str) -> int:
     return 0
 
 
+def _render_exam_shell(workspace: str) -> int:
+    workspace_root = Path(workspace).resolve()
+    local_session = _load_workspace_session(workspace_root)
+    if str(local_session.get("mode") or "") != "exam":
+        raise ValueError(
+            f"Workspace is not an exam session: {_workspace_session_path(workspace_root)}"
+        )
+    expected_files = [str(item) for item in local_session.get("expected_files", [])]
+    statement_path = Path(str(local_session.get("statement_path") or "")).resolve()
+    lines = [
+        "Exam Shell",
+        "==========",
+        f"Session: {local_session.get('session_id', 'n/a')}",
+        f"Pool: {local_session.get('pool_id', 'n/a')}",
+        f"Exercise: {local_session.get('exercise_id', 'n/a')}",
+        f"Level: {local_session.get('level', 'n/a')}",
+        f"Workspace: {workspace_root}",
+        f"Statement: {statement_path}",
+        "",
+        "Expected files:",
+    ]
+    if expected_files:
+        lines.extend(f"- {name}" for name in expected_files)
+    else:
+        lines.append("- none")
+    lines.extend(["", "Workspace check:"])
+    for name in expected_files:
+        file_status = "ready" if (workspace_root / name).exists() else "missing"
+        lines.append(f"- {name}: {file_status}")
+    lines.extend(
+        [
+            "",
+            "Suggested commands:",
+            f"- cat {statement_path}",
+            f"- python3 -m platform_cli.main exam submit {workspace_root}",
+        ]
+    )
+    _print_lines(lines)
+    return 0
+
+
 def main() -> int:
     parser = _build_parser()
     args = parser.parse_args()
@@ -726,11 +809,17 @@ def main() -> int:
         _render_history(progression, args.user_id, args.limit)
         return 0
 
+    if args.command == "examples":
+        _render_examples(args.workspace_root)
+        return 0
+
     if args.command == "exam":
         if args.exam_command == "start":
             return _start_exam_flow(
                 platform_root, args.pool_id, args.workspace, args.user_id
             )
+        if args.exam_command == "shell":
+            return _render_exam_shell(args.workspace)
         return _submit_exam_flow(platform_root, args.workspace)
 
     if args.command == "list-exercises":

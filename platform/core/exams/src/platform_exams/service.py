@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import hashlib
 from pathlib import Path
 import uuid
@@ -33,7 +33,12 @@ class ExamSessionService:
         self.storage = storage or StorageService(self.repository_root)
 
     def _now(self) -> str:
-        return datetime.now(tz=UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        return (
+            datetime.now(tz=timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
     def _new_session_id(self, pool_id: str) -> str:
         return f"exam.{pool_id.replace('.', '-')}.{uuid.uuid4().hex[:8]}"
@@ -316,4 +321,9 @@ class ExamSessionService:
     def _add_seconds(self, timestamp: str, seconds: int) -> str:
         base = datetime.fromisoformat(timestamp.replace("Z", "+00:00"))
         target = base + timedelta(seconds=seconds)
-        return target.astimezone(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        return (
+            target.astimezone(timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )

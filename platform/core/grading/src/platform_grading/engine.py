@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 import importlib.util
 import itertools
 from pathlib import Path
@@ -50,7 +50,12 @@ class GradingEngine:
         return self._builtin_module("reporters", "local_reporter").LocalReporter()
 
     def _now(self) -> str:
-        return datetime.now(tz=UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        return (
+            datetime.now(tz=timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
     def _build_result_from_command(self, compiler: str, command_result, binary_path: Path) -> BuildResult:
         stderr_text = Path(command_result.stderr_path).read_text(encoding="utf-8")

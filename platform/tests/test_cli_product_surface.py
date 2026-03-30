@@ -27,6 +27,19 @@ def test_curriculum_command_renders_modules(monkeypatch, capsys) -> None:
     assert "exams.exam00" in output
 
 
+def test_examples_command_renders_practice_and_exam_commands(
+    monkeypatch, capsys
+) -> None:
+    output = _run_cli(
+        monkeypatch, capsys, "examples", "--workspace-root", "/tmp/ft42-examples"
+    )
+
+    assert "CLI Examples" in output
+    assert "Practice example:" in output
+    assert "Exam example:" in output
+    assert "exam shell" in output
+
+
 def test_practice_start_and_submit_smoke(tmp_path: Path, monkeypatch, capsys) -> None:
     workspace = tmp_path / "practice"
     output = _run_cli(
@@ -69,3 +82,15 @@ def test_exam_start_and_submit_smoke(tmp_path: Path, monkeypatch, capsys) -> Non
 
     assert "Exam Submission" in output
     assert "Status: PASS" in output
+
+
+def test_exam_shell_shows_workspace_status(tmp_path: Path, monkeypatch, capsys) -> None:
+    workspace = tmp_path / "exam-shell"
+    _run_cli(monkeypatch, capsys, "exam", "start", "--workspace", str(workspace))
+
+    output = _run_cli(monkeypatch, capsys, "exam", "shell", str(workspace))
+
+    assert "Exam Shell" in output
+    assert "Expected files:" in output
+    assert "Workspace check:" in output
+    assert ("ready" in output) or ("missing" in output)

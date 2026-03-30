@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 import hashlib
 from pathlib import Path
 import uuid
@@ -57,7 +57,12 @@ class PiscineSessionService:
         return SUPPORTED_PISCINE_GROUPS
 
     def _now(self) -> str:
-        return datetime.now(tz=UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        return (
+            datetime.now(tz=timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
     def _new_session_id(self, pool_id: str) -> str:
         return f"piscine.{pool_id.replace('.', '-')}.{uuid.uuid4().hex[:8]}"

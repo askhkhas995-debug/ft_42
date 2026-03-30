@@ -14,6 +14,7 @@ Today it provides:
 - a working grading engine for C reference and learner submissions
 - piscine session services and exam session services
 - learner-facing CLI flows for curriculum browsing, practice, progress, and exam simulation
+- learner-facing exam shell helper for workspace readiness checks during an active exam session
 - a minimal local dashboard entrypoint
 
 ## Canonical Source Of Truth
@@ -47,6 +48,7 @@ From `platform/`:
 python3 -m pytest
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main home
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main curriculum
+PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main examples --workspace-root /tmp/nexus42-examples
 ```
 
 Practice flow:
@@ -60,6 +62,7 @@ Exam flow:
 
 ```bash
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main exam start --workspace /tmp/nexus42-exam
+PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main exam shell /tmp/nexus42-exam
 PYTHONPATH="apps/cli/src:apps/dashboard/src:core/catalog/src:core/curriculum/src:core/exams/src:core/grading/src:core/progression/src:core/sandbox/src:core/scheduler/src:core/sessions/src:core/storage/src:tooling" python3 -m platform_cli.main exam submit /tmp/nexus42-exam
 ```
 
