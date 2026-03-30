@@ -1,0 +1,19 @@
+schema_version: 1
+name: grading_report
+description: Immutable grading output produced by the grading engine.
+required:
+  - schema_version
+  - report_id
+  - attempt_id
+  - session_id
+  - user_id
+  - exercise_id
+  - mode
+  - started_at
+  - finished_at
+  - build_result
+  - run_result
+  - evaluation
+  - rubric
+  - feedback
+  - analytics

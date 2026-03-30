@@ -1,0 +1,11 @@
+schema_version: 1
+name: timeline_event
+description: Append-only timeline and productivity event.
+required:
+  - schema_version
+  - event_id
+  - user_id
+  - event_type
+  - occurred_at
+  - source
+  - payload

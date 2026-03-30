@@ -1,0 +1,11 @@
+kind: exercise
+identifier: next_character
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/next_character
+exam_group: examfinal
+assignment: next_character
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

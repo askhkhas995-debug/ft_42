@@ -1,0 +1,13 @@
+unresolved_gaps:
+- exam_group: examfinal
+  source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  legacy_level: 9
+  legacy_assignment_name: naahio
+  reason: pool reference remains unresolved after manual curation for assignment 'naahio'
+- exam_group: examfinal
+  source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  legacy_level: 9
+  legacy_assignment_name: null
+  reason: legacy level was excluded because all references were unresolved

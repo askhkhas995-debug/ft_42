@@ -1,0 +1,36 @@
+cases:
+- id: simple
+  argv:
+  - '42'
+  - '10'
+  expected_stdout: '2
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: different
+  argv:
+  - '42'
+  - '12'
+  expected_stdout: '6
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: large
+  argv:
+  - '14'
+  - '77'
+  expected_stdout: '7
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: one_arg
+  argv:
+  - '17'
+  expected_stdout: '
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

@@ -1,0 +1,9 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-fix_result/runtime/workspaces/bundle-audit.exams-exam02-fix_result/submission/fix_result.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-fix_result/runtime/workspaces/bundle-audit.exams-exam02-fix_result/submission/fix_result.c:54:9: error: 'write' reading 26 bytes from a region of size 9 [-Werror=stringop-overread]
+   54 |         write(STDERR_FILENO, "Error !\n", 26);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-fix_result/runtime/workspaces/bundle-audit.exams-exam02-fix_result/submission/fix_result.c:1:
+/usr/include/unistd.h:378:16: note: in a call to function 'write' declared with attribute 'access (read_only, 2, 3)'
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+cc1: all warnings being treated as errors

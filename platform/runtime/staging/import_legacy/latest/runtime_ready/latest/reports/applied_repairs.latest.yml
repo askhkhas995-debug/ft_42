@@ -1,0 +1,13 @@
+applied_repairs:
+- exercise_id: exams.exam02.binary_to_decimal
+  repair_class: generator_filename_typo
+  source_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/genrator.py
+  target_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/generator.py
+  applied: true
+  note: ''
+- exercise_id: exams.examfinal.binary_to_decimal
+  repair_class: generator_filename_typo
+  source_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/genrator.py
+  target_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/generator.py
+  applied: true
+  note: ''

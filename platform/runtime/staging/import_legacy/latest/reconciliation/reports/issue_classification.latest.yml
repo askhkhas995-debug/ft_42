@@ -1,0 +1,16 @@
+issue_classification:
+- issue_type: bad_pool_reference
+  total_count: 7
+  auto_remediable_count: 5
+  manual_review_count: 0
+  non_remediable_count: 2
+- issue_type: missing_file
+  total_count: 3
+  auto_remediable_count: 0
+  manual_review_count: 0
+  non_remediable_count: 3
+- issue_type: naming_mismatch
+  total_count: 3
+  auto_remediable_count: 0
+  manual_review_count: 0
+  non_remediable_count: 3

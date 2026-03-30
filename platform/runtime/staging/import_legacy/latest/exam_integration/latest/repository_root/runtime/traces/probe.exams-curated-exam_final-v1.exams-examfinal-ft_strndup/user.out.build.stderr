@@ -1,0 +1,4 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/examfinal/ft_strndup/tests/main.c:7:12: error: 'ft_my_strlen' defined but not used [-Werror=unused-function]
+    7 | static int ft_my_strlen(char *str)
+      |            ^~~~~~~~~~~~
+cc1: all warnings being treated as errors

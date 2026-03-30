@@ -1,0 +1,11 @@
+kind: exercise
+identifier: binary_to_decimal
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/binary_to_decimal
+exam_group: examfinal
+assignment: binary_to_decimal
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

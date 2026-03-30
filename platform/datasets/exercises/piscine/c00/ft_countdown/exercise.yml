@@ -1,0 +1,115 @@
+schema_version: 1
+id: piscine.c00.ft_countdown
+slug: ft_countdown
+title: ft_countdown
+summary: Write a program that outputs the digits from 9 to 0 followed by a newline.
+track: piscine
+group: c00
+source:
+  kind: legacy_import
+  origin_id: c00.ft_countdown
+  origin_path: grademe 42 exam/n/success/ft_countdown/ft_countdown.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 1
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - io
+  - iteration
+  skills:
+  - stdout
+  - main_program
+  misconceptions:
+  - missing_newline
+  - wrong_order
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 10
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - ft_countdown.c
+  allowed_functions:
+  - write
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: standalone_program
+  entry_files:
+  - ft_countdown.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c00.ft_countdown
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: newline-required
+    prompt: This exercise does require a final newline after the last digit.
+    reveal_before_submit: true
+  - id: descending-order
+    prompt: The digits must be printed in descending order from 9 to 0.
+    reveal_before_submit: true
+  hints:
+  - id: countdown-loop
+    prompt: Start at the character '9' and move downward until you print '0'.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Observe whether the final byte is a newline and whether every digit appears
+      exactly once.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: false
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T15:19:57Z'
+  updated_at: '2026-03-07T15:19:57Z'
+  status: draft

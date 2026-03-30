@@ -1,0 +1,113 @@
+schema_version: 1
+id: piscine.c06.paramsum
+slug: paramsum
+title: paramsum
+summary: Write a program that displays the number of arguments passed to it.
+track: piscine
+group: c06
+source:
+  kind: legacy_import
+  origin_id: c06.paramsum
+  origin_path: grademe-main/.subjects/PISCINE_PART/exam_03/3/paramsum/paramsum.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 3
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - argv
+  - main_program
+  - io
+  skills:
+  - command_line_args
+  - putnbr_recursive
+  misconceptions: []
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 20
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - paramsum.c
+  allowed_functions:
+  - write
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: standalone_program
+  entry_files:
+  - paramsum.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c06.paramsum
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: many-args
+    prompt: If there are more than 9 arguments, you will need to print a multi-digit
+      number.
+    reveal_before_submit: true
+  hints:
+  - id: recursive-putnbr
+    prompt: You'll need a way to output digits, such as a recursive put_number function
+      or iterative write.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Make sure the displayed number correctly represents the number of external args
+      (not counting the program name itself).
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: true
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:35:01Z'
+  updated_at: '2026-03-07T18:35:01Z'
+  status: draft

@@ -1,0 +1,6 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-fix_loop/submission/fix_loop.c:1:38: error: unknown type name 'size_t'
+    1 | void    *ft_function(void *b, int c, size_t len)
+      |                                      ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-fix_loop/submission/fix_loop.c:1:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+  +++ |+#include <stddef.h>
+    1 | void    *ft_function(void *b, int c, size_t len)

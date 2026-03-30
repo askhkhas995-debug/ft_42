@@ -1,0 +1,92 @@
+schema_version: 1
+name: pool
+description: Canonical schema summary for level-based pool bundles.
+bundle_layout:
+  root: datasets/pools/<track>/<slug>
+  required_files:
+    - pool.yml
+supported_tracks:
+  - piscine
+  - exams
+  - knr
+  - theory_to_practice
+  - bug_injection
+  - completion
+  - prediction
+required:
+  - schema_version
+  - id
+  - title
+  - track
+  - mode
+  - description
+  - selection
+  - timing
+  - levels
+  - metadata
+supported_modes:
+  - practice
+  - exam
+sections:
+  selection:
+    required:
+      - strategy
+      - repeat_policy
+    optional:
+      - recent_window
+      - seed_policy
+    supported_strategies:
+      - random
+      - weighted
+      - ordered
+    supported_repeat_policies:
+      - avoid_passed
+      - avoid_recent
+      - allow_review
+    supported_seed_policies:
+      - deterministic_per_session
+      - system_random
+  timing:
+    required:
+      - total_time_seconds
+      - per_level_time_seconds
+      - cooldown
+    cooldown_required:
+      - enabled
+      - seconds
+      - scope
+    cooldown_supported_scopes:
+      - pool
+      - level
+  levels:
+    item_required:
+      - level
+      - title
+      - min_picks
+      - unlock_if
+      - exercise_refs
+    item_optional:
+      - max_picks
+      - time_limit_seconds
+    unlock_if_required:
+      - all_of
+      - any_of
+    exercise_ref_required:
+      - exercise_id
+    exercise_ref_optional:
+      - variant
+      - weight
+      - order
+validation_notes:
+  - Unknown keys are rejected in validated sections.
+  - track must match the pool directory track segment.
+  - mode must be one of the canonical pool modes.
+  - pool entries reference exercise ids, never file paths.
+  - referenced exercise ids and variants must resolve through the catalog.
+  - ordered selection requires order on every exercise reference.
+  - ordered selection breaks ties by declaration order.
+  - ordered selection rejects duplicate order values within a level.
+  - avoid_recent requires selection.recent_window.
+  - Unlock references must point at defined lower levels.
+  - level.time_limit_seconds overrides timing.per_level_time_seconds for that level.
+  - Executable validation lives in core/catalog/src/platform_catalog/pool_validation.py.

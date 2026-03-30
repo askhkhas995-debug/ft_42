@@ -1,0 +1,24 @@
+cases:
+- id: simple
+  argv:
+  - FOR PONY
+  expected_stdout: 'FOR
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: leading_spaces
+  argv:
+  - '  lorem,ipsum  '
+  expected_stdout: 'lorem,ipsum
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: no_args
+  argv: []
+  expected_stdout: '
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

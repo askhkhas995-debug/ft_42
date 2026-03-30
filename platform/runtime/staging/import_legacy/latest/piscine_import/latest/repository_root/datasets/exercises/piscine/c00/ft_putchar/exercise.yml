@@ -1,0 +1,129 @@
+schema_version: 1
+id: piscine.c00.ft_putchar
+slug: ft_putchar
+title: ft_putchar
+summary: Write a function that outputs one character to stdout.
+track: piscine
+group: c00
+source:
+  kind: authored
+  origin_id: c00.ft_putchar
+  origin_path: Subjects/C 00.pdf
+  copyright_status: owned
+language: c
+difficulty:
+  level: 1
+  category: beginner
+pedagogy:
+  modes:
+    - practice
+    - observation
+    - completion
+    - prediction
+  concepts:
+    - io
+    - functions
+  skills:
+    - stdout
+    - function_definition
+  misconceptions:
+    - forgetting_newline
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 10
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+  fixtures_dir: fixtures
+  hints_dir: hints
+  assets_dir: assets
+student_contract:
+  expected_files:
+    - ft_putchar.c
+  allowed_functions:
+    - write
+  forbidden_functions: []
+  required_headers:
+    - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+    - -Wall
+    - -Wextra
+    - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files:
+    - ft_putchar.c
+runtime:
+  argv_policy: none
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: c.stdout.single_char
+  analyzer_ids:
+    - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+    - id: normal
+      kind: normal
+      starter_dir: starter
+      reference_dir: reference
+      tests_dir: tests
+      description: Standard implementation path.
+    - id: prediction
+      kind: prediction_prompt
+      description: Predict output before running the harness.
+tracking:
+  productivity_tags:
+    - quick_win
+  habit_tags:
+    - daily_piscine
+  timeline_tags:
+    - c00
+learning:
+  visible_edge_cases:
+    - id: printable-character
+      prompt: Confirm the function prints exactly one visible character with no extra newline.
+      reveal_before_submit: true
+    - id: whitespace-character
+      prompt: Check spaces and tabs too, because they still count as characters.
+      reveal_before_submit: true
+  hints:
+    - id: byte-count
+      prompt: "`write` needs the exact byte count, so one character should use a count of 1."
+      unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+      - Compare the observed stdout bytes directly with the expected single character.
+      - Notice that the exercise is about side effects, not return values.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: false
+metadata:
+  author: platform
+  reviewers: []
+  created_at: "2026-03-05T00:00:00Z"
+  updated_at: "2026-03-05T00:00:00Z"
+  status: draft

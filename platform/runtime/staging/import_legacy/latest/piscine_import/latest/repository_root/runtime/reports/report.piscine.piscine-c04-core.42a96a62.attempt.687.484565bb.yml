@@ -1,0 +1,182 @@
+schema_version: 1
+report_id: report.piscine.piscine-c04-core.42a96a62.attempt.687.484565bb
+attempt_id: piscine.piscine-c04-core.42a96a62.attempt.687
+session_id: piscine.piscine-c04-core.42a96a62
+user_id: validation.runner
+exercise_id: piscine.c04.ft_atoi
+variant_id: normal
+pool_id: piscine.c04.core
+mode: piscine
+started_at: '2026-03-07T18:30:52Z'
+finished_at: '2026-03-07T18:30:53Z'
+duration_ms: 238
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/submission/ft_atoi.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/datasets/exercises/piscine/c04/ft_atoi/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.out.build.stdout
+  stderr_path: runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    -2147483648
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.min_int.stdout
+  stderr_path: runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.min_int.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.8333333333333334
+  normalized_score: 83.33
+  pass_policy: all_tests
+  failure_class: wrong_output
+  failed_test_ids:
+  - whitespace
+  passed_test_ids:
+  - simple_positive
+  - simple_negative
+  - multiple_signs
+  - max_int
+  - min_int
+  edge_case_summary:
+    total: 6
+    passed: 5
+    failed: 1
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.83
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with wrong_output.
+feedback:
+  summary: Attempt failed with wrong_output.
+  actionable_next_steps:
+  - Compare expected and actual stdout for the failed test cases.
+  hint_ids: []
+  concept_gaps:
+  - strings
+  - parsing
+  - math
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687
+  report_path: runtime/reports/report.piscine.piscine-c04-core.42a96a62.attempt.687.484565bb.yml
+  diff_path: runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/whitespace.diff.txt
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 687
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: strings
+      delta: -0.2
+    - concept: parsing
+      delta: -0.2
+    - concept: math
+      delta: -0.2
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/submission/ft_atoi.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - '42'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.simple_positive.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.simple_positive.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: simple_positive
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - '-42'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.simple_negative.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.simple_negative.stderr
+    trace_path: ''
+    duration_ms: 6
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: simple_negative
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - ' \t\n\v\f\r 42'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.whitespace.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.whitespace.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: whitespace
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - --42
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.multiple_signs.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.multiple_signs.stderr
+    trace_path: ''
+    duration_ms: 5
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: multiple_signs
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - '2147483647'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.max_int.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.max_int.stderr
+    trace_path: ''
+    duration_ms: 8
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: max_int
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c04-core.42a96a62.attempt.687/build/user.out
+    - '-2147483648'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.min_int.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c04-core.42a96a62.attempt.687/user.min_int.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: min_int
+  comparison_notes:
+  - '[stdout]
+
+    --- expected
+
+    +++ actual
+
+    @@ -1 +1 @@
+
+    -42
+
+    +0'

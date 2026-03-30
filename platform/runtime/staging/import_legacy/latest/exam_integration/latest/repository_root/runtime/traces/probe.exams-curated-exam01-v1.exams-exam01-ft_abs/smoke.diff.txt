@@ -1,0 +1,4 @@
+[exit_code]
+expected=0 actual=255
+[runtime]
+status=failure

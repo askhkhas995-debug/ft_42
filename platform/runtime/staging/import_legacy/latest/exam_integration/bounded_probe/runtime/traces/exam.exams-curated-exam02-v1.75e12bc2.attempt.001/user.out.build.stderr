@@ -1,0 +1,3 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/exam.exams-curated-exam02-v1.75e12bc2.attempt.001/submission/volume_cube.c:1:2: error: #error forced failing integration submission
+    1 | #error forced failing integration submission
+      |  ^~~~~

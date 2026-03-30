@@ -1,0 +1,8 @@
+schema_version: 1
+overrides:
+  - source_id: ExamFinal
+    pool_name: c-piscine-exam-final.yml
+    level: 3
+    legacy_assignment_name: sum_n
+    canonical_exercise_id: exams.exam01.sum_n
+    justification: Legacy final exam pool reuses the accepted exam01 sum_n exercise; the direct final correction bundle has no matching subject, so this cross-group pool override is required.

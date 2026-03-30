@@ -1,0 +1,51 @@
+schema_version: 1
+session_id: piscine.piscine-c00-foundations.7de62aff
+user_id: validation.runner
+mode: piscine
+state: completed
+started_at: '2026-03-07T18:25:46Z'
+updated_at: '2026-03-07T18:25:49Z'
+finished_at: null
+pool_id: piscine.c00.foundations
+track: piscine
+selection_strategy: ordered
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 3600
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+progress:
+  attempts_total: 4
+  completed_exercise_ids:
+  - piscine.c00.ft_countdown
+  - piscine.c00.ft_print_numbers
+  - piscine.c00.ft_putchar
+  - piscine.c00.ft_putstr
+  passed_exercise_ids:
+  - piscine.c00.ft_countdown
+  - piscine.c00.ft_print_numbers
+  - piscine.c00.ft_putchar
+  - piscine.c00.ft_putstr
+  failed_attempts_total: 0
+  current_level: 3
+  highest_unlocked_level: 3
+  completed_levels:
+  - 0
+  - 1
+  - 2
+  - 3
+  available_exercise_ids: []
+  last_completed_exercise_id: piscine.c00.ft_putstr
+  completion_ratio: 1.0
+  finished_at: '2026-03-07T18:25:49Z'
+current_assignment: null
+resume_policy:
+  reuse_active_session: true
+  resume_current_assignment_first: true
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

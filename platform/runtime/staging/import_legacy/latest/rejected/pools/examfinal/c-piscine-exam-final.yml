@@ -1,0 +1,13 @@
+kind: pool
+identifier: c-piscine-exam-final.yml
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/pools/c-piscine-exam-final.yml
+exam_group: examfinal
+assignment: sum_n
+pool_name: c-piscine-exam-final.yml
+reasons:
+- bad_pool_reference
+messages:
+- pool references unknown or rejected assignment 'sum_n'
+- pool references unknown or rejected assignment 'prev_character'
+- pool references unknown or rejected assignment 'naahio'

@@ -1,0 +1,5 @@
+accepted_pools:
+- pool_id: exams.exam00.c-piscine-exam-00
+  exam_group: exam00
+  slug: c-piscine-exam-00
+  source_id: Exam00

@@ -1,0 +1,151 @@
+schema_version: 1
+report_id: report.probe.piscine-c05-is_power_of_2.8bbf43fe
+attempt_id: probe.piscine-c05-is_power_of_2
+session_id: probe.session
+user_id: probe.user
+exercise_id: piscine.c05.is_power_of_2
+variant_id: normal
+pool_id: piscine.c05.core
+mode: piscine
+started_at: '2026-03-07T18:25:43Z'
+finished_at: '2026-03-07T18:25:43Z'
+duration_ms: 147
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/submission/is_power_of_2.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/datasets/exercises/piscine/c05/is_power_of_2/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/probe.piscine-c05-is_power_of_2/user.out.build.stdout
+  stderr_path: runtime/traces/probe.piscine-c05-is_power_of_2/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    1024
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/probe.piscine-c05-is_power_of_2/user.power.stdout
+  stderr_path: runtime/traces/probe.piscine-c05-is_power_of_2/user.power.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: true
+  raw_score: 1.0
+  normalized_score: 100.0
+  pass_policy: all_tests
+  failure_class: none
+  failed_test_ids: []
+  passed_test_ids:
+  - two
+  - '1'
+  - '0'
+  - non_power
+  - power
+  edge_case_summary:
+    total: 5
+    passed: 5
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 1.0
+    max_score: 1.0
+    verdict: pass
+    note: All tests passed.
+feedback:
+  summary: All tests passed.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.piscine-c05-is_power_of_2
+  report_path: runtime/reports/report.probe.piscine-c05-is_power_of_2.8bbf43fe.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: math
+      delta: 1.0
+    - concept: binary
+      delta: 1.0
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.piscine-c05-is_power_of_2/submission/is_power_of_2.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    - '2'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.two.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.two.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: two
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    - '1'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.1.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.1.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: '1'
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    - '0'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.0.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.0.stderr
+    trace_path: ''
+    duration_ms: 8
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: '0'
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    - '42'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.non_power.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.non_power.stderr
+    trace_path: ''
+    duration_ms: 7
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: non_power
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-is_power_of_2/build/user.out
+    - '1024'
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.power.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-is_power_of_2/user.power.stderr
+    trace_path: ''
+    duration_ms: 8
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: power
+  comparison_notes: []

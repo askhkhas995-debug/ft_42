@@ -1,0 +1,73 @@
+schema_version: 1
+id: piscine.c03.core
+title: C03 Core
+track: piscine
+mode: practice
+description: Pool for advanced string scanning and manipulation.
+selection:
+  strategy: ordered
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 4500
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+levels:
+- level: 0
+  title: First Word
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c03.first_word
+    variant: normal
+    order: 10
+- level: 1
+  title: Reverse Print
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c03.rev_print
+    variant: normal
+    order: 20
+- level: 2
+  title: RotOne
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c03.rotone
+    variant: normal
+    order: 30
+- level: 3
+  title: Rot13
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 2
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c03.rot_13
+    variant: normal
+    order: 40
+metadata:
+  created_at: '2026-03-07T18:35:01Z'
+  updated_at: '2026-03-07T18:35:01Z'
+  status: draft

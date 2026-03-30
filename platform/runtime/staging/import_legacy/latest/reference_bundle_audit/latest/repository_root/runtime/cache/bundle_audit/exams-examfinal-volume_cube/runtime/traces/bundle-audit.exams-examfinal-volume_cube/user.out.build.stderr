@@ -1,0 +1,7 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-volume_cube/runtime/workspaces/bundle-audit.exams-examfinal-volume_cube/submission/volume_cube.c: In function 'volume_cube':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-volume_cube/runtime/workspaces/bundle-audit.exams-examfinal-volume_cube/submission/volume_cube.c:2:23: error: expected ';' before '}' token
+    2 |     return (a * a * a)
+      |                       ^
+      |                       ;
+    3 | }
+      | ~                      

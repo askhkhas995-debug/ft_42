@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus42-platform"
+version = "0.1.0"
+description = "Local-first 42-style C learning and exam platform"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Codex" }]
+dependencies = ["PyYAML>=6.0"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = [
+  "apps/cli/src",
+  "apps/dashboard/src",
+  "core/catalog/src",
+  "core/curriculum/src",
+  "core/exams/src",
+  "core/progression/src",
+  "core/sessions/src",
+  "core/scheduler/src",
+  "core/grading/src",
+  "core/sandbox/src",
+  "core/analytics/src",
+  "core/timeline/src",
+  "core/storage/src",
+  "tooling",
+]
+
+[project.scripts]
+platform-cli = "platform_cli.main:main"
+platform-dashboard = "platform_dashboard.app:main"
+grademe = "platform_cli.main:main"

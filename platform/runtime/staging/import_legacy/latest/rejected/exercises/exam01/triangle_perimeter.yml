@@ -1,0 +1,11 @@
+kind: exercise
+identifier: triangle_perimeter
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/triangle_perimeter
+exam_group: exam01
+assignment: triangle_perimeter
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

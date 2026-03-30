@@ -1,0 +1,85 @@
+schema_version: 1
+pool_id: exams.curated.exam00.v1
+source_id: Exam00
+source_pool_name: c-piscine-exam-00.yml
+public_exam_name: exam00
+entries:
+- curated_level: 0
+  legacy_level: 0
+  legacy_position: 0
+  legacy_assignment_name: fix_a
+  canonical_exercise_id: exams.exam00.fix_a
+  provenance: imported_directly
+- curated_level: 0
+  legacy_level: 0
+  legacy_position: 1
+  legacy_assignment_name: fix_z
+  canonical_exercise_id: exams.exam00.fix_z
+  provenance: imported_directly
+- curated_level: 1
+  legacy_level: 1
+  legacy_position: 0
+  legacy_assignment_name: rectangle_area
+  canonical_exercise_id: exams.exam00.rectangle_area
+  provenance: imported_directly
+- curated_level: 1
+  legacy_level: 1
+  legacy_position: 1
+  legacy_assignment_name: triangle_area
+  canonical_exercise_id: exams.exam00.triangle_area
+  provenance: imported_directly
+- curated_level: 2
+  legacy_level: 2
+  legacy_position: 0
+  legacy_assignment_name: ascii_character
+  canonical_exercise_id: exams.exam00.ascii_character
+  provenance: imported_directly
+- curated_level: 3
+  legacy_level: 3
+  legacy_position: 0
+  legacy_assignment_name: ft_isdigit
+  canonical_exercise_id: exams.exam00.ft_isdigit
+  provenance: imported_directly
+- curated_level: 3
+  legacy_level: 3
+  legacy_position: 1
+  legacy_assignment_name: ft_abs
+  canonical_exercise_id: exams.exam00.ft_abs
+  provenance: imported_directly
+- curated_level: 4
+  legacy_level: 4
+  legacy_position: 0
+  legacy_assignment_name: is_consonant
+  canonical_exercise_id: exams.exam00.is_consonant
+  provenance: imported_directly
+- curated_level: 4
+  legacy_level: 4
+  legacy_position: 1
+  legacy_assignment_name: is_vowel
+  canonical_exercise_id: exams.exam00.is_vowel
+  provenance: imported_directly
+- curated_level: 5
+  legacy_level: 5
+  legacy_position: 0
+  legacy_assignment_name: ft_mod
+  canonical_exercise_id: exams.exam00.ft_mod
+  provenance: imported_directly
+- curated_level: 5
+  legacy_level: 5
+  legacy_position: 1
+  legacy_assignment_name: ft_pow
+  canonical_exercise_id: exams.exam00.ft_pow
+  provenance: imported_directly
+- curated_level: 5
+  legacy_level: 5
+  legacy_position: 2
+  legacy_assignment_name: ft_div
+  canonical_exercise_id: exams.exam00.ft_div
+  provenance: imported_directly
+- curated_level: 6
+  legacy_level: 6
+  legacy_position: 0
+  legacy_assignment_name: frequency_character
+  canonical_exercise_id: exams.exam00.frequency_character
+  provenance: imported_directly
+unresolved_gaps: []

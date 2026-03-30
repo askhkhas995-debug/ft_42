@@ -1,0 +1,47 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-remove_duplicate/submission/remove_duplicate.c: In function 'remove_duplicates':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-remove_duplicate/submission/remove_duplicate.c:9:9: error: unused variable 'exists' [-Werror=unused-variable]
+    9 |     int exists[MAX_SIZE];
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:7:9: error: implicit declaration of function 'printf' [-Werror=implicit-function-declaration]
+    7 |         printf("\n");
+      |         ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:2:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    1 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    2 | 
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:7:9: error: incompatible implicit declaration of built-in function 'printf' [-Werror=builtin-declaration-mismatch]
+    7 |         printf("\n");
+      |         ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:7:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:11:15: error: 'MAX_SIZE' undeclared (first use in this function)
+   11 |     int input[MAX_SIZE];
+      |               ^~~~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:11:15: note: each undeclared identifier is reported only once for each function it appears in
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:13:19: error: implicit declaration of function 'strtok'; did you mean 'strtol'? [-Werror=implicit-function-declaration]
+   13 |     char *token = strtok(argv[1], ", ");
+      |                   ^~~~~~
+      |                   strtol
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:13:19: error: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:16:15: error: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+   16 |         token = strtok(NULL, ", ");
+      |               ^
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:20:16: error: too few arguments to function 'remove_duplicates'
+   20 |     int *res = remove_duplicates(input);
+      |                ^~~~~~~~~~~~~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:3:6: note: declared here
+    3 | void remove_duplicates(int *arr, int *n);
+      |      ^~~~~~~~~~~~~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:22:9: error: incompatible implicit declaration of built-in function 'printf' [-Werror=builtin-declaration-mismatch]
+   22 |         printf("%d ", res[i]);
+      |         ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:22:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:24:5: error: incompatible implicit declaration of built-in function 'printf' [-Werror=builtin-declaration-mismatch]
+   24 |     printf(";\n");
+      |     ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:24:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/examfinal/remove_duplicate/tests/main.c:11:9: error: unused variable 'input' [-Werror=unused-variable]
+   11 |     int input[MAX_SIZE];
+      |         ^~~~~
+cc1: all warnings being treated as errors

@@ -1,0 +1,181 @@
+schema_version: 1
+id: exams.exam02.c-piscine-exam-02
+title: EXAM02 c-piscine-exam-02
+track: exams
+mode: exam
+description: Reconciled legacy pool from Exam02.
+selection:
+  strategy: random
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 9000
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+levels:
+- level: 0
+  title: Legacy Level 0
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.volume_cube
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.volume_cuboid
+    variant: normal
+    weight: 1
+- level: 1
+  title: Legacy Level 1
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.smallest_number
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.largest_number
+    variant: normal
+    weight: 1
+- level: 2
+  title: Legacy Level 2
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.ft_str_is_alpha
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.ft_strdiff
+    variant: normal
+    weight: 1
+- level: 3
+  title: Legacy Level 3
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 2
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.prev_charcter
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.next_character
+    variant: normal
+    weight: 1
+- level: 4
+  title: Legacy Level 4
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 3
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.ft_strchr
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.ft_strstr
+    variant: normal
+    weight: 1
+- level: 5
+  title: Legacy Level 5
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 4
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.ascii_charcater_v2
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.ft_strcat
+    variant: normal
+    weight: 1
+- level: 6
+  title: Legacy Level 6
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 5
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.ft_bubblesort
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.sort_words
+    variant: normal
+    weight: 1
+- level: 7
+  title: Legacy Level 7
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 6
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.ft_strjoin
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.ft_strndup
+    variant: normal
+    weight: 1
+- level: 8
+  title: Legacy Level 8
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 7
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.binary_to_decimal
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.decimal_to_binary
+    variant: normal
+    weight: 1
+- level: 9
+  title: Legacy Level 9
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 8
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam02.fix_parser
+    variant: normal
+    weight: 1
+  - exercise_id: exams.exam02.fix_result
+    variant: normal
+    weight: 1
+metadata:
+  created_at: '2026-03-07T01:25:51Z'
+  updated_at: '2026-03-07T01:25:51Z'
+  status: reconciled

@@ -1,0 +1,11 @@
+kind: exercise
+identifier: rectangle_area
+source_id: ExamPoolRevanced-main/Exam00
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/rectangle_area
+exam_group: exam00
+assignment: rectangle_area
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam00'

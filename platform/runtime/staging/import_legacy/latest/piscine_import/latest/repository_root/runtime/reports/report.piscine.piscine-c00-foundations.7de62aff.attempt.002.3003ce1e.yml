@@ -1,0 +1,93 @@
+schema_version: 1
+report_id: report.piscine.piscine-c00-foundations.7de62aff.attempt.002.3003ce1e
+attempt_id: piscine.piscine-c00-foundations.7de62aff.attempt.002
+session_id: piscine.piscine-c00-foundations.7de62aff
+user_id: validation.runner
+exercise_id: piscine.c00.ft_print_numbers
+variant_id: normal
+pool_id: piscine.c00.foundations
+mode: piscine
+started_at: '2026-03-07T18:25:47Z'
+finished_at: '2026-03-07T18:25:47Z'
+duration_ms: 97
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002/submission/ft_print_numbers.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/datasets/exercises/piscine/c00/ft_print_numbers/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.out.build.stdout
+  stderr_path: runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002/build/user.out
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.ascending_digits.stdout
+  stderr_path: runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.ascending_digits.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: true
+  raw_score: 1.0
+  normalized_score: 100.0
+  pass_policy: all_tests
+  failure_class: none
+  failed_test_ids: []
+  passed_test_ids:
+  - ascending_digits
+  edge_case_summary:
+    total: 1
+    passed: 1
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 1.0
+    max_score: 1.0
+    verdict: pass
+    note: All tests passed.
+feedback:
+  summary: All tests passed.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002
+  report_path: runtime/reports/report.piscine.piscine-c00-foundations.7de62aff.attempt.002.3003ce1e.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: io
+      delta: 1.0
+    - concept: iteration
+      delta: 1.0
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002/submission/ft_print_numbers.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c00-foundations.7de62aff.attempt.002/build/user.out
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.ascending_digits.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c00-foundations.7de62aff.attempt.002/user.ascending_digits.stderr
+    trace_path: ''
+    duration_ms: 9
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: ascending_digits
+  comparison_notes: []

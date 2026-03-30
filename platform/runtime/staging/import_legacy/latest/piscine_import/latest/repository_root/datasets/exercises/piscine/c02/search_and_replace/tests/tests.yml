@@ -1,0 +1,28 @@
+cases:
+- id: simple_replace
+  argv:
+  - hello
+  - l
+  - r
+  expected_stdout: 'herro
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: no_match
+  argv:
+  - zaz
+  - r
+  - u
+  expected_stdout: 'zaz
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: wrong_argc
+  argv: []
+  expected_stdout: '
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

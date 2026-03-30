@@ -1,0 +1,12 @@
+kind: pool
+identifier: c-piscine-exam-02.yml
+source_id: ExamPoolRevanced-main/Exam02
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/pools/c-piscine-exam-02.yml
+exam_group: exam02
+assignment: prev_character
+pool_name: c-piscine-exam-02.yml
+reasons:
+- bad_pool_reference
+messages:
+- pool references unknown or rejected assignment 'prev_character'
+- pool references unknown or rejected assignment 'ascii_character_v2'

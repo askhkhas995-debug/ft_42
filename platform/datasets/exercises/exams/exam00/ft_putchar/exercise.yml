@@ -1,0 +1,91 @@
+schema_version: 1
+id: exams.exam00.ft_putchar
+slug: ft_putchar
+title: ft_putchar Exam
+summary: Write a function that outputs one character to stdout in exam mode.
+track: exams
+group: exam00
+source:
+  kind: authored
+  origin_id: exam00.ft_putchar
+  origin_path: Exam00
+  copyright_status: owned
+language: c
+difficulty:
+  level: 1
+  category: exam
+pedagogy:
+  modes:
+    - practice
+    - exam
+  concepts:
+    - io
+    - functions
+  skills:
+    - stdout
+  misconceptions:
+    - forgetting_write
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 10
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+    - ft_putchar.c
+  allowed_functions:
+    - write
+  forbidden_functions: []
+  required_headers:
+    - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: false
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+    - -Wall
+    - -Wextra
+    - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files:
+    - ft_putchar.c
+runtime:
+  argv_policy: none
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: exam.stdout.single_char
+  analyzer_ids:
+    - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+    - id: normal
+      kind: normal
+      starter_dir: starter
+      reference_dir: reference
+      tests_dir: tests
+      description: Standard implementation path.
+metadata:
+  author: platform
+  reviewers: []
+  created_at: "2026-03-06T00:00:00Z"
+  updated_at: "2026-03-06T00:00:00Z"
+  status: draft

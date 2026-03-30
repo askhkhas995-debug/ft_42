@@ -1,0 +1,96 @@
+schema_version: 1
+report_id: report.probe.exams-curated-exam02-v1.exams-exam02-ft_strndup.17779d15
+attempt_id: probe.exams-curated-exam02-v1.exams-exam02-ft_strndup
+session_id: probe.exams-curated-exam02-v1
+user_id: integration.probe
+exercise_id: exams.exam02.ft_strndup
+variant_id: normal
+pool_id: exams.curated.exam02.v1
+mode: exam
+started_at: '2026-03-07T12:03:53Z'
+finished_at: '2026-03-07T12:03:55Z'
+duration_ms: 1114
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/submission/ft_strndup.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/exam02/ft_strndup/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.out.build.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: crash
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/build/user.out
+  exit_code: -11
+  signal: '11'
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.smoke.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.smoke.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: crash
+  failed_test_ids:
+  - smoke
+  passed_test_ids: []
+  edge_case_summary:
+    total: 1
+    passed: 0
+    failed: 1
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with crash.
+feedback:
+  summary: Attempt failed with crash.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup
+  report_path: runtime/reports/report.probe.exams-curated-exam02-v1.exams-exam02-ft_strndup.17779d15.yml
+  diff_path: runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/smoke.diff.txt
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/submission/ft_strndup.c
+  run_results:
+  - status: crash
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/build/user.out
+    exit_code: -11
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.smoke.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/traces/probe.exams-curated-exam02-v1.exams-exam02-ft_strndup/user.smoke.stderr
+    trace_path: ''
+    duration_ms: 805
+    timed_out: false
+    signal: '11'
+    memory_limit_hit: false
+    test_id: smoke
+  comparison_notes:
+  - '[exit_code]
+
+    expected=0 actual=-11
+
+    [runtime]
+
+    status=crash'

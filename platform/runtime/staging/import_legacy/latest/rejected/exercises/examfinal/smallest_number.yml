@@ -1,0 +1,11 @@
+kind: exercise
+identifier: smallest_number
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/smallest_number
+exam_group: examfinal
+assignment: smallest_number
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

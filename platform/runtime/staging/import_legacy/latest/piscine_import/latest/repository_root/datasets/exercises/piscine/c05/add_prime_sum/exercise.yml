@@ -1,0 +1,115 @@
+schema_version: 1
+id: piscine.c05.add_prime_sum
+slug: add_prime_sum
+title: add_prime_sum
+summary: Write a program that takes a positive integer as argument and displays the
+  sum of all prime numbers inferior or equal to it.
+track: piscine
+group: c05
+source:
+  kind: legacy_import
+  origin_id: c05.add_prime_sum
+  origin_path: grademe-main/.subjects/PISCINE_PART/exam_03/2/add_prime_sum/add_prime_sum.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 4
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - math
+  - division
+  - primes
+  - io
+  skills:
+  - putnbr_recursive
+  - finding_primes
+  misconceptions:
+  - 0_and_1_arent_primes
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 30
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - add_prime_sum.c
+  allowed_functions:
+  - write
+  - exit
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: standalone_program
+  entry_files:
+  - add_prime_sum.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c05.add_prime_sum
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: one-is-not-prime
+    prompt: 1 is not technically considered a prime number, so do not include it.
+    reveal_before_submit: true
+  hints:
+  - id: putnbr
+    prompt: You need a function like `putnbr(int)` to print the result since printf
+      is disallowed.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Sum all primes recursively or iteratively, verify correctly outputted digits.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: true
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:25:36Z'
+  updated_at: '2026-03-07T18:25:36Z'
+  status: draft

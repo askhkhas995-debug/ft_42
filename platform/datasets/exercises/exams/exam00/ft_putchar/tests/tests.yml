@@ -1,0 +1,13 @@
+cases:
+  - id: lowercase
+    argv:
+      - a
+    expected_stdout: "a"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: symbol
+    argv:
+      - "?"
+    expected_stdout: "?"
+    expected_stderr: ""
+    expected_exit_code: 0

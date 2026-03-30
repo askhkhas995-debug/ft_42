@@ -1,0 +1,17 @@
+# fix a
+
+```text
+Assignment name  : fix_a
+Expected files   : fix_a.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+copier and fix the code below so it prints the 'a' character followed by a new line.
+
+int main()
+{
+    write(5, 1, "a\n",2);
+    return 0;
+}
+```

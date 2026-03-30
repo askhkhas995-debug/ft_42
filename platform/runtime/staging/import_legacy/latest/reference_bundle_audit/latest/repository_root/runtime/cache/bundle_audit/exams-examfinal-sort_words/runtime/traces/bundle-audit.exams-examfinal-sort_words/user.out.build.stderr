@@ -1,0 +1,8 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-sort_words/runtime/workspaces/bundle-audit.exams-examfinal-sort_words/submission/sort_words.c: In function 'sortWords':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-sort_words/runtime/workspaces/bundle-audit.exams-examfinal-sort_words/submission/sort_words.c:21:19: error: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Werror=sign-compare]
+   21 |     for (i = 0; j < strlen(str); j++) {
+      |                   ^
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-sort_words/runtime/workspaces/bundle-audit.exams-examfinal-sort_words/submission/sort_words.c:11:10: error: unused variable 'ptr1' [-Werror=unused-variable]
+   11 |     char ptr1[50][100];
+      |          ^~~~
+cc1: all warnings being treated as errors

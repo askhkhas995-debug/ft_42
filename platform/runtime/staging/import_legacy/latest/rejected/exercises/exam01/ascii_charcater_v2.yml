@@ -1,0 +1,11 @@
+kind: exercise
+identifier: ascii_charcater_v2
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ascii_charcater_v2
+exam_group: exam01
+assignment: ascii_charcater_v2
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

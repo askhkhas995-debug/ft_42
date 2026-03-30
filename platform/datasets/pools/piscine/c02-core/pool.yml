@@ -1,0 +1,60 @@
+schema_version: 1
+id: piscine.c02.core
+title: C02 Core
+track: piscine
+mode: practice
+description: Pool for string transformations and character manipulation.
+selection:
+  strategy: ordered
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 3600
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+levels:
+- level: 0
+  title: Case Flipping
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c02.ulstr
+    variant: normal
+    order: 10
+- level: 1
+  title: Search and Replace
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c02.search_and_replace
+    variant: normal
+    order: 20
+- level: 2
+  title: Repeated Characters
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c02.repeat_alpha
+    variant: normal
+    order: 30
+metadata:
+  created_at: '2026-03-07T15:19:57Z'
+  updated_at: '2026-03-07T15:19:57Z'
+  status: draft

@@ -1,0 +1,71 @@
+generated_at: '2026-03-07T01:44:06Z'
+staging_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest
+summary:
+  manual_review_count: 2
+  manual_alias_override_count: 0
+  manual_pool_override_count: 1
+  applied_override_count: 1
+  repaired_pool_count: 0
+  remaining_unresolved_count: 1
+  validation_ok: true
+manual_review_records:
+- legacy_reference_name: sum_n
+  source_id: ExamFinal
+  source_pool: c-piscine-exam-final.yml
+  exam_group: examfinal
+  likely_intended_exam_rank: examfinal level 3
+  level: 3
+  position_in_level: 2
+  candidate_canonical_exercise_ids:
+  - exams.exam01.sum_n
+  auto_repair_not_safe_reason: a plausible canonical target exists, but it falls outside
+    the strict automatic same-group exact or 1-edit reconciliation rules
+  issue_type: naming mismatch
+- legacy_reference_name: naahio
+  source_id: ExamFinal
+  source_pool: c-piscine-exam-final.yml
+  exam_group: examfinal
+  likely_intended_exam_rank: examfinal level 9
+  level: 9
+  position_in_level: 0
+  candidate_canonical_exercise_ids: []
+  auto_repair_not_safe_reason: the legacy bundle is incomplete or missing required
+    files, so no accepted canonical target exists to auto-repair against
+  issue_type: missing content
+manual_alias_overrides: []
+manual_pool_overrides:
+- source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  level: 3
+  legacy_assignment_name: sum_n
+  canonical_exercise_id: exams.exam01.sum_n
+  justification: Legacy final exam pool reuses the accepted exam01 sum_n exercise;
+    the direct final correction bundle has no matching subject, so this cross-group
+    pool override is required.
+applied_overrides:
+- override_type: manual_pool_override
+  source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  level: 3
+  legacy_assignment_name: sum_n
+  canonical_exercise_id: exams.exam01.sum_n
+  justification: Legacy final exam pool reuses the accepted exam01 sum_n exercise;
+    the direct final correction bundle has no matching subject, so this cross-group
+    pool override is required.
+repaired_pools: []
+unresolved_references_remaining:
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool reference remains unresolved after manual curation for assignment
+    'naahio'
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: c-piscine-exam-final.yml
+validation:
+  ok: true
+  exercise_count: 90
+  pool_count: 0
+  failure_count: 0
+  failures: []

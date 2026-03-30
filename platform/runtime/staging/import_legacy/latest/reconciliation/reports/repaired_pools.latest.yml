@@ -1,0 +1,11 @@
+repaired_pools:
+- pool_id: exams.exam01.c-piscine-exam-01
+  source_id: Exam01
+  exam_group: exam01
+  slug: c-piscine-exam-01
+  repaired_reference_count: 2
+- pool_id: exams.exam02.c-piscine-exam-02
+  source_id: Exam02
+  exam_group: exam02
+  slug: c-piscine-exam-02
+  repaired_reference_count: 2

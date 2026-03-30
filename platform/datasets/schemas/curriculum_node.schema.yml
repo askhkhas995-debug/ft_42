@@ -1,0 +1,53 @@
+schema_version: 1
+name: curriculum_node
+description: Canonical curriculum graph summary for the learner-facing platform.
+root_file: datasets/curriculum/tree.yml
+top_level_required:
+  - schema_version
+  - source_of_truth
+  - nodes
+node_required:
+  - id
+  - title
+  - type
+  - track
+  - group
+  - prerequisites
+  - learning_objectives
+  - concepts
+  - difficulty
+  - estimated_effort
+  - progression_order
+  - unlock_conditions
+  - grading_mode
+  - expected_files
+  - starter_files
+  - reference_available
+  - tests_available
+  - status
+supported_types:
+  - module
+  - exercise
+  - rush
+  - exam
+supported_grading_modes:
+  - practice
+  - exam
+  - collaborative
+  - peer_review
+  - mixed
+supported_status:
+  - ready
+  - draft
+  - placeholder
+node_optional:
+  - summary
+  - exercise_ids
+  - pool_ids
+  - notices
+  - metadata
+validation_notes:
+  - The curriculum dataset is canonical learner sequencing metadata.
+  - Exercise and pool references must point only at canonical datasets under datasets/exercises and datasets/pools.
+  - storage and runtime artifacts are read models or execution output, never canonical curriculum input.
+  - runtime/staging/import_legacy is generated import workspace and cannot be used as canonical curriculum authority.

@@ -1,0 +1,87 @@
+schema_version: 1
+id: exams.exam01.remove_duplicate
+slug: remove_duplicate
+title: remove_duplicate
+summary: Write a function for an int array and remove duplicate elements in that array
+track: exams
+group: exam01
+source:
+  kind: legacy_import
+  origin_id: exam01.remove_duplicate
+  origin_path: Exam01/corrections/remove_duplicate
+  copyright_status: legacy_migrated
+language: c
+difficulty:
+  level: 2
+  category: exam
+pedagogy:
+  modes:
+  - practice
+  - exam
+  concepts: []
+  skills: []
+  misconceptions: []
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 15
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files: &id001
+  - remove_duplicate.c
+  allowed_functions: []
+  forbidden_functions: []
+  required_headers:
+  - stdio.h
+  - stdlib.h
+  - string.h
+  output_contract:
+    channel: stdout
+    newline_policy: ignore
+  norm:
+    enabled: false
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files: *id001
+runtime:
+  argv_policy: explicit_per_test
+  stdin_policy: explicit_per_test
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: legacy.exam01.remove_duplicate
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Migrated legacy baseline variant.
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T01:25:15Z'
+  updated_at: '2026-03-07T01:25:15Z'
+  status: migrated

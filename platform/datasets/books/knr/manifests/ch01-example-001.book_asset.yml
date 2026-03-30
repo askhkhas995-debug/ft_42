@@ -1,0 +1,16 @@
+schema_version: 1
+book_id: knr
+chapter_id: ch01
+section_id: s01
+example_id: ex001
+title: Hello world baseline example
+concepts:
+  - compilation
+  - program_structure
+source_pages:
+  - 1
+snippet_path: ../assets/ch01-ex001.c
+derivative_exercise_ids:
+  - knr.ch01.ex001.hello_world_observation
+copyright_status: extracted_for_index_only
+notes: Seed asset for observation and prediction variants.

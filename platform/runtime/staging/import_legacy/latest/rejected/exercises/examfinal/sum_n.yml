@@ -1,0 +1,13 @@
+kind: exercise
+identifier: sum_n
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sum_n
+exam_group: examfinal
+assignment: sum_n
+pool_name: null
+reasons:
+- naming_mismatch
+- missing_file
+messages:
+- correction bundle exists without matching subject
+- missing subject file for correction bundle

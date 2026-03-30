@@ -1,0 +1,11 @@
+kind: exercise
+identifier: is_vowel
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/is_vowel
+exam_group: examfinal
+assignment: is_vowel
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

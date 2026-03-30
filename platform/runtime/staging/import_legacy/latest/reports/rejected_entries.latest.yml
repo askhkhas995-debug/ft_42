@@ -1,0 +1,1154 @@
+rejected_entries:
+- kind: exercise
+  identifier: ascii_character
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ascii_character
+  exam_group: exam00
+  assignment: ascii_character
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: fix_a
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/fix_a
+  exam_group: exam00
+  assignment: fix_a
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: fix_z
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/fix_z
+  exam_group: exam00
+  assignment: fix_z
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: frequency_character
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/frequency_character
+  exam_group: exam00
+  assignment: frequency_character
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ft_abs
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_abs
+  exam_group: exam00
+  assignment: ft_abs
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ft_div
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_div
+  exam_group: exam00
+  assignment: ft_div
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ft_isdigit
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_isdigit
+  exam_group: exam00
+  assignment: ft_isdigit
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ft_mod
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_mod
+  exam_group: exam00
+  assignment: ft_mod
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ft_pow
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_pow
+  exam_group: exam00
+  assignment: ft_pow
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: is_consonant
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/is_consonant
+  exam_group: exam00
+  assignment: is_consonant
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: is_vowel
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/is_vowel
+  exam_group: exam00
+  assignment: is_vowel
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: rectangle_area
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/rectangle_area
+  exam_group: exam00
+  assignment: rectangle_area
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: triangle_area
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/triangle_area
+  exam_group: exam00
+  assignment: triangle_area
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam00'
+- kind: exercise
+  identifier: ascii_charcater_v2
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ascii_charcater_v2
+  exam_group: exam01
+  assignment: ascii_charcater_v2
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: circle_perimeter
+  source_id: Exam01
+  location: /home/xapet/Desktop/f/Exam01/corrections/circle_perimeter
+  exam_group: exam01
+  assignment: circle_perimeter
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - correction bundle exists without matching subject
+  - missing subject file for correction bundle
+- kind: exercise
+  identifier: circle_perimeter
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/circle_perimeter
+  exam_group: exam01
+  assignment: circle_perimeter
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - correction bundle exists without matching subject
+  - missing subject file for correction bundle
+- kind: exercise
+  identifier: factorial_number
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/factorial_number
+  exam_group: exam01
+  assignment: factorial_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: fix_a
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/fix_a
+  exam_group: exam01
+  assignment: fix_a
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: fix_z
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/fix_z
+  exam_group: exam01
+  assignment: fix_z
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_abs
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_abs
+  exam_group: exam01
+  assignment: ft_abs
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_pow
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_pow
+  exam_group: exam01
+  assignment: ft_pow
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_sqrt
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_sqrt
+  exam_group: exam01
+  assignment: ft_sqrt
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_str_is_alpha
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_str_is_alpha
+  exam_group: exam01
+  assignment: ft_str_is_alpha
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_strcat
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strcat
+  exam_group: exam01
+  assignment: ft_strcat
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_strdiff
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strdiff
+  exam_group: exam01
+  assignment: ft_strdiff
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ft_strjoin
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strjoin
+  exam_group: exam01
+  assignment: ft_strjoin
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: length_words
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/length_words
+  exam_group: exam01
+  assignment: length_words
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: next_character
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/next_character
+  exam_group: exam01
+  assignment: next_character
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: prev_charcter
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/prev_charcter
+  exam_group: exam01
+  assignment: prev_charcter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: rectangle_perimeter
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/rectangle_perimeter
+  exam_group: exam01
+  assignment: rectangle_perimeter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: remove_duplicate
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/remove_duplicate
+  exam_group: exam01
+  assignment: remove_duplicate
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: remove_vowels
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/remove_vowels
+  exam_group: exam01
+  assignment: remove_vowels
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: sum_n
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/sum_n
+  exam_group: exam01
+  assignment: sum_n
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: triangle_perimeter
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/triangle_perimeter
+  exam_group: exam01
+  assignment: triangle_perimeter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam01'
+- kind: exercise
+  identifier: ascii_charcater_v2
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ascii_charcater_v2
+  exam_group: exam02
+  assignment: ascii_charcater_v2
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: binary_to_decimal
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/binary_to_decimal
+  exam_group: exam02
+  assignment: binary_to_decimal
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: decimal_to_binary
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/decimal_to_binary
+  exam_group: exam02
+  assignment: decimal_to_binary
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: fix_parser
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/fix_parser
+  exam_group: exam02
+  assignment: fix_parser
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: fix_result
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/fix_result
+  exam_group: exam02
+  assignment: fix_result
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_bubblesort
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_bubblesort
+  exam_group: exam02
+  assignment: ft_bubblesort
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_str_is_alpha
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_str_is_alpha
+  exam_group: exam02
+  assignment: ft_str_is_alpha
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strcat
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strcat
+  exam_group: exam02
+  assignment: ft_strcat
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strchr
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strchr
+  exam_group: exam02
+  assignment: ft_strchr
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strdel
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strdel
+  exam_group: exam02
+  assignment: ft_strdel
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strdiff
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strdiff
+  exam_group: exam02
+  assignment: ft_strdiff
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strjoin
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strjoin
+  exam_group: exam02
+  assignment: ft_strjoin
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strndup
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strndup
+  exam_group: exam02
+  assignment: ft_strndup
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: ft_strstr
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strstr
+  exam_group: exam02
+  assignment: ft_strstr
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: largest_number
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/largest_number
+  exam_group: exam02
+  assignment: largest_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: next_character
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/next_character
+  exam_group: exam02
+  assignment: next_character
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: prev_charcter
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/prev_charcter
+  exam_group: exam02
+  assignment: prev_charcter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: size_variables
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/size_variables
+  exam_group: exam02
+  assignment: size_variables
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: smallest_number
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/smallest_number
+  exam_group: exam02
+  assignment: smallest_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: sort_words
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/sort_words
+  exam_group: exam02
+  assignment: sort_words
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: volume_cube
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/volume_cube
+  exam_group: exam02
+  assignment: volume_cube
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: volume_cuboid
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/volume_cuboid
+  exam_group: exam02
+  assignment: volume_cuboid
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'Exam02'
+- kind: exercise
+  identifier: add_complex
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/add_complex
+  exam_group: examfinal
+  assignment: add_complex
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ascii_charcater_v2
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ascii_charcater_v2
+  exam_group: examfinal
+  assignment: ascii_charcater_v2
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: binary_to_decimal
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/binary_to_decimal
+  exam_group: examfinal
+  assignment: binary_to_decimal
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: decimal_to_binary
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/decimal_to_binary
+  exam_group: examfinal
+  assignment: decimal_to_binary
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: factorial_number
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/factorial_number
+  exam_group: examfinal
+  assignment: factorial_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: fix_a
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_a
+  exam_group: examfinal
+  assignment: fix_a
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: fix_loop
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_loop
+  exam_group: examfinal
+  assignment: fix_loop
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: fix_z
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_z
+  exam_group: examfinal
+  assignment: fix_z
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_abs
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_abs
+  exam_group: examfinal
+  assignment: ft_abs
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_bubblesort
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_bubblesort
+  exam_group: examfinal
+  assignment: ft_bubblesort
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_div
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_div
+  exam_group: examfinal
+  assignment: ft_div
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_isdigit
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_isdigit
+  exam_group: examfinal
+  assignment: ft_isdigit
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_mod
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_mod
+  exam_group: examfinal
+  assignment: ft_mod
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_pow
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_pow
+  exam_group: examfinal
+  assignment: ft_pow
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_sqrt
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_sqrt
+  exam_group: examfinal
+  assignment: ft_sqrt
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_str_is_alpha
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_str_is_alpha
+  exam_group: examfinal
+  assignment: ft_str_is_alpha
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_strdiff
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strdiff
+  exam_group: examfinal
+  assignment: ft_strdiff
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_strjoin
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strjoin
+  exam_group: examfinal
+  assignment: ft_strjoin
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_strndup
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strndup
+  exam_group: examfinal
+  assignment: ft_strndup
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: ft_strstr
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strstr
+  exam_group: examfinal
+  assignment: ft_strstr
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: is_consonant
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/is_consonant
+  exam_group: examfinal
+  assignment: is_consonant
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: is_vowel
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/is_vowel
+  exam_group: examfinal
+  assignment: is_vowel
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: largest_number
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/largest_number
+  exam_group: examfinal
+  assignment: largest_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: list_trait
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/list_trait
+  exam_group: examfinal
+  assignment: list_trait
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: mult_complex
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/mult_complex
+  exam_group: examfinal
+  assignment: mult_complex
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: naahio
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/subjects/naahio/subject.en.txt
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - subject exists without matching correction bundle
+  - missing correction bundle for subject
+- kind: exercise
+  identifier: naahio
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/subjects/naahio/subject.en.txt
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - subject exists without matching correction bundle
+  - missing correction bundle for subject
+- kind: exercise
+  identifier: next_character
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/next_character
+  exam_group: examfinal
+  assignment: next_character
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: prev_charcter
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/prev_charcter
+  exam_group: examfinal
+  assignment: prev_charcter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: rectangle_perimeter
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/rectangle_perimeter
+  exam_group: examfinal
+  assignment: rectangle_perimeter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: remove_duplicate
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/remove_duplicate
+  exam_group: examfinal
+  assignment: remove_duplicate
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: remove_vowels
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/remove_vowels
+  exam_group: examfinal
+  assignment: remove_vowels
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: smallest_number
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/smallest_number
+  exam_group: examfinal
+  assignment: smallest_number
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: sort_words
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sort_words
+  exam_group: examfinal
+  assignment: sort_words
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: sub_complex
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sub_complex
+  exam_group: examfinal
+  assignment: sub_complex
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: sum_n
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/corrections/sum_n
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - correction bundle exists without matching subject
+  - missing subject file for correction bundle
+- kind: exercise
+  identifier: sum_n
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sum_n
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: null
+  reasons:
+  - naming_mismatch
+  - missing_file
+  messages:
+  - correction bundle exists without matching subject
+  - missing subject file for correction bundle
+- kind: exercise
+  identifier: triangle_perimeter
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/triangle_perimeter
+  exam_group: examfinal
+  assignment: triangle_perimeter
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: volume_cube
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/volume_cube
+  exam_group: examfinal
+  assignment: volume_cube
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: exercise
+  identifier: volume_cuboid
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/volume_cuboid
+  exam_group: examfinal
+  assignment: volume_cuboid
+  pool_name: null
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate assignment conflicts with earlier source 'ExamFinal'
+- kind: pool
+  identifier: c-piscine-exam-00.yml
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/pools/c-piscine-exam-00.yml
+  exam_group: exam00
+  assignment: null
+  pool_name: c-piscine-exam-00.yml
+  reasons:
+  - duplicate_source_conflict
+  messages:
+  - duplicate pool conflicts with earlier source 'Exam00'
+- kind: pool
+  identifier: c-piscine-exam-01.yml
+  source_id: Exam01
+  location: /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+  exam_group: exam01
+  assignment: prev_character
+  pool_name: c-piscine-exam-01.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'ascii_character_v2'
+- kind: pool
+  identifier: c-piscine-exam-01.yml
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/pools/c-piscine-exam-01.yml
+  exam_group: exam01
+  assignment: prev_character
+  pool_name: c-piscine-exam-01.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'ascii_character_v2'
+- kind: pool
+  identifier: c-piscine-exam-02.yml
+  source_id: Exam02
+  location: /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+  exam_group: exam02
+  assignment: prev_character
+  pool_name: c-piscine-exam-02.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'ascii_character_v2'
+- kind: pool
+  identifier: c-piscine-exam-02.yml
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/pools/c-piscine-exam-02.yml
+  exam_group: exam02
+  assignment: prev_character
+  pool_name: c-piscine-exam-02.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'ascii_character_v2'
+- kind: pool
+  identifier: c-piscine-exam-final.yml
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: c-piscine-exam-final.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'sum_n'
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'naahio'
+- kind: pool
+  identifier: c-piscine-exam-final.yml
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/pools/c-piscine-exam-final.yml
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: c-piscine-exam-final.yml
+  reasons:
+  - bad_pool_reference
+  messages:
+  - pool references unknown or rejected assignment 'sum_n'
+  - pool references unknown or rejected assignment 'prev_character'
+  - pool references unknown or rejected assignment 'naahio'

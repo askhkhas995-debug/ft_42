@@ -1,0 +1,11 @@
+kind: exercise
+identifier: ft_sqrt
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_sqrt
+exam_group: examfinal
+assignment: ft_sqrt
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

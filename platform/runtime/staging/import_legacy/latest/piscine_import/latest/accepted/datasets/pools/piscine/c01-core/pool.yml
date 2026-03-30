@@ -1,0 +1,47 @@
+schema_version: 1
+id: piscine.c01.core
+title: C01 Core
+track: piscine
+mode: practice
+description: Pool for basic string manipulation and function with harness testing.
+selection:
+  strategy: ordered
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 3600
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+levels:
+- level: 0
+  title: String Length
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c01.ft_strlen
+    variant: normal
+    order: 10
+- level: 1
+  title: String Copy
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: piscine.c01.ft_strcpy
+    variant: normal
+    order: 20
+metadata:
+  created_at: '2026-03-07T18:35:01Z'
+  updated_at: '2026-03-07T18:35:01Z'
+  status: draft

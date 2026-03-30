@@ -1,0 +1,19 @@
+profile_id: sandbox.c.default
+description: Default local sandbox profile for compiling and running C exercises.
+compile:
+  cpu_seconds: 10
+  memory_mb: 512
+  process_limit: 32
+  network: false
+run:
+  default_timeout_seconds: 3
+  default_memory_mb: 128
+  max_stdout_bytes: 1048576
+  max_stderr_bytes: 1048576
+  network: false
+filesystem:
+  writable_roots:
+    - runtime/workspaces
+  read_only_roots:
+    - datasets
+    - runtime/toolchains

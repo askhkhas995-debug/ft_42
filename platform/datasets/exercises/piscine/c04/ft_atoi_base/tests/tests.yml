@@ -1,0 +1,37 @@
+cases:
+- id: simple
+  argv:
+  - 12fdb3
+  - '16'
+  expected_stdout: '1244595
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: upper
+  argv:
+  - 12FDB3
+  - '16'
+  expected_stdout: '1244595
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: binary
+  argv:
+  - '101010'
+  - '2'
+  expected_stdout: '42
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: negative
+  argv:
+  - -2A
+  - '16'
+  expected_stdout: '-42
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

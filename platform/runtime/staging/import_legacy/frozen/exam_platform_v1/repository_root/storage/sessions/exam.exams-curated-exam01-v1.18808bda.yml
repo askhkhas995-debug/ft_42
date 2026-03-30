@@ -1,0 +1,47 @@
+schema_version: 1
+session_id: exam.exams-curated-exam01-v1.18808bda
+user_id: integration.runner
+mode: exam
+state: finished
+started_at: '2026-03-07T12:54:49Z'
+finished_at: '2026-03-07T12:55:04Z'
+pool_id: exams.curated.exam01.v1
+track: exams
+selection_strategy: random
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 9000
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+progress:
+  attempts_total: 6
+  passed_exercise_ids:
+  - exams.exam01.ascii_charcater_v2
+  - exams.exam01.fix_a
+  - exams.exam01.length_words
+  - exams.exam01.rectangle_perimeter
+  - exams.exam01.remove_vowels
+  failed_attempts_total: 1
+  current_level: 4
+  highest_unlocked_level: 4
+  completed_levels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  finished_at: '2026-03-07T12:55:04Z'
+current_assignment: null
+cooldown:
+  enabled: false
+  scope: pool
+  seconds: 0
+  last_applied_at: '2026-03-07T12:55:04Z'
+  available_at: null
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

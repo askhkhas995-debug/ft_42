@@ -1,0 +1,41 @@
+cases:
+- id: two
+  argv:
+  - '2'
+  expected_stdout: '1
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: '1'
+  argv:
+  - '1'
+  expected_stdout: '1
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: '0'
+  argv:
+  - '0'
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: non_power
+  argv:
+  - '42'
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: power
+  argv:
+  - '1024'
+  expected_stdout: '1
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

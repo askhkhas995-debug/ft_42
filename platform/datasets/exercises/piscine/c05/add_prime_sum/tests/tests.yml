@@ -1,0 +1,48 @@
+cases:
+- id: five
+  argv:
+  - '5'
+  expected_stdout: '10
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: seven
+  argv:
+  - '7'
+  expected_stdout: '17
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: nine
+  argv:
+  - '9'
+  expected_stdout: '17
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: one
+  argv:
+  - '1'
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: zero
+  argv:
+  - '0'
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: missing_args
+  argv: []
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

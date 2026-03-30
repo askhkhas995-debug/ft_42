@@ -1,0 +1,5 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/exam01/ft_sqrt/tests/main.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/exam01/ft_sqrt/tests/main.c:14:15: error: implicit declaration of function 'atoi' [-Werror=implicit-function-declaration]
+   14 |     int num = atoi(argv[1]);
+      |               ^~~~
+cc1: all warnings being treated as errors

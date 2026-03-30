@@ -1,0 +1,13 @@
+cases:
+  - id: exam_word
+    argv:
+      - exam
+    expected_stdout: "exam"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: uppercase
+    argv:
+      - EXAM
+    expected_stdout: "EXAM"
+    expected_stderr: ""
+    expected_exit_code: 0

@@ -1,0 +1,16 @@
+schema_version: 1
+name: attempt_log
+description: Append-only attempt record persisted as JSONL.
+required:
+  - schema_version
+  - attempt_id
+  - session_id
+  - user_id
+  - exercise_id
+  - mode
+  - attempt_index_for_session
+  - attempt_index_for_exercise
+  - created_at
+  - state
+  - workspace
+  - timing

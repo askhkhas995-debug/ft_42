@@ -1,0 +1,225 @@
+schema_version: 1
+report_id: report.probe.piscine-c05-add_prime_sum.7769f422
+attempt_id: probe.piscine-c05-add_prime_sum
+session_id: probe.session
+user_id: probe.user
+exercise_id: piscine.c05.add_prime_sum
+variant_id: normal
+pool_id: piscine.c05.core
+mode: piscine
+started_at: '2026-03-07T18:25:44Z'
+finished_at: '2026-03-07T18:25:44Z'
+duration_ms: 104
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/submission/add_prime_sum.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/probe.piscine-c05-add_prime_sum/user.out.build.stdout
+  stderr_path: runtime/traces/probe.piscine-c05-add_prime_sum/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: failure
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+  exit_code: 1
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/probe.piscine-c05-add_prime_sum/user.missing_args.stdout
+  stderr_path: runtime/traces/probe.piscine-c05-add_prime_sum/user.missing_args.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: wrong_output
+  failed_test_ids:
+  - five
+  - seven
+  - nine
+  - one
+  - zero
+  - missing_args
+  passed_test_ids: []
+  edge_case_summary:
+    total: 6
+    passed: 0
+    failed: 6
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with wrong_output.
+feedback:
+  summary: Attempt failed with wrong_output.
+  actionable_next_steps:
+  - Compare expected and actual stdout for the failed test cases.
+  hint_ids: []
+  concept_gaps:
+  - math
+  - division
+  - primes
+  - io
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.piscine-c05-add_prime_sum
+  report_path: runtime/reports/report.probe.piscine-c05-add_prime_sum.7769f422.yml
+  diff_path: runtime/traces/probe.piscine-c05-add_prime_sum/five.diff.txt
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: math
+      delta: -0.2
+    - concept: division
+      delta: -0.2
+    - concept: primes
+      delta: -0.2
+    - concept: io
+      delta: -0.2
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.piscine-c05-add_prime_sum/submission/add_prime_sum.c
+  run_results:
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    - '5'
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.five.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.five.stderr
+    trace_path: ''
+    duration_ms: 4
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: five
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    - '7'
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.seven.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.seven.stderr
+    trace_path: ''
+    duration_ms: 4
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: seven
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    - '9'
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.nine.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.nine.stderr
+    trace_path: ''
+    duration_ms: 3
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: nine
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    - '1'
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.one.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.one.stderr
+    trace_path: ''
+    duration_ms: 3
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: one
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    - '0'
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.zero.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.zero.stderr
+    trace_path: ''
+    duration_ms: 4
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: zero
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c05-add_prime_sum/build/user.out
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.missing_args.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/probe.piscine-c05-add_prime_sum/user.missing_args.stderr
+    trace_path: ''
+    duration_ms: 3
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: missing_args
+  comparison_notes:
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'
+  - '[stdout]
+
+    --- expected
+
+    +++ actual
+
+    @@ -1 +1 @@
+
+    -0
+
+    +1
+
+    [exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'

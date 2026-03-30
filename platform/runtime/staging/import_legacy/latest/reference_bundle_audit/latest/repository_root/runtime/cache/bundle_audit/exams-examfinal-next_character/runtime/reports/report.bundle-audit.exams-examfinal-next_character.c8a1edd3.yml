@@ -1,0 +1,88 @@
+schema_version: 1
+report_id: report.bundle-audit.exams-examfinal-next_character.c8a1edd3
+attempt_id: bundle-audit.exams-examfinal-next_character
+session_id: bundle-audit.examfinal
+user_id: reference.bundle.audit
+exercise_id: exams.examfinal.next_character
+variant_id: normal
+pool_id: null
+mode: exam
+started_at: '2026-03-07T12:53:21Z'
+finished_at: '2026-03-07T12:53:21Z'
+duration_ms: 167
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/workspaces/bundle-audit.exams-examfinal-next_character/submission/next_character.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/workspaces/bundle-audit.exams-examfinal-next_character/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/bundle-audit.exams-examfinal-next_character/user.out.build.stdout
+  stderr_path: runtime/traces/bundle-audit.exams-examfinal-next_character/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/workspaces/bundle-audit.exams-examfinal-next_character/build/user.out
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/bundle-audit.exams-examfinal-next_character/user.smoke.stdout
+  stderr_path: runtime/traces/bundle-audit.exams-examfinal-next_character/user.smoke.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: true
+  raw_score: 1.0
+  normalized_score: 100.0
+  pass_policy: all_tests
+  failure_class: none
+  failed_test_ids: []
+  passed_test_ids:
+  - smoke
+  edge_case_summary:
+    total: 1
+    passed: 1
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 1.0
+    max_score: 1.0
+    verdict: pass
+    note: All tests passed.
+feedback:
+  summary: All tests passed.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/bundle-audit.exams-examfinal-next_character
+  report_path: runtime/reports/report.bundle-audit.exams-examfinal-next_character.c8a1edd3.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/bundle-audit.exams-examfinal-next_character/submission/next_character.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/workspaces/bundle-audit.exams-examfinal-next_character/build/user.out
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/traces/bundle-audit.exams-examfinal-next_character/user.smoke.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-next_character/runtime/traces/bundle-audit.exams-examfinal-next_character/user.smoke.stderr
+    trace_path: ''
+    duration_ms: 11
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: smoke
+  comparison_notes: []

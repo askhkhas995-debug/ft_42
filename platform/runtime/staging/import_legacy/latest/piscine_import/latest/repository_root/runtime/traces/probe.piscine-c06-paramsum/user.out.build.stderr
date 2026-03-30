@@ -1,0 +1,5 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c06-paramsum/submission/paramsum.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c06-paramsum/submission/paramsum.c:27:37: error: parameter 'av' set but not used [-Werror=unused-but-set-parameter]
+   27 | int             main(int ac, char **av)
+      |                              ~~~~~~~^~
+cc1: all warnings being treated as errors

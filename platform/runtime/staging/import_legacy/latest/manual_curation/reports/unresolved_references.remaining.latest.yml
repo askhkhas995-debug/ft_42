@@ -1,0 +1,10 @@
+unresolved_references_remaining:
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool reference remains unresolved after manual curation for assignment
+    'naahio'
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: c-piscine-exam-final.yml

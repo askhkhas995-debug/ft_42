@@ -1,0 +1,147 @@
+generated_at: '2026-03-07T01:25:51Z'
+staging_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest
+summary:
+  alias_mapping_count: 5
+  auto_repaired_reference_count: 5
+  unresolved_reference_count: 2
+  ambiguous_mapping_count: 0
+  repaired_pool_count: 2
+  validation_ok: true
+canonical_sources:
+  exam00: Exam00
+  exam01: Exam01
+  exam02: Exam02
+  examfinal: ExamFinal
+issue_classification:
+- issue_type: bad_pool_reference
+  total_count: 7
+  auto_remediable_count: 5
+  manual_review_count: 0
+  non_remediable_count: 2
+- issue_type: missing_file
+  total_count: 3
+  auto_remediable_count: 0
+  manual_review_count: 0
+  non_remediable_count: 3
+- issue_type: naming_mismatch
+  total_count: 3
+  auto_remediable_count: 0
+  manual_review_count: 0
+  non_remediable_count: 3
+alias_mappings:
+- exam_group: exam01
+  legacy_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam01.ascii_charcater_v2
+  canonical_slug: ascii_charcater_v2
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+- exam_group: exam01
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.exam01.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+- exam_group: exam02
+  legacy_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam02.ascii_charcater_v2
+  canonical_slug: ascii_charcater_v2
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+- exam_group: exam02
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.exam02.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+- exam_group: examfinal
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.examfinal.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+auto_repaired_references:
+- source_id: Exam01
+  exam_group: exam01
+  pool_name: c-piscine-exam-01.yml
+  level: 2
+  original_assignment_name: prev_character
+  canonical_exercise_id: exams.exam01.prev_charcter
+  mapping_reason: unique_edit_distance_1
+- source_id: Exam01
+  exam_group: exam01
+  pool_name: c-piscine-exam-01.yml
+  level: 7
+  original_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam01.ascii_charcater_v2
+  mapping_reason: unique_edit_distance_1
+- source_id: Exam02
+  exam_group: exam02
+  pool_name: c-piscine-exam-02.yml
+  level: 3
+  original_assignment_name: prev_character
+  canonical_exercise_id: exams.exam02.prev_charcter
+  mapping_reason: unique_edit_distance_1
+- source_id: Exam02
+  exam_group: exam02
+  pool_name: c-piscine-exam-02.yml
+  level: 5
+  original_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam02.ascii_charcater_v2
+  mapping_reason: unique_edit_distance_1
+- source_id: ExamFinal
+  exam_group: examfinal
+  pool_name: c-piscine-exam-final.yml
+  level: 4
+  original_assignment_name: prev_character
+  canonical_exercise_id: exams.examfinal.prev_charcter
+  mapping_reason: unique_edit_distance_1
+unresolved_references_remaining:
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool reference remains unresolved after reconciliation for assignment 'sum_n'
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool reference remains unresolved after reconciliation for assignment 'naahio'
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: c-piscine-exam-final.yml
+ambiguous_mappings: []
+repaired_pools:
+- pool_id: exams.exam01.c-piscine-exam-01
+  source_id: Exam01
+  exam_group: exam01
+  slug: c-piscine-exam-01
+  repaired_reference_count: 2
+- pool_id: exams.exam02.c-piscine-exam-02
+  source_id: Exam02
+  exam_group: exam02
+  slug: c-piscine-exam-02
+  repaired_reference_count: 2
+validation:
+  ok: true
+  exercise_count: 90
+  pool_count: 2
+  failure_count: 0
+  failures: []

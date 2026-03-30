@@ -1,0 +1,25 @@
+cases:
+- id: empty_string
+  argv:
+  - ''
+  expected_stdout: '
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: short_string
+  argv:
+  - abc
+  expected_stdout: 'abc
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: spaces
+  argv:
+  - '   c'
+  expected_stdout: '   c
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

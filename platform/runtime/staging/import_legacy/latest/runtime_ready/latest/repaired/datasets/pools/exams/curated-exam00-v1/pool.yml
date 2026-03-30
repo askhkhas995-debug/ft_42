@@ -1,0 +1,72 @@
+schema_version: 1
+id: exams.curated.exam00.v1
+title: Curated EXAM00 v1 Runtime Ready
+track: exams
+mode: exam
+description: Curated canonical pool for exam00 based on staged legacy import outputs.
+  Filtered to the runtime-ready staged subset.
+selection:
+  strategy: random
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 6300
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+levels:
+- level: 0
+  title: Legacy Level 0
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.fix_a
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.fix_z
+    variant: normal
+    weight: 1
+    order: 2
+- level: 1
+  title: Legacy Level 2
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.ascii_character
+    variant: normal
+    weight: 1
+    order: 1
+- level: 2
+  title: Legacy Level 4
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.is_consonant
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.is_vowel
+    variant: normal
+    weight: 1
+    order: 2
+metadata:
+  created_at: '2026-03-07T01:30:27Z'
+  updated_at: '2026-03-07T12:52:40Z'
+  status: runtime_ready_subset

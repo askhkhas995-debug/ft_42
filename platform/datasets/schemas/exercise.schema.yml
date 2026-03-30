@@ -1,0 +1,127 @@
+schema_version: 1
+name: exercise
+description: Canonical schema summary for dataset-driven exercise bundles.
+bundle_layout:
+  root: datasets/exercises/<track>/<group>/<slug>
+  required_files:
+    - exercise.yml
+    - statement.md
+    - tests/tests.yml
+  required_directories:
+    - starter/
+    - reference/
+  conditional_files:
+    - tests/main.c when build.compile_mode == function_with_harness
+supported_tracks:
+  - piscine
+  - exams
+  - knr
+  - theory_to_practice
+  - bug_injection
+  - completion
+  - prediction
+required:
+  - schema_version
+  - id
+  - slug
+  - title
+  - summary
+  - track
+  - group
+  - source
+  - language
+  - difficulty
+  - pedagogy
+  - files
+  - student_contract
+  - build
+  - runtime
+  - grading
+  - variants
+  - metadata
+optional:
+  - tracking
+sections:
+  source:
+    required:
+      - kind
+      - origin_id
+      - origin_path
+      - copyright_status
+  difficulty:
+    required:
+      - level
+      - category
+  pedagogy:
+    required:
+      - modes
+      - concepts
+      - skills
+      - misconceptions
+      - prerequisite_ids
+      - followup_ids
+      - estimated_minutes
+  files:
+    required:
+      - statement
+      - starter_dir
+      - reference_dir
+      - tests_dir
+    optional:
+      - fixtures_dir
+      - hints_dir
+      - assets_dir
+  student_contract:
+    required:
+      - expected_files
+      - allowed_functions
+      - forbidden_functions
+      - required_headers
+      - output_contract
+      - norm
+  build:
+    required:
+      - compiler
+      - standard
+      - flags
+      - link_flags
+      - compile_mode
+      - entry_files
+    supported_compile_modes:
+      - function_with_harness
+      - standalone_program
+  runtime:
+    required:
+      - argv_policy
+      - stdin_policy
+      - timeout_seconds
+      - memory_limit_mb
+      - file_write_policy
+      - network_access
+  grading:
+    required:
+      - strategy
+      - comparator
+      - rubric_id
+      - pass_policy
+      - edge_case_suite_id
+      - analyzer_ids
+  variants:
+    required:
+      - default
+      - available
+  metadata:
+    required:
+      - author
+      - reviewers
+      - created_at
+      - updated_at
+      - status
+validation_notes:
+  - Unknown keys are rejected in validated sections.
+  - track must match the exercise directory track segment.
+  - build.entry_files must be a subset of student_contract.expected_files.
+  - starter/ and reference/ must contain every expected file.
+  - tests/main.c is required only when build.compile_mode == function_with_harness.
+  - variants.default must reference one variants.available id.
+  - Executable validation lives in core/catalog/src/platform_catalog/validation.py.

@@ -1,0 +1,11 @@
+kind: exercise
+identifier: ft_strjoin
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strjoin
+exam_group: exam01
+assignment: ft_strjoin
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

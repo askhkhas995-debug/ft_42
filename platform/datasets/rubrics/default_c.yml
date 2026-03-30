@@ -1,0 +1,15 @@
+rubric_id: rubric.c.default
+title: Default C Exercise Rubric
+items:
+  - id: compilation
+    weight: 0.25
+    description: Code builds successfully under the declared toolchain and flags.
+  - id: correctness
+    weight: 0.5
+    description: Output and behavior match the expected contract.
+  - id: edge_cases
+    weight: 0.15
+    description: Implementation handles declared edge-case coverage.
+  - id: constraints
+    weight: 0.1
+    description: Allowed and forbidden function constraints are respected.

@@ -1,0 +1,11 @@
+kind: exercise
+identifier: fix_result
+source_id: ExamPoolRevanced-main/Exam02
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/fix_result
+exam_group: exam02
+assignment: fix_result
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam02'

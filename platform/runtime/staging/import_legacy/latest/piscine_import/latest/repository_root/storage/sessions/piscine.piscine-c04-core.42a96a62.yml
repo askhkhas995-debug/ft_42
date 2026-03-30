@@ -1,0 +1,49 @@
+schema_version: 1
+session_id: piscine.piscine-c04-core.42a96a62
+user_id: validation.runner
+mode: piscine
+state: active
+started_at: '2026-03-07T18:25:57Z'
+updated_at: '2026-03-07T18:34:22Z'
+finished_at: null
+pool_id: piscine.c04.core
+track: piscine
+selection_strategy: ordered
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 4500
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+progress:
+  attempts_total: 1137
+  completed_exercise_ids: []
+  passed_exercise_ids: []
+  failed_attempts_total: 1137
+  current_level: 0
+  highest_unlocked_level: 0
+  completed_levels: []
+  available_exercise_ids:
+  - piscine.c04.ft_atoi
+  last_completed_exercise_id: null
+  completion_ratio: 0.0
+  finished_at: null
+current_assignment:
+  exercise_id: piscine.c04.ft_atoi
+  variant_id: normal
+  level: 0
+  assigned_at: '2026-03-07T18:25:57Z'
+  attempt_count: 1137
+  failure_count: 1137
+  last_attempt_id: piscine.piscine-c04-core.42a96a62.attempt.1137
+  last_report_id: report.piscine.piscine-c04-core.42a96a62.attempt.1137.1007fdbe
+  status: retrying
+resume_policy:
+  reuse_active_session: true
+  resume_current_assignment_first: true
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

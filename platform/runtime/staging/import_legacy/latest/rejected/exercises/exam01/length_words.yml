@@ -1,0 +1,11 @@
+kind: exercise
+identifier: length_words
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/length_words
+exam_group: exam01
+assignment: length_words
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

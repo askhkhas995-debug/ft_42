@@ -1,0 +1,77 @@
+schema_version: 1
+report_id: report.exam.exams-curated-exam01-v1.ce4e08c8.attempt.096.b02b3c4e
+attempt_id: exam.exams-curated-exam01-v1.ce4e08c8.attempt.096
+session_id: exam.exams-curated-exam01-v1.ce4e08c8
+user_id: integration.runner
+exercise_id: exams.exam01.next_character
+variant_id: normal
+pool_id: exams.curated.exam01.v1
+mode: exam
+started_at: '2026-03-07T12:15:56Z'
+finished_at: '2026-03-07T12:15:57Z'
+duration_ms: 172
+build_result:
+  status: failure
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096/submission/next_character.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam01/next_character/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096/build/user.out
+  exit_code: 1
+  stdout_path: runtime/traces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096/user.out.build.stdout
+  stderr_path: runtime/traces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096/user.out.build.stderr
+  diagnostics:
+    errors: 3
+    warnings: 1
+run_result:
+  status: skipped
+  command: ''
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: ''
+  stderr_path: ''
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: compile_error
+  failed_test_ids: []
+  passed_test_ids: []
+  edge_case_summary:
+    total: 0
+    passed: 0
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with compile_error.
+feedback:
+  summary: Attempt failed with compile_error.
+  actionable_next_steps:
+  - Fix compiler errors and rebuild with the declared flags.
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096
+  report_path: runtime/reports/report.exam.exams-curated-exam01-v1.ce4e08c8.attempt.096.b02b3c4e.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 93
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.096/submission/next_character.c
+  run_results: []
+  comparison_notes: []

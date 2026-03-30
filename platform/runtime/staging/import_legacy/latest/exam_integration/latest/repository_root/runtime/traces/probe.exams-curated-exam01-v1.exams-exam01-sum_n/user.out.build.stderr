@@ -1,0 +1,5 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam01/sum_n/tests/main.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam01/sum_n/tests/main.c:11:13: error: implicit declaration of function 'atoi' [-Werror=implicit-function-declaration]
+   11 |     int n = atoi(argv[1]);
+      |             ^~~~
+cc1: all warnings being treated as errors

@@ -1,0 +1,11 @@
+kind: pool
+identifier: c-piscine-exam-00.yml
+source_id: ExamPoolRevanced-main/Exam00
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/pools/c-piscine-exam-00.yml
+exam_group: exam00
+assignment: null
+pool_name: c-piscine-exam-00.yml
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate pool conflicts with earlier source 'Exam00'

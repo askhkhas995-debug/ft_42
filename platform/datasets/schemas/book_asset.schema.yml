@@ -1,0 +1,15 @@
+schema_version: 1
+name: book_asset
+description: Metadata for imported K&R and theory-book examples.
+required:
+  - schema_version
+  - book_id
+  - chapter_id
+  - section_id
+  - example_id
+  - title
+  - concepts
+  - source_pages
+  - snippet_path
+  - derivative_exercise_ids
+  - copyright_status

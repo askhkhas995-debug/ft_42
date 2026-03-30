@@ -1,0 +1,89 @@
+schema_version: 1
+report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr.08c9844a
+attempt_id: probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr
+session_id: probe.exams-curated-exam_final-v1
+user_id: integration.probe
+exercise_id: exams.examfinal.ft_strstr
+variant_id: normal
+pool_id: exams.curated.exam_final.v1
+mode: exam
+started_at: '2026-03-07T11:57:47Z'
+finished_at: '2026-03-07T11:57:48Z'
+duration_ms: 358
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/submission/ft_strstr.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/examfinal/ft_strstr/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.out.build.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/build/user.out
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.smoke.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.smoke.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: true
+  raw_score: 1.0
+  normalized_score: 100.0
+  pass_policy: all_tests
+  failure_class: none
+  failed_test_ids: []
+  passed_test_ids:
+  - smoke
+  edge_case_summary:
+    total: 1
+    passed: 1
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 1.0
+    max_score: 1.0
+    verdict: pass
+    note: All tests passed.
+feedback:
+  summary: All tests passed.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr
+  report_path: runtime/reports/report.probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr.08c9844a.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/submission/ft_strstr.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/build/user.out
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.smoke.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/traces/probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr/user.smoke.stderr
+    trace_path: ''
+    duration_ms: 11
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: smoke
+  comparison_notes: []

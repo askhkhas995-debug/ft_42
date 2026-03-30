@@ -1,0 +1,11 @@
+kind: exercise
+identifier: is_consonant
+source_id: ExamPoolRevanced-main/Exam00
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/is_consonant
+exam_group: exam00
+assignment: is_consonant
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam00'

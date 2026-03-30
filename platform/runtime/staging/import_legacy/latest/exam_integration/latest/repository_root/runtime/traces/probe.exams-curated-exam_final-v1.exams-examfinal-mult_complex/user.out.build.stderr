@@ -1,0 +1,9 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-mult_complex/submission/mult_complex.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-mult_complex/submission/mult_complex.c:36:28: error: incompatible type for argument 3 of 'mult_Complex'
+   36 |         mult_Complex(a, b, product);
+      |                            ^~~~~~~
+      |                            |
+      |                            complex {aka struct complexNumber}
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-mult_complex/submission/mult_complex.c:9:56: note: expected 'complex *' {aka 'struct complexNumber *'} but argument is of type 'complex' {aka 'struct complexNumber'}
+    9 | void mult_Complex(complex num1, complex num2, complex *num3)
+      |                                               ~~~~~~~~~^~~~

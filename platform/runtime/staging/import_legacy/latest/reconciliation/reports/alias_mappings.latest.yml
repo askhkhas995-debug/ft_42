@@ -1,0 +1,46 @@
+alias_mappings:
+- exam_group: exam01
+  legacy_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam01.ascii_charcater_v2
+  canonical_slug: ascii_charcater_v2
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+- exam_group: exam01
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.exam01.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+- exam_group: exam02
+  legacy_assignment_name: ascii_character_v2
+  canonical_exercise_id: exams.exam02.ascii_charcater_v2
+  canonical_slug: ascii_charcater_v2
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+- exam_group: exam02
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.exam02.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+- exam_group: examfinal
+  legacy_assignment_name: prev_character
+  canonical_exercise_id: exams.examfinal.prev_charcter
+  canonical_slug: prev_charcter
+  reason: unique_edit_distance_1
+  source_issue_codes:
+  - bad_pool_reference
+  source_locations:
+  - /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml

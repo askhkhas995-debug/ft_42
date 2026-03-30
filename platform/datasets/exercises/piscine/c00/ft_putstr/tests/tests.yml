@@ -1,0 +1,19 @@
+cases:
+  - id: word
+    argv:
+      - hello
+    expected_stdout: "hello"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: mixed
+    argv:
+      - Codex42
+    expected_stdout: "Codex42"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: empty
+    argv:
+      - ""
+    expected_stdout: ""
+    expected_stderr: ""
+    expected_exit_code: 0

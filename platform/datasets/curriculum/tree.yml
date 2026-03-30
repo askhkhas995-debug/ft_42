@@ -1,0 +1,623 @@
+schema_version: 1
+source_of_truth:
+  exercises: datasets/exercises
+  pools: datasets/pools
+  curriculum: datasets/curriculum
+  storage: storage
+  runtime: runtime
+  staging: runtime/staging/import_legacy
+metadata:
+  title: Nexus42 Curriculum Tree
+  author: platform.curriculum
+  updated_at: '2026-03-22T00:00:00Z'
+  notes:
+    - Canonical learner sequencing lives here.
+    - Placeholder nodes mark curriculum areas that exist conceptually but are not yet shipped as canonical content.
+nodes:
+  - id: piscine.shell00
+    title: Shell 00 Foundations
+    type: module
+    track: piscine
+    group: shell00
+    summary: Original shell onboarding placeholder for command-line basics.
+    prerequisites: []
+    learning_objectives:
+      - Set up a basic shell-first workflow.
+      - Practice filesystem navigation and simple scripting habits.
+    concepts: [shell, filesystem, terminal]
+    difficulty: 1
+    estimated_effort: 240
+    progression_order: 10
+    unlock_conditions:
+      all_of: []
+      note: Entry point for shell onboarding once shell runtime support lands.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Shell runtime contract is not canonical yet.
+  - id: piscine.shell01
+    title: Shell 01 Utilities
+    type: module
+    track: piscine
+    group: shell01
+    summary: Follow-up shell utilities and text processing placeholder.
+    prerequisites: [piscine.shell00]
+    learning_objectives:
+      - Chain simple shell tools.
+      - Build confidence with text-oriented terminal tasks.
+    concepts: [shell, pipes, text_processing]
+    difficulty: 2
+    estimated_effort: 240
+    progression_order: 20
+    unlock_conditions:
+      all_of: [piscine.shell00]
+      note: Unlocks after shell00 is complete.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Shell runtime contract is not canonical yet.
+  - id: piscine.c00
+    title: C00 Output and Simple Functions
+    type: module
+    track: piscine
+    group: c00
+    summary: First C module focused on output, functions, and control flow basics.
+    prerequisites: []
+    learning_objectives:
+      - Compile and submit a first C exercise bundle.
+      - Practice writing small functions with deterministic output.
+    concepts: [io, functions, loops]
+    difficulty: 1
+    estimated_effort: 300
+    progression_order: 30
+    unlock_conditions:
+      all_of: []
+      note: Canonical starting point for the current local-first C curriculum.
+    grading_mode: practice
+    expected_files: [ft_putchar.c, ft_print_numbers.c, ft_countdown.c, ft_putstr.c]
+    starter_files: [ft_putchar.c, ft_print_numbers.c, ft_countdown.c, ft_putstr.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c00.ft_putchar
+      - piscine.c00.ft_print_numbers
+      - piscine.c00.ft_countdown
+      - piscine.c00.ft_putstr
+    pool_ids: [piscine.c00.foundations]
+    notices: []
+  - id: piscine.c01
+    title: C01 Strings and Memory Addresses
+    type: module
+    track: piscine
+    group: c01
+    summary: Early string handling and pointer-friendly function practice.
+    prerequisites: [piscine.c00]
+    learning_objectives:
+      - Manipulate strings through iteration.
+      - Understand destination/source buffer contracts.
+    concepts: [strings, pointers, iteration]
+    difficulty: 2
+    estimated_effort: 240
+    progression_order: 40
+    unlock_conditions:
+      all_of: [piscine.c00]
+      note: Unlocks after the c00 practice pool.
+    grading_mode: practice
+    expected_files: [ft_strlen.c, ft_strcpy.c]
+    starter_files: [ft_strlen.c, ft_strcpy.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids: [piscine.c01.ft_strlen, piscine.c01.ft_strcpy]
+    pool_ids: [piscine.c01.core]
+    notices: []
+  - id: piscine.c02
+    title: C02 Character and String Transformations
+    type: module
+    track: piscine
+    group: c02
+    summary: Character inspection and string transformation practice.
+    prerequisites: [piscine.c01]
+    learning_objectives:
+      - Parse argv-driven string tasks.
+      - Transform character case and substitution rules.
+    concepts: [strings, parsing, argv]
+    difficulty: 2
+    estimated_effort: 300
+    progression_order: 50
+    unlock_conditions:
+      all_of: [piscine.c01]
+      note: Unlocks after c01 string basics.
+    grading_mode: practice
+    expected_files: [ulstr.c, search_and_replace.c, repeat_alpha.c]
+    starter_files: [ulstr.c, search_and_replace.c, repeat_alpha.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c02.ulstr
+      - piscine.c02.search_and_replace
+      - piscine.c02.repeat_alpha
+    pool_ids: [piscine.c02.core]
+    notices: []
+  - id: piscine.c03
+    title: C03 Output Transformations
+    type: module
+    track: piscine
+    group: c03
+    summary: Output-focused transformations and small parsing problems.
+    prerequisites: [piscine.c02]
+    learning_objectives:
+      - Build precise stdout programs.
+      - Practice reversible and rotational transforms.
+    concepts: [stdout, parsing, strings]
+    difficulty: 3
+    estimated_effort: 360
+    progression_order: 60
+    unlock_conditions:
+      all_of: [piscine.c02]
+      note: Unlocks after c02 transformations.
+    grading_mode: practice
+    expected_files: [first_word.c, rev_print.c, rotone.c, rot_13.c]
+    starter_files: [first_word.c, rev_print.c, rotone.c, rot_13.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c03.first_word
+      - piscine.c03.rev_print
+      - piscine.c03.rotone
+      - piscine.c03.rot_13
+    pool_ids: [piscine.c03.core]
+    notices: []
+  - id: piscine.c04
+    title: C04 Numeric Conversion
+    type: module
+    track: piscine
+    group: c04
+    summary: Numeric parsing and integer/string conversion exercises.
+    prerequisites: [piscine.c03]
+    learning_objectives:
+      - Convert textual numbers into integers safely.
+      - Handle bases and integer formatting edge cases.
+    concepts: [parsing, integers, bases]
+    difficulty: 4
+    estimated_effort: 360
+    progression_order: 70
+    unlock_conditions:
+      all_of: [piscine.c03]
+      note: Unlocks after output transformation practice.
+    grading_mode: practice
+    expected_files: [ft_atoi.c, ft_itoa.c, ft_atoi_base.c]
+    starter_files: [ft_atoi.c, ft_itoa.c, ft_atoi_base.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c04.ft_atoi
+      - piscine.c04.ft_itoa
+      - piscine.c04.ft_atoi_base
+    pool_ids: [piscine.c04.core]
+    notices: []
+  - id: rush.rush00
+    title: Rush 00 Collaborative Milestone
+    type: rush
+    track: rushes
+    group: rush00
+    summary: First collaborative milestone placeholder.
+    prerequisites: [piscine.c04]
+    learning_objectives:
+      - Coordinate work across a small team.
+      - Translate a problem statement into shared deliverables.
+    concepts: [collaboration, decomposition, review]
+    difficulty: 4
+    estimated_effort: 480
+    progression_order: 75
+    unlock_conditions:
+      all_of: [piscine.c04]
+      note: Suggested milestone after the first four C modules.
+    grading_mode: collaborative
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Rush scaffolding is modeled, but canonical rush content is not published yet.
+  - id: piscine.c05
+    title: C05 Math and Number Theory Practice
+    type: module
+    track: piscine
+    group: c05
+    summary: Integer reasoning, gcd/lcm, and prime-related exercises.
+    prerequisites: [piscine.c04]
+    learning_objectives:
+      - Decompose numeric problems into helpers.
+      - Test arithmetic logic against fixed edge cases.
+    concepts: [math, loops, divisibility]
+    difficulty: 4
+    estimated_effort: 420
+    progression_order: 80
+    unlock_conditions:
+      all_of: [piscine.c04]
+      note: Unlocks after numeric conversion practice.
+    grading_mode: practice
+    expected_files: [is_power_of_2.c, pgcd.c, lcm.c, add_prime_sum.c]
+    starter_files: [is_power_of_2.c, pgcd.c, lcm.c, add_prime_sum.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c05.is_power_of_2
+      - piscine.c05.pgcd
+      - piscine.c05.lcm
+      - piscine.c05.add_prime_sum
+    pool_ids: [piscine.c05.core]
+    notices: []
+  - id: piscine.c06
+    title: C06 Parameter-Driven Programs
+    type: module
+    track: piscine
+    group: c06
+    summary: Simple argv-oriented programs with deterministic output.
+    prerequisites: [piscine.c05]
+    learning_objectives:
+      - Write argument-driven programs.
+      - Keep behavior predictable for CLI-based grading.
+    concepts: [argv, stdout, control_flow]
+    difficulty: 3
+    estimated_effort: 240
+    progression_order: 90
+    unlock_conditions:
+      all_of: [piscine.c05]
+      note: Unlocks after c05 numeric practice.
+    grading_mode: practice
+    expected_files: [aff_first_param.c, aff_last_param.c, paramsum.c]
+    starter_files: [aff_first_param.c, aff_last_param.c, paramsum.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids:
+      - piscine.c06.aff_first_param
+      - piscine.c06.aff_last_param
+      - piscine.c06.paramsum
+    pool_ids: [piscine.c06.core]
+    notices: []
+  - id: rush.rush01
+    title: Rush 01 Collaborative Milestone
+    type: rush
+    track: rushes
+    group: rush01
+    summary: Second collaborative milestone placeholder.
+    prerequisites: [piscine.c06]
+    learning_objectives:
+      - Review shared code under time pressure.
+      - Coordinate integration and validation work.
+    concepts: [collaboration, review, integration]
+    difficulty: 5
+    estimated_effort: 600
+    progression_order: 95
+    unlock_conditions:
+      all_of: [piscine.c06]
+      note: Suggested after current canonical piscine coverage.
+    grading_mode: collaborative
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Rush scaffolding is modeled, but canonical rush content is not published yet.
+  - id: exams.exam00
+    title: Exam 00 Starter Simulation
+    type: exam
+    track: exams
+    group: exam00
+    summary: Introductory timed exam simulation built on canonical exam00 content.
+    prerequisites: [piscine.c02]
+    learning_objectives:
+      - Experience a time-boxed submission flow.
+      - Practice retry and reporting inside an exam session.
+    concepts: [exam_mode, timing, io]
+    difficulty: 2
+    estimated_effort: 120
+    progression_order: 100
+    unlock_conditions:
+      all_of: [piscine.c02]
+      note: First canonical exam simulation.
+    grading_mode: exam
+    expected_files: [ft_putchar.c, ft_putstr.c]
+    starter_files: [ft_putchar.c, ft_putstr.c]
+    reference_available: true
+    tests_available: true
+    status: ready
+    exercise_ids: [exams.exam00.ft_putchar, exams.exam00.ft_putstr]
+    pool_ids: [exams.exam00.starter]
+    notices: []
+  - id: piscine.c07
+    title: C07 Arrays and Data Layout
+    type: module
+    track: piscine
+    group: c07
+    summary: Planned continuation after canonical c06 content.
+    prerequisites: [piscine.c06]
+    learning_objectives:
+      - Extend practice into richer array and memory layouts.
+      - Prepare for higher-rank exercises.
+    concepts: [arrays, memory_layout, functions]
+    difficulty: 4
+    estimated_effort: 420
+    progression_order: 110
+    unlock_conditions:
+      all_of: [piscine.c06]
+      note: Planned canonical extension.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Directory exists, but canonical exercise bundles are not authored yet.
+  - id: piscine.c08
+    title: C08 Modular C and Reuse
+    type: module
+    track: piscine
+    group: c08
+    summary: Planned module for modular code organization.
+    prerequisites: [piscine.c07]
+    learning_objectives:
+      - Organize larger C tasks across reusable helpers.
+      - Prepare for broader multi-file work.
+    concepts: [modularity, headers, reuse]
+    difficulty: 5
+    estimated_effort: 480
+    progression_order: 120
+    unlock_conditions:
+      all_of: [piscine.c07]
+      note: Placeholder until canonical c08 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c08 content has not been authored yet.
+  - id: exams.exam01
+    title: Exam 01 Intermediate Simulation
+    type: exam
+    track: exams
+    group: exam01
+    summary: Planned intermediate exam track promoted only after canonicalization.
+    prerequisites: [piscine.c06]
+    learning_objectives:
+      - Practice intermediate timed problem solving.
+      - Measure readiness for denser exercise rotation.
+    concepts: [exam_mode, retry_logic, parsing]
+    difficulty: 4
+    estimated_effort: 180
+    progression_order: 125
+    unlock_conditions:
+      all_of: [piscine.c06]
+      note: Generated staging content exists, but canonical exam01 pool promotion is pending.
+    grading_mode: exam
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: draft
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Staged imports exist, but canonical exam01 datasets are not promoted yet.
+  - id: piscine.c09
+    title: C09 Strings and Utility Patterns
+    type: module
+    track: piscine
+    group: c09
+    summary: Planned continuation for more involved utilities.
+    prerequisites: [piscine.c08]
+    learning_objectives:
+      - Practice larger utility functions.
+      - Reinforce string and memory contracts.
+    concepts: [strings, utilities, contracts]
+    difficulty: 5
+    estimated_effort: 480
+    progression_order: 130
+    unlock_conditions:
+      all_of: [piscine.c08]
+      note: Placeholder until canonical c09 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c09 content has not been authored yet.
+  - id: piscine.c10
+    title: C10 Multi-File Programs
+    type: module
+    track: piscine
+    group: c10
+    summary: Planned module for larger program organization.
+    prerequisites: [piscine.c09]
+    learning_objectives:
+      - Coordinate multiple compilation units.
+      - Prepare for more advanced project structure.
+    concepts: [multi_file, build, organization]
+    difficulty: 6
+    estimated_effort: 540
+    progression_order: 140
+    unlock_conditions:
+      all_of: [piscine.c09]
+      note: Placeholder until canonical c10 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c10 content has not been authored yet.
+  - id: exams.exam02
+    title: Exam 02 Advanced Simulation
+    type: exam
+    track: exams
+    group: exam02
+    summary: Planned advanced exam track promoted only after canonicalization.
+    prerequisites: [piscine.c09]
+    learning_objectives:
+      - Practice broader timed problem rotation.
+      - Build confidence before final-rank exam training.
+    concepts: [exam_mode, scheduling, problem_solving]
+    difficulty: 6
+    estimated_effort: 240
+    progression_order: 145
+    unlock_conditions:
+      all_of: [piscine.c09]
+      note: Generated staging content exists, but canonical exam02 pool promotion is pending.
+    grading_mode: exam
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: draft
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Staged imports exist, but canonical exam02 datasets are not promoted yet.
+  - id: piscine.c11
+    title: C11 Abstractions and Function Pointers
+    type: module
+    track: piscine
+    group: c11
+    summary: Planned advanced abstraction module.
+    prerequisites: [piscine.c10]
+    learning_objectives:
+      - Work with richer abstractions and higher-order patterns.
+      - Prepare for more advanced project work.
+    concepts: [abstraction, function_pointers, APIs]
+    difficulty: 7
+    estimated_effort: 600
+    progression_order: 150
+    unlock_conditions:
+      all_of: [piscine.c10]
+      note: Placeholder until canonical c11 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c11 content has not been authored yet.
+  - id: piscine.c12
+    title: C12 Lists and Structured Data
+    type: module
+    track: piscine
+    group: c12
+    summary: Planned structured-data module.
+    prerequisites: [piscine.c11]
+    learning_objectives:
+      - Manipulate linked structures safely.
+      - Build confidence with more stateful data flow.
+    concepts: [linked_lists, structs, memory]
+    difficulty: 7
+    estimated_effort: 600
+    progression_order: 160
+    unlock_conditions:
+      all_of: [piscine.c11]
+      note: Placeholder until canonical c12 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c12 content has not been authored yet.
+  - id: piscine.c13
+    title: C13 Final Practice Arc
+    type: module
+    track: piscine
+    group: c13
+    summary: Planned final practice arc before the highest exam simulation.
+    prerequisites: [piscine.c12]
+    learning_objectives:
+      - Consolidate the curriculum into final practice.
+      - Prepare for top-level timed simulation.
+    concepts: [integration, review, readiness]
+    difficulty: 8
+    estimated_effort: 720
+    progression_order: 170
+    unlock_conditions:
+      all_of: [piscine.c12]
+      note: Placeholder until canonical c13 bundles exist.
+    grading_mode: practice
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: placeholder
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Canonical c13 content has not been authored yet.
+  - id: exams.exam_final
+    title: Final Exam Simulation
+    type: exam
+    track: exams
+    group: exam_final
+    summary: Planned final exam track promoted only after canonicalization and repair.
+    prerequisites: [piscine.c13]
+    learning_objectives:
+      - Practice an end-of-track timed simulation.
+      - Review readiness across the whole C path.
+    concepts: [exam_mode, endurance, integration]
+    difficulty: 8
+    estimated_effort: 300
+    progression_order: 180
+    unlock_conditions:
+      all_of: [piscine.c13]
+      note: Generated staging content exists, but canonical final exam promotion is pending.
+    grading_mode: exam
+    expected_files: []
+    starter_files: []
+    reference_available: false
+    tests_available: false
+    status: draft
+    exercise_ids: []
+    pool_ids: []
+    notices:
+      - Staged imports exist, but canonical final exam datasets are not promoted yet.

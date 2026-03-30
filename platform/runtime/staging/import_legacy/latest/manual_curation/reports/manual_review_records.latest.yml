@@ -1,0 +1,24 @@
+manual_review_records:
+- legacy_reference_name: sum_n
+  source_id: ExamFinal
+  source_pool: c-piscine-exam-final.yml
+  exam_group: examfinal
+  likely_intended_exam_rank: examfinal level 3
+  level: 3
+  position_in_level: 2
+  candidate_canonical_exercise_ids:
+  - exams.exam01.sum_n
+  auto_repair_not_safe_reason: a plausible canonical target exists, but it falls outside
+    the strict automatic same-group exact or 1-edit reconciliation rules
+  issue_type: naming mismatch
+- legacy_reference_name: naahio
+  source_id: ExamFinal
+  source_pool: c-piscine-exam-final.yml
+  exam_group: examfinal
+  likely_intended_exam_rank: examfinal level 9
+  level: 9
+  position_in_level: 0
+  candidate_canonical_exercise_ids: []
+  auto_repair_not_safe_reason: the legacy bundle is incomplete or missing required
+    files, so no accepted canonical target exists to auto-repair against
+  issue_type: missing content

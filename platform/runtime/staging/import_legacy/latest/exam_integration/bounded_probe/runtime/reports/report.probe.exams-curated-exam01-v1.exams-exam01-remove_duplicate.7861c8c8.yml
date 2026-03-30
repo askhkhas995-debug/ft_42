@@ -1,0 +1,77 @@
+schema_version: 1
+report_id: report.probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate.7861c8c8
+attempt_id: probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate
+session_id: probe.exams-curated-exam01-v1
+user_id: integration.probe
+exercise_id: exams.exam01.remove_duplicate
+variant_id: normal
+pool_id: exams.curated.exam01.v1
+mode: exam
+started_at: '2026-03-07T12:03:41Z'
+finished_at: '2026-03-07T12:03:41Z'
+duration_ms: 171
+build_result:
+  status: failure
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate/submission/remove_duplicate.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/exam01/remove_duplicate/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate/build/user.out
+  exit_code: 1
+  stdout_path: runtime/traces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate/user.out.build.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate/user.out.build.stderr
+  diagnostics:
+    errors: 22
+    warnings: 2
+run_result:
+  status: skipped
+  command: ''
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: ''
+  stderr_path: ''
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: compile_error
+  failed_test_ids: []
+  passed_test_ids: []
+  edge_case_summary:
+    total: 0
+    passed: 0
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with compile_error.
+feedback:
+  summary: Attempt failed with compile_error.
+  actionable_next_steps:
+  - Fix compiler errors and rebuild with the declared flags.
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate
+  report_path: runtime/reports/report.probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate.7861c8c8.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.exams-curated-exam01-v1.exams-exam01-remove_duplicate/submission/remove_duplicate.c
+  run_results: []
+  comparison_notes: []

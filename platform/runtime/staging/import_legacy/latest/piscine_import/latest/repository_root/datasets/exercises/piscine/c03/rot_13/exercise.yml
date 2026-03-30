@@ -1,0 +1,115 @@
+schema_version: 1
+id: piscine.c03.rot_13
+slug: rot_13
+title: rot_13
+summary: Write a program that applies ROT13 encoding to a string.
+track: piscine
+group: c03
+source:
+  kind: legacy_import
+  origin_id: c03.rot_13
+  origin_path: grademe-main/.subjects/PISCINE_PART/exam_01/7/rot_13/rot_13.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 3
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - strings
+  - conditionals
+  skills:
+  - char_arithmetic
+  - modular_wrap
+  misconceptions:
+  - wrong_rotation_direction
+  - modifying_non_alpha
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 15
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - rot_13.c
+  allowed_functions:
+  - write
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: standalone_program
+  entry_files:
+  - rot_13.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c03.rot_13
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: rot13-involution
+    prompt: ROT13 applied twice returns the original text.
+    reveal_before_submit: true
+  - id: non-alpha-unchanged
+    prompt: Non-alphabetical characters stay unchanged.
+    reveal_before_submit: true
+  hints:
+  - id: split-alphabet
+    prompt: Letters A-M (a-m) shift forward by 13; letters N-Z (n-z) shift backward
+      by 13.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Apply ROT13 mentally to each input letter and compare with output.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: true
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:25:36Z'
+  updated_at: '2026-03-07T18:25:36Z'
+  status: draft

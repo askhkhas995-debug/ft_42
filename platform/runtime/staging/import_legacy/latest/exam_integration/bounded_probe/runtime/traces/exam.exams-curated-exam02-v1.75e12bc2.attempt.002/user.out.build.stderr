@@ -1,0 +1,7 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/exam.exams-curated-exam02-v1.75e12bc2.attempt.002/submission/volume_cube.c: In function 'volume_cube':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/exam.exams-curated-exam02-v1.75e12bc2.attempt.002/submission/volume_cube.c:2:23: error: expected ';' before '}' token
+    2 |     return (a * a * a)
+      |                       ^
+      |                       ;
+    3 | }
+      | ~                      

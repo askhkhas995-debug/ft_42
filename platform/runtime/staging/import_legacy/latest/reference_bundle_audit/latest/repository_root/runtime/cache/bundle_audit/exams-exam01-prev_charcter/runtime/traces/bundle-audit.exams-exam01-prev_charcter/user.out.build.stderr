@@ -1,0 +1,5 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam01-prev_charcter/runtime/workspaces/bundle-audit.exams-exam01-prev_charcter/submission/prev_character.c: In function 'prev_character':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam01-prev_charcter/runtime/workspaces/bundle-audit.exams-exam01-prev_charcter/submission/prev_character.c:12:1: error: control reaches end of non-void function [-Werror=return-type]
+   12 | }
+      | ^
+cc1: all warnings being treated as errors

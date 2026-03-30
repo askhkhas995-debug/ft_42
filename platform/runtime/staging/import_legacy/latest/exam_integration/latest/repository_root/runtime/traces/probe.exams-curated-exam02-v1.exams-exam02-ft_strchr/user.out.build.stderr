@@ -1,0 +1,22 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c:9:16: error: passing argument 1 of 'printf' makes pointer from integer without a cast [-Werror=int-conversion]
+    9 |         printf('\n');
+      |                ^~~~
+      |                |
+      |                int
+In file included from /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c:1:
+/usr/include/stdio.h:363:43: note: expected 'const char * restrict' but argument is of type 'int'
+  363 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c:9:9: error: format not a string literal and no format arguments [-Werror=format-security]
+    9 |         printf('\n');
+      |         ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c:13:39: error: passing argument 2 of 'ft_strchr' makes integer from pointer without a cast [-Werror=int-conversion]
+   13 |     printf("%s\n", ft_strchr(av[1], av[2]));
+      |                                     ~~^~~
+      |                                       |
+      |                                       char *
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/datasets/exercises/exams/exam02/ft_strchr/tests/main.c:4:39: note: expected 'char' but argument is of type 'char *'
+    4 | char *ft_strchr(const char *str, char c);
+      |                                  ~~~~~^
+cc1: all warnings being treated as errors

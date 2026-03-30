@@ -1,0 +1,11 @@
+kind: exercise
+identifier: sum_n
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/sum_n
+exam_group: exam01
+assignment: sum_n
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

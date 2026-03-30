@@ -1,0 +1,53 @@
+schema_version: 1
+session_id: exam.exams-curated-exam_final-v1.1b506a0b
+user_id: integration.runner
+mode: exam
+state: finished
+started_at: '2026-03-07T12:55:32Z'
+finished_at: '2026-03-07T12:56:01Z'
+pool_id: exams.curated.exam_final.v1
+track: exams
+selection_strategy: random
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 13500
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+progress:
+  attempts_total: 9
+  passed_exercise_ids:
+  - exams.examfinal.binary_to_decimal
+  - exams.examfinal.fix_a
+  - exams.examfinal.ft_bubblesort
+  - exams.examfinal.ft_strstr
+  - exams.examfinal.is_consonant
+  - exams.examfinal.largest_number
+  - exams.examfinal.next_character
+  - exams.examfinal.remove_vowels
+  failed_attempts_total: 1
+  current_level: 7
+  highest_unlocked_level: 7
+  completed_levels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  finished_at: '2026-03-07T12:56:01Z'
+current_assignment: null
+cooldown:
+  enabled: false
+  scope: pool
+  seconds: 0
+  last_applied_at: '2026-03-07T12:56:01Z'
+  available_at: null
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

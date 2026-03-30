@@ -1,0 +1,7 @@
+cases:
+- id: countdown
+  expected_stdout: '9876543210
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

@@ -1,0 +1,2263 @@
+generated_at: '2026-03-07T12:52:40Z'
+staging_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest
+runtime_ready_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest
+summary:
+  total_audited_bundles: 83
+  runnable_bundles_after_repair: 34
+  failing_bundles_after_repair: 49
+  applied_repair_count: 2
+  runtime_ready_pool_count: 4
+  counts_by_failure_class_after_repair:
+    malformed_test_fixture: 25
+    reference_compile_failure: 22
+    runtime_crash: 1
+    runtime_wrong_output: 1
+applied_repairs:
+- exercise_id: exams.exam02.binary_to_decimal
+  repair_class: generator_filename_typo
+  source_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/genrator.py
+  target_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/generator.py
+  applied: true
+  note: ''
+- exercise_id: exams.examfinal.binary_to_decimal
+  repair_class: generator_filename_typo
+  source_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/genrator.py
+  target_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/generator.py
+  applied: true
+  note: ''
+pool_summaries:
+- pool_id: exams.curated.exam00.v1
+  retained_level_count: 3
+  retained_exercise_count: 5
+  dropped_levels:
+  - 1
+  - 3
+  - 5
+  - 6
+  dropped_exercise_ids:
+  - exams.exam00.frequency_character
+  - exams.exam00.ft_abs
+  - exams.exam00.ft_div
+  - exams.exam00.ft_isdigit
+  - exams.exam00.ft_mod
+  - exams.exam00.ft_pow
+  - exams.exam00.rectangle_area
+  - exams.exam00.triangle_area
+- pool_id: exams.curated.exam01.v1
+  retained_level_count: 5
+  retained_exercise_count: 7
+  dropped_levels:
+  - 2
+  - 3
+  - 4
+  - 6
+  - 9
+  dropped_exercise_ids:
+  - exams.exam01.factorial_number
+  - exams.exam01.ft_abs
+  - exams.exam01.ft_pow
+  - exams.exam01.ft_sqrt
+  - exams.exam01.ft_str_is_alpha
+  - exams.exam01.ft_strcat
+  - exams.exam01.ft_strdiff
+  - exams.exam01.ft_strjoin
+  - exams.exam01.next_character
+  - exams.exam01.prev_charcter
+  - exams.exam01.remove_duplicate
+  - exams.exam01.sum_n
+- pool_id: exams.curated.exam02.v1
+  retained_level_count: 6
+  retained_exercise_count: 9
+  dropped_levels:
+  - 2
+  - 6
+  - 7
+  - 9
+  dropped_exercise_ids:
+  - exams.exam02.fix_parser
+  - exams.exam02.fix_result
+  - exams.exam02.ft_bubblesort
+  - exams.exam02.ft_str_is_alpha
+  - exams.exam02.ft_strcat
+  - exams.exam02.ft_strchr
+  - exams.exam02.ft_strdiff
+  - exams.exam02.ft_strjoin
+  - exams.exam02.ft_strndup
+  - exams.exam02.sort_words
+  - exams.exam02.volume_cube
+- pool_id: exams.curated.exam_final.v1
+  retained_level_count: 8
+  retained_exercise_count: 13
+  dropped_levels:
+  - 1
+  - 3
+  - 5
+  - 8
+  - 12
+  - 13
+  - 14
+  dropped_exercise_ids:
+  - exams.exam01.sum_n
+  - exams.examfinal.add_complex
+  - exams.examfinal.factorial_number
+  - exams.examfinal.fix_loop
+  - exams.examfinal.ft_abs
+  - exams.examfinal.ft_div
+  - exams.examfinal.ft_mod
+  - exams.examfinal.ft_pow
+  - exams.examfinal.ft_sqrt
+  - exams.examfinal.ft_strdiff
+  - exams.examfinal.ft_strjoin
+  - exams.examfinal.ft_strndup
+  - exams.examfinal.list_trait
+  - exams.examfinal.mult_complex
+  - exams.examfinal.remove_duplicate
+  - exams.examfinal.sort_words
+  - exams.examfinal.sub_complex
+  - exams.examfinal.volume_cube
+  - exams.examfinal.volume_cuboid
+repaired_results:
+- exercise_id: exams.exam00.ascii_character
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ascii_character
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam00-ascii_character.99b05ad2
+- exercise_id: exams.exam00.fix_a
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/fix_a
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam00-fix_a.8a109c1a
+- exercise_id: exams.exam00.fix_z
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/fix_z
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam00-fix_z.c6472db3
+- exercise_id: exams.exam00.frequency_character
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/frequency_character
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id001 []
+  grading_report_id: report.bundle-audit.exams-exam00-frequency_character.a4cb2a03
+- exercise_id: exams.exam00.ft_abs
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ft_abs
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id002 []
+  grading_report_id: report.bundle-audit.exams-exam00-ft_abs.1c82d26d
+- exercise_id: exams.exam00.ft_div
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ft_div
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id003 []
+  grading_report_id: report.bundle-audit.exams-exam00-ft_div.7e1f7a19
+- exercise_id: exams.exam00.ft_isdigit
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ft_isdigit
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id004 []
+  grading_report_id: report.bundle-audit.exams-exam00-ft_isdigit.9b3785f2
+- exercise_id: exams.exam00.ft_mod
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ft_mod
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id005 []
+  grading_report_id: report.bundle-audit.exams-exam00-ft_mod.f3ee52d5
+- exercise_id: exams.exam00.ft_pow
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/ft_pow
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id006 []
+  grading_report_id: report.bundle-audit.exams-exam00-ft_pow.e1c78682
+- exercise_id: exams.exam00.is_consonant
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/is_consonant
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam00-is_consonant.2a03df3c
+- exercise_id: exams.exam00.is_vowel
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/is_vowel
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam00-is_vowel.b000a95b
+- exercise_id: exams.exam00.rectangle_area
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/rectangle_area
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id007 []
+  grading_report_id: report.bundle-audit.exams-exam00-rectangle_area.f53a4d26
+- exercise_id: exams.exam00.triangle_area
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam00/triangle_area
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id008 []
+  grading_report_id: report.bundle-audit.exams-exam00-triangle_area.3088060b
+- exercise_id: exams.exam01.ascii_charcater_v2
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ascii_charcater_v2
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-ascii_charcater_v2.57079f58
+- exercise_id: exams.exam01.factorial_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/factorial_number
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id009 []
+  grading_report_id: report.bundle-audit.exams-exam01-factorial_number.c88e8778
+- exercise_id: exams.exam01.fix_a
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/fix_a
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-fix_a.d4c28114
+- exercise_id: exams.exam01.fix_z
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/fix_z
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-fix_z.362a3e32
+- exercise_id: exams.exam01.ft_abs
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_abs
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id010 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_abs.5cf64fa5
+- exercise_id: exams.exam01.ft_pow
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_pow
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id011 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_pow.1a3b2073
+- exercise_id: exams.exam01.ft_sqrt
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_sqrt
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id012 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_sqrt.f4fbf304
+- exercise_id: exams.exam01.ft_str_is_alpha
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_str_is_alpha
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id013 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_str_is_alpha.df2f2564
+- exercise_id: exams.exam01.ft_strcat
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_strcat
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id014 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_strcat.35ae9808
+- exercise_id: exams.exam01.ft_strdiff
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_strdiff
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id015 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_strdiff.d9c990f7
+- exercise_id: exams.exam01.ft_strjoin
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/ft_strjoin
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 9
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id016 []
+  grading_report_id: report.bundle-audit.exams-exam01-ft_strjoin.606cbb6e
+- exercise_id: exams.exam01.length_words
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/length_words
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-length_words.a4b9d7fd
+- exercise_id: exams.exam01.next_character
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/next_character
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id017 []
+  grading_report_id: report.bundle-audit.exams-exam01-next_character.dcb04c74
+- exercise_id: exams.exam01.prev_charcter
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/prev_charcter
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id018 []
+  grading_report_id: report.bundle-audit.exams-exam01-prev_charcter.effdbf69
+- exercise_id: exams.exam01.rectangle_perimeter
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/rectangle_perimeter
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-rectangle_perimeter.a6e85c10
+- exercise_id: exams.exam01.remove_duplicate
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/remove_duplicate
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id019 []
+  grading_report_id: report.bundle-audit.exams-exam01-remove_duplicate.217be308
+- exercise_id: exams.exam01.remove_vowels
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/remove_vowels
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-remove_vowels.8ed5905a
+- exercise_id: exams.exam01.sum_n
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/sum_n
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id020 []
+  grading_report_id: report.bundle-audit.exams-exam01-sum_n.6583c216
+- exercise_id: exams.exam01.triangle_perimeter
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam01/triangle_perimeter
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam01-triangle_perimeter.2f6162e8
+- exercise_id: exams.exam02.ascii_charcater_v2
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ascii_charcater_v2
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-ascii_charcater_v2.12498c9e
+- exercise_id: exams.exam02.binary_to_decimal
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/binary_to_decimal
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: advisory_only
+  advisory_classes:
+  - broken_generator_path
+  proposed_repairs:
+  - repair_class: generator_filename_typo
+    source_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/genrator.py
+    target_path: /home/xapet/Desktop/f/Exam02/corrections/binary_to_decimal/generator.py
+    justification: resolved generator.py via known legacy genrator.py typo
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-binary_to_decimal.f7a25d13
+- exercise_id: exams.exam02.decimal_to_binary
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/decimal_to_binary
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-decimal_to_binary.e4deeaa2
+- exercise_id: exams.exam02.fix_parser
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/fix_parser
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 9
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id021 []
+  grading_report_id: report.bundle-audit.exams-exam02-fix_parser.729550d0
+- exercise_id: exams.exam02.fix_result
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/fix_result
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 9
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id022 []
+  grading_report_id: report.bundle-audit.exams-exam02-fix_result.4824f8e5
+- exercise_id: exams.exam02.ft_bubblesort
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_bubblesort
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id023 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_bubblesort.f1370bc8
+- exercise_id: exams.exam02.ft_str_is_alpha
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_str_is_alpha
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id024 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_str_is_alpha.c04bc050
+- exercise_id: exams.exam02.ft_strcat
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strcat
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id025 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strcat.783f4037
+- exercise_id: exams.exam02.ft_strchr
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strchr
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id026 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strchr.ce4206d7
+- exercise_id: exams.exam02.ft_strdiff
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strdiff
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id027 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strdiff.c348dc8c
+- exercise_id: exams.exam02.ft_strjoin
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strjoin
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id028 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strjoin.21dfce0a
+- exercise_id: exams.exam02.ft_strndup
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strndup
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: runtime_crash
+  grading_failure_class: crash
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id029 []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strndup.60b958d2
+- exercise_id: exams.exam02.ft_strstr
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/ft_strstr
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-ft_strstr.ec6fc7e3
+- exercise_id: exams.exam02.largest_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/largest_number
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-largest_number.5dd5adbd
+- exercise_id: exams.exam02.next_character
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/next_character
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-next_character.72388ae5
+- exercise_id: exams.exam02.prev_charcter
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/prev_charcter
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-prev_charcter.4ef86b3f
+- exercise_id: exams.exam02.smallest_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/smallest_number
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-smallest_number.8917c766
+- exercise_id: exams.exam02.sort_words
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/sort_words
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id030 []
+  grading_report_id: report.bundle-audit.exams-exam02-sort_words.de73c6d0
+- exercise_id: exams.exam02.volume_cube
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/volume_cube
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id031 []
+  grading_report_id: report.bundle-audit.exams-exam02-volume_cube.5a1fca2d
+- exercise_id: exams.exam02.volume_cuboid
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/exam02/volume_cuboid
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-exam02-volume_cuboid.4f93a19f
+- exercise_id: exams.examfinal.add_complex
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/add_complex
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id032 []
+  grading_report_id: report.bundle-audit.exams-examfinal-add_complex.44fc5229
+- exercise_id: exams.examfinal.binary_to_decimal
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/binary_to_decimal
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 9
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: advisory_only
+  advisory_classes:
+  - broken_generator_path
+  proposed_repairs:
+  - repair_class: generator_filename_typo
+    source_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/genrator.py
+    target_path: /home/xapet/Desktop/f/ExamFinal/corrections/binary_to_decimal/generator.py
+    justification: resolved generator.py via known legacy genrator.py typo
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-binary_to_decimal.57c4f883
+- exercise_id: exams.examfinal.decimal_to_binary
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/decimal_to_binary
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 9
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-decimal_to_binary.265689db
+- exercise_id: exams.examfinal.factorial_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/factorial_number
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id033 []
+  grading_report_id: report.bundle-audit.exams-examfinal-factorial_number.1a3f76b5
+- exercise_id: exams.examfinal.fix_a
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/fix_a
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-fix_a.88866877
+- exercise_id: exams.examfinal.fix_loop
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/fix_loop
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 5
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id034 []
+  grading_report_id: report.bundle-audit.exams-examfinal-fix_loop.5794d6ad
+- exercise_id: exams.examfinal.fix_z
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/fix_z
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 0
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-fix_z.277baa87
+- exercise_id: exams.examfinal.ft_abs
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_abs
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id035 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_abs.325aa4e2
+- exercise_id: exams.examfinal.ft_bubblesort
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_bubblesort
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 10
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_bubblesort.49c3ad3d
+- exercise_id: exams.examfinal.ft_div
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_div
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id036 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_div.7fb4ba4d
+- exercise_id: exams.examfinal.ft_mod
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_mod
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id037 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_mod.dc69fa97
+- exercise_id: exams.examfinal.ft_pow
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_pow
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id038 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_pow.abb209e1
+- exercise_id: exams.examfinal.ft_sqrt
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_sqrt
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id039 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_sqrt.1f11923b
+- exercise_id: exams.examfinal.ft_strdiff
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_strdiff
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 11
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id040 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_strdiff.f3f22b20
+- exercise_id: exams.examfinal.ft_strjoin
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_strjoin
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 12
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id041 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_strjoin.426cc363
+- exercise_id: exams.examfinal.ft_strndup
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_strndup
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 12
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id042 []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_strndup.ff6da46b
+- exercise_id: exams.examfinal.ft_strstr
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/ft_strstr
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 11
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-ft_strstr.cefa828f
+- exercise_id: exams.examfinal.is_consonant
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/is_consonant
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-is_consonant.a09c0c3b
+- exercise_id: exams.examfinal.is_vowel
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/is_vowel
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 6
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-is_vowel.eff8cfb4
+- exercise_id: exams.examfinal.largest_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/largest_number
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-largest_number.9f5a5a7b
+- exercise_id: exams.examfinal.list_trait
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/list_trait
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 14
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: runtime_wrong_output
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id043 []
+  grading_report_id: report.bundle-audit.exams-examfinal-list_trait.be8c1231
+- exercise_id: exams.examfinal.mult_complex
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/mult_complex
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id044 []
+  grading_report_id: report.bundle-audit.exams-examfinal-mult_complex.f060866a
+- exercise_id: exams.examfinal.next_character
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/next_character
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-next_character.c18e80c4
+- exercise_id: exams.examfinal.prev_charcter
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/prev_charcter
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 4
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-prev_charcter.ae5e7206
+- exercise_id: exams.examfinal.remove_duplicate
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/remove_duplicate
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id045 []
+  grading_report_id: report.bundle-audit.exams-examfinal-remove_duplicate.b87c3757
+- exercise_id: exams.examfinal.remove_vowels
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/remove_vowels
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 7
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-remove_vowels.e99525ee
+- exercise_id: exams.examfinal.smallest_number
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/smallest_number
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 2
+  structural_valid: true
+  runtime_valid: true
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: null
+  grading_failure_class: none
+  repairability: none
+  advisory_classes: []
+  proposed_repairs: []
+  notes: []
+  grading_report_id: report.bundle-audit.exams-examfinal-smallest_number.ded00bcb
+- exercise_id: exams.examfinal.sort_words
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/sort_words
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 10
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id046 []
+  grading_report_id: report.bundle-audit.exams-examfinal-sort_words.e95d9a09
+- exercise_id: exams.examfinal.sub_complex
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/sub_complex
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id047 []
+  grading_report_id: report.bundle-audit.exams-examfinal-sub_complex.2199a1f7
+- exercise_id: exams.examfinal.volume_cube
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/volume_cube
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: reference_compile_failure
+  grading_failure_class: compile_error
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id048 []
+  grading_report_id: report.bundle-audit.exams-examfinal-volume_cube.cd864b1c
+- exercise_id: exams.examfinal.volume_cuboid
+  bundle_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired/datasets/exercises/exams/examfinal/volume_cuboid
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 1
+  structural_valid: true
+  runtime_valid: false
+  required_files_present: true
+  reference_implementation_present: true
+  generator_path_valid: true
+  harness_path_valid: true
+  compile_command_resolvable: true
+  tests_runnable: true
+  grading_executable: true
+  primary_failure_class: malformed_test_fixture
+  grading_failure_class: wrong_output
+  repairability: manual_content_repair
+  advisory_classes: []
+  proposed_repairs: []
+  notes: &id049 []
+  grading_report_id: report.bundle-audit.exams-examfinal-volume_cuboid.bf571253
+unrepaired_bundles:
+- exercise_id: exams.exam00.frequency_character
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 6
+  notes: *id001
+- exercise_id: exams.exam00.ft_abs
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 3
+  notes: *id002
+- exercise_id: exams.exam00.ft_div
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  notes: *id003
+- exercise_id: exams.exam00.ft_isdigit
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 3
+  notes: *id004
+- exercise_id: exams.exam00.ft_mod
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  notes: *id005
+- exercise_id: exams.exam00.ft_pow
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 5
+  notes: *id006
+- exercise_id: exams.exam00.rectangle_area
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 1
+  notes: *id007
+- exercise_id: exams.exam00.triangle_area
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam00.v1
+    level: 1
+  notes: *id008
+- exercise_id: exams.exam01.factorial_number
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  notes: *id009
+- exercise_id: exams.exam01.ft_abs
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  notes: *id010
+- exercise_id: exams.exam01.ft_pow
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 6
+  notes: *id011
+- exercise_id: exams.exam01.ft_sqrt
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 6
+  notes: *id012
+- exercise_id: exams.exam01.ft_str_is_alpha
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 3
+  notes: *id013
+- exercise_id: exams.exam01.ft_strcat
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 7
+  notes: *id014
+- exercise_id: exams.exam01.ft_strdiff
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 3
+  notes: *id015
+- exercise_id: exams.exam01.ft_strjoin
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 9
+  notes: *id016
+- exercise_id: exams.exam01.next_character
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 2
+  notes: *id017
+- exercise_id: exams.exam01.prev_charcter
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 2
+  notes: *id018
+- exercise_id: exams.exam01.remove_duplicate
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 5
+  notes: *id019
+- exercise_id: exams.exam01.sum_n
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam01.v1
+    level: 4
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  notes: *id020
+- exercise_id: exams.exam02.fix_parser
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 9
+  notes: *id021
+- exercise_id: exams.exam02.fix_result
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 9
+  notes: *id022
+- exercise_id: exams.exam02.ft_bubblesort
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 6
+  notes: *id023
+- exercise_id: exams.exam02.ft_str_is_alpha
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 2
+  notes: *id024
+- exercise_id: exams.exam02.ft_strcat
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 5
+  notes: *id025
+- exercise_id: exams.exam02.ft_strchr
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 4
+  notes: *id026
+- exercise_id: exams.exam02.ft_strdiff
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 2
+  notes: *id027
+- exercise_id: exams.exam02.ft_strjoin
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 7
+  notes: *id028
+- exercise_id: exams.exam02.ft_strndup
+  primary_failure_class: runtime_crash
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 7
+  notes: *id029
+- exercise_id: exams.exam02.sort_words
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 6
+  notes: *id030
+- exercise_id: exams.exam02.volume_cube
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam02.v1
+    level: 0
+  notes: *id031
+- exercise_id: exams.examfinal.add_complex
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  notes: *id032
+- exercise_id: exams.examfinal.factorial_number
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  notes: *id033
+- exercise_id: exams.examfinal.fix_loop
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 5
+  notes: *id034
+- exercise_id: exams.examfinal.ft_abs
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 3
+  notes: *id035
+- exercise_id: exams.examfinal.ft_div
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  notes: *id036
+- exercise_id: exams.examfinal.ft_mod
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  notes: *id037
+- exercise_id: exams.examfinal.ft_pow
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  notes: *id038
+- exercise_id: exams.examfinal.ft_sqrt
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 8
+  notes: *id039
+- exercise_id: exams.examfinal.ft_strdiff
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 11
+  notes: *id040
+- exercise_id: exams.examfinal.ft_strjoin
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 12
+  notes: *id041
+- exercise_id: exams.examfinal.ft_strndup
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 12
+  notes: *id042
+- exercise_id: exams.examfinal.list_trait
+  primary_failure_class: runtime_wrong_output
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 14
+  notes: *id043
+- exercise_id: exams.examfinal.mult_complex
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  notes: *id044
+- exercise_id: exams.examfinal.remove_duplicate
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 7
+  notes: *id045
+- exercise_id: exams.examfinal.sort_words
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 10
+  notes: *id046
+- exercise_id: exams.examfinal.sub_complex
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 13
+  notes: *id047
+- exercise_id: exams.examfinal.volume_cube
+  primary_failure_class: reference_compile_failure
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 1
+  notes: *id048
+- exercise_id: exams.examfinal.volume_cuboid
+  primary_failure_class: malformed_test_fixture
+  repairability: manual_content_repair
+  pool_refs:
+  - pool_id: exams.curated.exam_final.v1
+    level: 1
+  notes: *id049
+raw_audit_summary:
+  total_audited_bundles: 83
+  runnable_bundles: 34
+  failing_bundles: 49
+  structurally_valid_bundles: 83
+  counts_by_failure_class:
+    malformed_test_fixture: 25
+    reference_compile_failure: 22
+    runtime_crash: 1
+    runtime_wrong_output: 1
+  affected_pools_and_levels:
+    exams.curated.exam00.v1:
+    - 1
+    - 3
+    - 5
+    - 6
+    exams.curated.exam01.v1:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 9
+    exams.curated.exam02.v1:
+    - 0
+    - 2
+    - 4
+    - 5
+    - 6
+    - 7
+    - 9
+    exams.curated.exam_final.v1:
+    - 1
+    - 3
+    - 5
+    - 7
+    - 8
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14

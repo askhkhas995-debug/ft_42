@@ -1,0 +1,123 @@
+schema_version: 1
+report_id: report.piscine.piscine-c02-core.a5338985.attempt.003.8f5fa0ba
+attempt_id: piscine.piscine-c02-core.a5338985.attempt.003
+session_id: piscine.piscine-c02-core.a5338985
+user_id: validation.runner
+exercise_id: piscine.c02.repeat_alpha
+variant_id: normal
+pool_id: piscine.c02.core
+mode: piscine
+started_at: '2026-03-07T18:25:52Z'
+finished_at: '2026-03-07T18:25:52Z'
+duration_ms: 80
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/submission/repeat_alpha.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.out.build.stdout
+  stderr_path: runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: success
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/build/user.out
+    a 1b
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.with_non_alpha.stdout
+  stderr_path: runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.with_non_alpha.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: true
+  raw_score: 1.0
+  normalized_score: 100.0
+  pass_policy: all_tests
+  failure_class: none
+  failed_test_ids: []
+  passed_test_ids:
+  - simple
+  - no_args
+  - with_non_alpha
+  edge_case_summary:
+    total: 3
+    passed: 3
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 1.0
+    max_score: 1.0
+    verdict: pass
+    note: All tests passed.
+feedback:
+  summary: All tests passed.
+  actionable_next_steps: []
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003
+  report_path: runtime/reports/report.piscine.piscine-c02-core.a5338985.attempt.003.8f5fa0ba.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: strings
+      delta: 1.0
+    - concept: iteration
+      delta: 1.0
+    - concept: conditionals
+      delta: 1.0
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/submission/repeat_alpha.c
+  run_results:
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/build/user.out
+    - abc
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.simple.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.simple.stderr
+    trace_path: ''
+    duration_ms: 6
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: simple
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/build/user.out
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.no_args.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.no_args.stderr
+    trace_path: ''
+    duration_ms: 5
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: no_args
+  - status: success
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/piscine.piscine-c02-core.a5338985.attempt.003/build/user.out
+    - a 1b
+    exit_code: 0
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.with_non_alpha.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/traces/piscine.piscine-c02-core.a5338985.attempt.003/user.with_non_alpha.stderr
+    trace_path: ''
+    duration_ms: 5
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: with_non_alpha
+  comparison_notes: []

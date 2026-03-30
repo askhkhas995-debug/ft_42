@@ -1,0 +1,3 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/exam.exams-curated-exam00-v1.ca729301.attempt.001/submission/fix_z.c:1:2: error: #error forced failing integration submission
+    1 | #error forced failing integration submission
+      |  ^~~~~

@@ -1,0 +1,76 @@
+schema_version: 1
+report_id: report.bundle-audit.exams-examfinal-mult_complex.ba013e6e
+attempt_id: bundle-audit.exams-examfinal-mult_complex
+session_id: bundle-audit.examfinal
+user_id: reference.bundle.audit
+exercise_id: exams.examfinal.mult_complex
+variant_id: normal
+pool_id: null
+mode: exam
+started_at: '2026-03-07T12:53:21Z'
+finished_at: '2026-03-07T12:53:21Z'
+duration_ms: 59
+build_result:
+  status: failure
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-mult_complex/runtime/workspaces/bundle-audit.exams-examfinal-mult_complex/submission/mult_complex.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-examfinal-mult_complex/runtime/workspaces/bundle-audit.exams-examfinal-mult_complex/build/user.out
+  exit_code: 1
+  stdout_path: runtime/traces/bundle-audit.exams-examfinal-mult_complex/user.out.build.stdout
+  stderr_path: runtime/traces/bundle-audit.exams-examfinal-mult_complex/user.out.build.stderr
+  diagnostics:
+    errors: 1
+    warnings: 0
+run_result:
+  status: skipped
+  command: ''
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: ''
+  stderr_path: ''
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: compile_error
+  failed_test_ids: []
+  passed_test_ids: []
+  edge_case_summary:
+    total: 0
+    passed: 0
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with compile_error.
+feedback:
+  summary: Attempt failed with compile_error.
+  actionable_next_steps:
+  - Fix compiler errors and rebuild with the declared flags.
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/bundle-audit.exams-examfinal-mult_complex
+  report_path: runtime/reports/report.bundle-audit.exams-examfinal-mult_complex.ba013e6e.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/bundle-audit.exams-examfinal-mult_complex/submission/mult_complex.c
+  run_results: []
+  comparison_notes: []

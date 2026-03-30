@@ -1,0 +1,13 @@
+kind: exercise
+identifier: circle_perimeter
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/circle_perimeter
+exam_group: exam01
+assignment: circle_perimeter
+pool_name: null
+reasons:
+- naming_mismatch
+- missing_file
+messages:
+- correction bundle exists without matching subject
+- missing subject file for correction bundle

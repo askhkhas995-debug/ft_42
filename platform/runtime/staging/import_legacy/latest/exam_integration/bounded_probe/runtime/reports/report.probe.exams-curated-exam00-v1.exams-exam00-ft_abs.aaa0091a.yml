@@ -1,0 +1,97 @@
+schema_version: 1
+report_id: report.probe.exams-curated-exam00-v1.exams-exam00-ft_abs.aaa0091a
+attempt_id: probe.exams-curated-exam00-v1.exams-exam00-ft_abs
+session_id: probe.exams-curated-exam00-v1
+user_id: integration.probe
+exercise_id: exams.exam00.ft_abs
+variant_id: normal
+pool_id: exams.curated.exam00.v1
+mode: exam
+started_at: '2026-03-07T12:03:32Z'
+finished_at: '2026-03-07T12:03:33Z'
+duration_ms: 343
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/submission/ft_abs.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/datasets/exercises/exams/exam00/ft_abs/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.out.build.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: failure
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/build/user.out
+  exit_code: 255
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.smoke.stdout
+  stderr_path: runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.smoke.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: wrong_output
+  failed_test_ids:
+  - smoke
+  passed_test_ids: []
+  edge_case_summary:
+    total: 1
+    passed: 0
+    failed: 1
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with wrong_output.
+feedback:
+  summary: Attempt failed with wrong_output.
+  actionable_next_steps:
+  - Compare expected and actual stdout for the failed test cases.
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs
+  report_path: runtime/reports/report.probe.exams-curated-exam00-v1.exams-exam00-ft_abs.aaa0091a.yml
+  diff_path: runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/smoke.diff.txt
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/submission/ft_abs.c
+  run_results:
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/build/user.out
+    exit_code: 255
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.smoke.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/traces/probe.exams-curated-exam00-v1.exams-exam00-ft_abs/user.smoke.stderr
+    trace_path: ''
+    duration_ms: 19
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: smoke
+  comparison_notes:
+  - '[exit_code]
+
+    expected=0 actual=255
+
+    [runtime]
+
+    status=failure'

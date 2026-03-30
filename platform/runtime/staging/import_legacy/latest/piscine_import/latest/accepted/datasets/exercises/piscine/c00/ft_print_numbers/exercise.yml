@@ -1,0 +1,116 @@
+schema_version: 1
+id: piscine.c00.ft_print_numbers
+slug: ft_print_numbers
+title: ft_print_numbers
+summary: Write a function that outputs the digits from 0 to 9.
+track: piscine
+group: c00
+source:
+  kind: legacy_import
+  origin_id: c00.ft_print_numbers
+  origin_path: grademe 42 exam/n/success/ft_print_numbers/ft_print_numbers.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 1
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - io
+  - iteration
+  skills:
+  - stdout
+  - loops
+  misconceptions:
+  - wrong_order
+  - extra_newline
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 10
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - ft_print_numbers.c
+  allowed_functions:
+  - write
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files:
+  - ft_print_numbers.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c00.ft_print_numbers
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: exact-order
+    prompt: The digits must stay in ascending order from 0 through 9.
+    reveal_before_submit: true
+  - id: no-trailing-newline
+    prompt: Do not print an extra newline unless the exercise explicitly asks for
+      it.
+    reveal_before_submit: true
+  hints:
+  - id: loop-over-digits
+    prompt: A small loop from the character '0' to '9' keeps the output compact and
+      ordered.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Compare the observed stdout bytes against the exact 10-digit target string.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: false
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:35:01Z'
+  updated_at: '2026-03-07T18:35:01Z'
+  status: draft

@@ -1,0 +1,25 @@
+cases:
+- id: empty_string
+  argv:
+  - ''
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: short_string
+  argv:
+  - abc
+  expected_stdout: '3
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: long_string
+  argv:
+  - hello world
+  expected_stdout: '11
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

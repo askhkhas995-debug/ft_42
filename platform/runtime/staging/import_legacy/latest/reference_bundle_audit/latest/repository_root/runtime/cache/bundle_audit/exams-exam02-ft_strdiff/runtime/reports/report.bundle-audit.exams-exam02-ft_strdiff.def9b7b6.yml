@@ -1,0 +1,97 @@
+schema_version: 1
+report_id: report.bundle-audit.exams-exam02-ft_strdiff.def9b7b6
+attempt_id: bundle-audit.exams-exam02-ft_strdiff
+session_id: bundle-audit.exam02
+user_id: reference.bundle.audit
+exercise_id: exams.exam02.ft_strdiff
+variant_id: normal
+pool_id: null
+mode: exam
+started_at: '2026-03-07T12:53:02Z'
+finished_at: '2026-03-07T12:53:03Z'
+duration_ms: 265
+build_result:
+  status: success
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff/submission/ft_strdiff.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/datasets/exercises/exams/exam02/ft_strdiff/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff/build/user.out
+  exit_code: 0
+  stdout_path: runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.out.build.stdout
+  stderr_path: runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.out.build.stderr
+  diagnostics:
+    errors: 0
+    warnings: 0
+run_result:
+  status: failure
+  command: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff/build/user.out
+  exit_code: 1
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.smoke.stdout
+  stderr_path: runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.smoke.stderr
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: wrong_output
+  failed_test_ids:
+  - smoke
+  passed_test_ids: []
+  edge_case_summary:
+    total: 1
+    passed: 0
+    failed: 1
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with wrong_output.
+feedback:
+  summary: Attempt failed with wrong_output.
+  actionable_next_steps:
+  - Compare expected and actual stdout for the failed test cases.
+  hint_ids: []
+  concept_gaps: []
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff
+  report_path: runtime/reports/report.bundle-audit.exams-exam02-ft_strdiff.def9b7b6.yml
+  diff_path: runtime/traces/bundle-audit.exams-exam02-ft_strdiff/smoke.diff.txt
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts: []
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff/submission/ft_strdiff.c
+  run_results:
+  - status: failure
+    command:
+    - /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/workspaces/bundle-audit.exams-exam02-ft_strdiff/build/user.out
+    exit_code: 1
+    stdout_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.smoke.stdout
+    stderr_path: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam02-ft_strdiff/runtime/traces/bundle-audit.exams-exam02-ft_strdiff/user.smoke.stderr
+    trace_path: ''
+    duration_ms: 10
+    timed_out: false
+    signal: ''
+    memory_limit_hit: false
+    test_id: smoke
+  comparison_notes:
+  - '[exit_code]
+
+    expected=0 actual=1
+
+    [runtime]
+
+    status=failure'

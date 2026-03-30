@@ -1,0 +1,3 @@
+/usr/bin/ld: /tmp/ccph40zU.o: in function `main':
+main.c:(.text+0x0): multiple definition of `main'; /tmp/ccqh1V7R.o:ft_itoa.c:(.text+0x1c0): first defined here
+collect2: error: ld returned 1 exit status

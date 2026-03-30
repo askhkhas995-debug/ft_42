@@ -1,0 +1,16 @@
+schema_version: 1
+book_id: theory_to_practice
+chapter_id: ch01
+section_id: s01
+example_id: ex001
+title: Variables and expressions baseline example
+concepts:
+  - variables
+  - expressions
+source_pages:
+  - 1
+snippet_path: ../assets/ch01-ex001.c
+derivative_exercise_ids:
+  - theory_to_practice.ch01.ex001.guided_lab
+copyright_status: extracted_for_index_only
+notes: Seed asset for theory-to-practice lab derivation.

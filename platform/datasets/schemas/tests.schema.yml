@@ -1,0 +1,19 @@
+schema_version: 1
+name: tests
+description: Canonical schema summary for tests/tests.yml files.
+required:
+  - cases
+case_schema:
+  required:
+    - id
+  optional:
+    - argv
+    - stdin
+    - expected_stdout
+    - expected_stderr
+    - expected_exit_code
+validation_notes:
+  - cases must contain at least one testcase.
+  - testcase ids must be unique within the file.
+  - Unknown testcase keys are rejected.
+  - expected_stdout may be null to indicate reference-derived output.

@@ -1,0 +1,10 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-frequency_character/runtime/workspaces/bundle-audit.exams-exam00-frequency_character/submission/frequency_character.c: In function 'frequency_character':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-frequency_character/runtime/workspaces/bundle-audit.exams-exam00-frequency_character/submission/frequency_character.c:4:14: error: 'NULL' undeclared (first use in this function)
+    4 |     if (c == NULL || str == NULL) {
+      |              ^~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-frequency_character/runtime/workspaces/bundle-audit.exams-exam00-frequency_character/submission/frequency_character.c:1:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+  +++ |+#include <stddef.h>
+    1 | int frequency_character(char c, char *str) {
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-frequency_character/runtime/workspaces/bundle-audit.exams-exam00-frequency_character/submission/frequency_character.c:4:14: note: each undeclared identifier is reported only once for each function it appears in
+    4 |     if (c == NULL || str == NULL) {
+      |              ^~~~

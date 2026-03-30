@@ -1,0 +1,7 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c04-ft_atoi_base/submission/ft_atoi_base.c:13:5: error: conflicting types for built-in function 'isblank'; expected 'int(int)' [-Werror=builtin-declaration-mismatch]
+   13 | int isblank(char c)
+      |     ^~~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c04-ft_atoi_base/submission/ft_atoi_base.c:1:1: note: 'isblank' is declared in header '<ctype.h>'
+  +++ |+#include <ctype.h>
+    1 | /* ************************************************************************** */
+cc1: all warnings being treated as errors

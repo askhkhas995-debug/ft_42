@@ -1,0 +1,17 @@
+# fix z
+
+```text
+Assignment name  : fix_z
+Expected files   : fix_z.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+copier and fix the code below so it prints the 'z' character followed by a new line.
+
+int main()
+{
+    write(1, "a\n"),
+    return 0;
+}
+```

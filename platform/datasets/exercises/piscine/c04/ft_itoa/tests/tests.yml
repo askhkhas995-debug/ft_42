@@ -1,0 +1,41 @@
+cases:
+- id: simple_positive
+  argv:
+  - '42'
+  expected_stdout: '42
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: simple_negative
+  argv:
+  - '-42'
+  expected_stdout: '-42
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: zero
+  argv:
+  - '0'
+  expected_stdout: '0
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: max_int
+  argv:
+  - '2147483647'
+  expected_stdout: '2147483647
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: min_int
+  argv:
+  - '-2147483648'
+  expected_stdout: '-2147483648
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

@@ -1,0 +1,455 @@
+generated_at: '2026-03-07T12:52:40Z'
+staging_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest
+integration_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/runtime_ready/latest/repaired
+summary:
+  runnable_pool_count: 4
+  runnable_exercise_count: 34
+  total_curated_exercise_count: 34
+  remaining_blocker_count: 49
+remaining_blockers:
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.frequency_character
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ft_abs
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ft_div
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ft_isdigit
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ft_mod
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ft_pow
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.rectangle_area
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.triangle_area
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.factorial_number
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_abs
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_pow
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_sqrt
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_str_is_alpha
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_strcat
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_strdiff
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ft_strjoin
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.next_character
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.prev_charcter
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.remove_duplicate
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.sum_n
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.fix_parser
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.fix_result
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_bubblesort
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_str_is_alpha
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strcat
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strchr
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strdiff
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strjoin
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strndup
+  reason: runtime_crash (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.sort_words
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.volume_cube
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.add_complex
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.factorial_number
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.fix_loop
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_abs
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_div
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_mod
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_pow
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_sqrt
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_strdiff
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_strjoin
+  reason: malformed_test_fixture (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_strndup
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.list_trait
+  reason: runtime_wrong_output (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.mult_complex
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.remove_duplicate
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.sort_words
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.sub_complex
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.volume_cube
+  reason: reference_compile_failure (manual_content_repair)
+- type: unrepaired_bundle
+  pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.volume_cuboid
+  reason: malformed_test_fixture (manual_content_repair)
+pool_results:
+- pool_id: exams.curated.exam00.v1
+  first_exercise_id: exams.exam00.fix_z
+  first_level: 0
+  selected_first_assignment: true
+  failing_submission_verified: true
+  retry_verified: true
+  passing_submission_verified: true
+  next_level_verified: true
+  finished_session_verified: true
+  fully_runnable: true
+  levels_completed: 3
+  attempts_total: 4
+  visited_exercise_ids:
+  - exams.exam00.fix_z
+  - exams.exam00.ascii_character
+  - exams.exam00.is_vowel
+  notes: []
+- pool_id: exams.curated.exam01.v1
+  first_exercise_id: exams.exam01.fix_a
+  first_level: 0
+  selected_first_assignment: true
+  failing_submission_verified: true
+  retry_verified: true
+  passing_submission_verified: true
+  next_level_verified: true
+  finished_session_verified: true
+  fully_runnable: true
+  levels_completed: 5
+  attempts_total: 6
+  visited_exercise_ids:
+  - exams.exam01.fix_a
+  - exams.exam01.rectangle_perimeter
+  - exams.exam01.remove_vowels
+  - exams.exam01.ascii_charcater_v2
+  - exams.exam01.length_words
+  notes: []
+- pool_id: exams.curated.exam02.v1
+  first_exercise_id: exams.exam02.volume_cuboid
+  first_level: 0
+  selected_first_assignment: true
+  failing_submission_verified: true
+  retry_verified: true
+  passing_submission_verified: true
+  next_level_verified: true
+  finished_session_verified: true
+  fully_runnable: true
+  levels_completed: 6
+  attempts_total: 7
+  visited_exercise_ids:
+  - exams.exam02.volume_cuboid
+  - exams.exam02.largest_number
+  - exams.exam02.next_character
+  - exams.exam02.ft_strstr
+  - exams.exam02.ascii_charcater_v2
+  - exams.exam02.binary_to_decimal
+  notes: []
+- pool_id: exams.curated.exam_final.v1
+  first_exercise_id: exams.examfinal.fix_a
+  first_level: 0
+  selected_first_assignment: true
+  failing_submission_verified: true
+  retry_verified: true
+  passing_submission_verified: true
+  next_level_verified: true
+  finished_session_verified: true
+  fully_runnable: true
+  levels_completed: 8
+  attempts_total: 9
+  visited_exercise_ids:
+  - exams.examfinal.fix_a
+  - exams.examfinal.largest_number
+  - exams.examfinal.next_character
+  - exams.examfinal.is_consonant
+  - exams.examfinal.remove_vowels
+  - exams.examfinal.binary_to_decimal
+  - exams.examfinal.ft_bubblesort
+  - exams.examfinal.ft_strstr
+  notes: []
+probe_results:
+- pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.fix_a
+  passed: true
+  report_id: report.probe.exams-curated-exam00-v1.exams-exam00-fix_a.cbf8ad41
+  failure_class: none
+- pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.fix_z
+  passed: true
+  report_id: report.probe.exams-curated-exam00-v1.exams-exam00-fix_z.44b9b406
+  failure_class: none
+- pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.ascii_character
+  passed: true
+  report_id: report.probe.exams-curated-exam00-v1.exams-exam00-ascii_character.da83e93d
+  failure_class: none
+- pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.is_consonant
+  passed: true
+  report_id: report.probe.exams-curated-exam00-v1.exams-exam00-is_consonant.03758609
+  failure_class: none
+- pool_id: exams.curated.exam00.v1
+  exercise_id: exams.exam00.is_vowel
+  passed: true
+  report_id: report.probe.exams-curated-exam00-v1.exams-exam00-is_vowel.b31bc002
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.fix_a
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-fix_a.7c281e4d
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.fix_z
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-fix_z.3e8b944e
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.rectangle_perimeter
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-rectangle_perimeter.d8aba519
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.triangle_perimeter
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-triangle_perimeter.be6bf56a
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.remove_vowels
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-remove_vowels.91328fd3
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.ascii_charcater_v2
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-ascii_charcater_v2.76953a2b
+  failure_class: none
+- pool_id: exams.curated.exam01.v1
+  exercise_id: exams.exam01.length_words
+  passed: true
+  report_id: report.probe.exams-curated-exam01-v1.exams-exam01-length_words.6913dd23
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.volume_cuboid
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-volume_cuboid.5cc1051c
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.smallest_number
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-smallest_number.d1d53269
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.largest_number
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-largest_number.df9fbca9
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.prev_charcter
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-prev_charcter.f7b286d0
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.next_character
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-next_character.18b3614e
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ft_strstr
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-ft_strstr.105c1976
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.ascii_charcater_v2
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-ascii_charcater_v2.4aecbf72
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.binary_to_decimal
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-binary_to_decimal.2a9cb961
+  failure_class: none
+- pool_id: exams.curated.exam02.v1
+  exercise_id: exams.exam02.decimal_to_binary
+  passed: true
+  report_id: report.probe.exams-curated-exam02-v1.exams-exam02-decimal_to_binary.be0e8bd6
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.fix_a
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-fix_a.bcdca2f2
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.fix_z
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-fix_z.dbbde141
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.smallest_number
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-smallest_number.84bd14a7
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.largest_number
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-largest_number.eb13fc4f
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.next_character
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-next_character.fc49cb2d
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.prev_charcter
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-prev_charcter.1b399084
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.is_consonant
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-is_consonant.5a31a3e8
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.is_vowel
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-is_vowel.bab28b86
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.remove_vowels
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-remove_vowels.84dda5c9
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.binary_to_decimal
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-binary_to_decimal.d3e434bc
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.decimal_to_binary
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-decimal_to_binary.72b51bb4
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_bubblesort
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-ft_bubblesort.65266c84
+  failure_class: none
+- pool_id: exams.curated.exam_final.v1
+  exercise_id: exams.examfinal.ft_strstr
+  passed: true
+  report_id: report.probe.exams-curated-exam_final-v1.exams-examfinal-ft_strstr.1a2f695a
+  failure_class: none

@@ -1,0 +1,154 @@
+schema_version: 1
+id: exams.curated.exam_final.v1
+title: Curated EXAM_FINAL v1 Runtime Ready
+track: exams
+mode: exam
+description: Curated canonical pool for exam_final based on staged legacy import outputs.
+  Filtered to the runtime-ready staged subset.
+selection:
+  strategy: random
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 13500
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+levels:
+- level: 0
+  title: Legacy Level 0
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.fix_a
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.examfinal.fix_z
+    variant: normal
+    weight: 1
+    order: 2
+- level: 1
+  title: Legacy Level 2
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.smallest_number
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.examfinal.largest_number
+    variant: normal
+    weight: 1
+    order: 2
+- level: 2
+  title: Legacy Level 4
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.next_character
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.examfinal.prev_charcter
+    variant: normal
+    weight: 1
+    order: 2
+- level: 3
+  title: Legacy Level 6
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 2
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.is_consonant
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.examfinal.is_vowel
+    variant: normal
+    weight: 1
+    order: 2
+- level: 4
+  title: Legacy Level 7
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 3
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.remove_vowels
+    variant: normal
+    weight: 1
+    order: 2
+- level: 5
+  title: Legacy Level 10
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 4
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.binary_to_decimal
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.examfinal.decimal_to_binary
+    variant: normal
+    weight: 1
+    order: 2
+- level: 6
+  title: Legacy Level 11
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 5
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.ft_bubblesort
+    variant: normal
+    weight: 1
+    order: 1
+- level: 7
+  title: Legacy Level 12
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 6
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.examfinal.ft_strstr
+    variant: normal
+    weight: 1
+    order: 2
+metadata:
+  created_at: '2026-03-07T01:30:27Z'
+  updated_at: '2026-03-07T12:52:40Z'
+  status: runtime_ready_subset

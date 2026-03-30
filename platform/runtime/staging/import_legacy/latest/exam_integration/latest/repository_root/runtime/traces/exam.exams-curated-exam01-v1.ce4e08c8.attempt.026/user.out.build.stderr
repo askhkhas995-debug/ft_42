@@ -1,0 +1,5 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.026/submission/next_character.c: In function 'next_character':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/latest/repository_root/runtime/workspaces/exam.exams-curated-exam01-v1.ce4e08c8.attempt.026/submission/next_character.c:12:1: error: control reaches end of non-void function [-Werror=return-type]
+   12 | }
+      | ^
+cc1: all warnings being treated as errors

@@ -1,0 +1,112 @@
+schema_version: 1
+id: piscine.c04.ft_atoi
+slug: ft_atoi
+title: ft_atoi
+summary: Write a function that converts a string to an integer.
+track: piscine
+group: c04
+source:
+  kind: legacy_import
+  origin_id: c04.ft_atoi
+  origin_path: grademe-main/.subjects/PISCINE_PART/exam_02/4/ft_atoi/ft_atoi.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 4
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - strings
+  - parsing
+  - math
+  skills:
+  - string_to_int
+  misconceptions:
+  - overflow
+  - multiple_signs_handling
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 20
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - ft_atoi.c
+  allowed_functions: []
+  forbidden_functions: []
+  required_headers: []
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files:
+  - ft_atoi.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c04.ft_atoi
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: whitespace
+    prompt: Handle leading whitespace correctly according to man atoi.
+    reveal_before_submit: true
+  - id: single_sign
+    prompt: Only one sign should be parsed; subsequent signs break the number.
+    reveal_before_submit: true
+  hints:
+  - id: skip_whitespace
+    prompt: Use a while loop to skip space, '\t', '\n', '\v', '\f', and '\r'.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Make sure multiple signs result in 0 or stop parsing immediately.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: true
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:35:01Z'
+  updated_at: '2026-03-07T18:35:01Z'
+  status: draft

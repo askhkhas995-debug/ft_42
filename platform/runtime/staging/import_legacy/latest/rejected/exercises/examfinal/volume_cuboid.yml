@@ -1,0 +1,11 @@
+kind: exercise
+identifier: volume_cuboid
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/volume_cuboid
+exam_group: examfinal
+assignment: volume_cuboid
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

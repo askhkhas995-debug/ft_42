@@ -1,0 +1,13 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-add_complex/submission/add_complex.c: In function 'add_Complex':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-add_complex/submission/add_complex.c:11:14: error: 'num3' is a pointer; did you mean to use '->'?
+   11 |         *num3.real = num1.real + num2.real;
+      |              ^
+      |              ->
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-add_complex/submission/add_complex.c:12:14: error: 'num3' is a pointer; did you mean to use '->'?
+   12 |         *num3.img = num1.img + num2.img;
+      |              ^
+      |              ->
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-add_complex/submission/add_complex.c:9:55: error: parameter 'num3' set but not used [-Werror=unused-but-set-parameter]
+    9 | void add_Complex(complex num1, complex num2, complex *num3)
+      |                                              ~~~~~~~~~^~~~
+cc1: all warnings being treated as errors

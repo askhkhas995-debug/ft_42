@@ -1,0 +1,143 @@
+schema_version: 1
+id: exams.curated.exam00.v1
+title: Curated EXAM00 v1
+track: exams
+mode: exam
+description: Curated canonical pool for exam00 based on staged legacy import outputs.
+selection:
+  strategy: random
+  repeat_policy: avoid_passed
+  seed_policy: deterministic_per_session
+timing:
+  total_time_seconds: 6300
+  per_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+levels:
+- level: 0
+  title: Legacy Level 0
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of: []
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.fix_a
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.fix_z
+    variant: normal
+    weight: 1
+    order: 2
+- level: 1
+  title: Legacy Level 1
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 0
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.rectangle_area
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.triangle_area
+    variant: normal
+    weight: 1
+    order: 2
+- level: 2
+  title: Legacy Level 2
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 1
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.ascii_character
+    variant: normal
+    weight: 1
+    order: 1
+- level: 3
+  title: Legacy Level 3
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 2
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.ft_isdigit
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.ft_abs
+    variant: normal
+    weight: 1
+    order: 2
+- level: 4
+  title: Legacy Level 4
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 3
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.is_consonant
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.is_vowel
+    variant: normal
+    weight: 1
+    order: 2
+- level: 5
+  title: Legacy Level 5
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 4
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.ft_mod
+    variant: normal
+    weight: 1
+    order: 1
+  - exercise_id: exams.exam00.ft_pow
+    variant: normal
+    weight: 1
+    order: 2
+  - exercise_id: exams.exam00.ft_div
+    variant: normal
+    weight: 1
+    order: 3
+- level: 6
+  title: Legacy Level 6
+  min_picks: 1
+  max_picks: 1
+  time_limit_seconds: 900
+  unlock_if:
+    all_of:
+    - 5
+    any_of: []
+  exercise_refs:
+  - exercise_id: exams.exam00.frequency_character
+    variant: normal
+    weight: 1
+    order: 1
+metadata:
+  created_at: '2026-03-07T01:30:27Z'
+  updated_at: '2026-03-07T01:30:27Z'
+  status: curated_v1

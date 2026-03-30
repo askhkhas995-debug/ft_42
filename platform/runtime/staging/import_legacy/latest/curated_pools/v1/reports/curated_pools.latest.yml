@@ -1,0 +1,200 @@
+generated_at: '2026-03-07T01:30:27Z'
+staging_root: /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest
+summary:
+  usable_pool_count: 4
+  unresolved_gap_count: 2
+  provenance_summary:
+    imported_directly: 78
+    repaired_automatically: 5
+    repaired_manually: 1
+  validation_ok: true
+curated_pools:
+- pool_id: exams.curated.exam00.v1
+  exam_group: exam00
+  public_exam_name: exam00
+  source_id: Exam00
+  source_pool_name: c-piscine-exam-00.yml
+  level_count: 7
+  per_level_counts:
+  - curated_level: 0
+    legacy_level: 0
+    exercise_count: 2
+  - curated_level: 1
+    legacy_level: 1
+    exercise_count: 2
+  - curated_level: 2
+    legacy_level: 2
+    exercise_count: 1
+  - curated_level: 3
+    legacy_level: 3
+    exercise_count: 2
+  - curated_level: 4
+    legacy_level: 4
+    exercise_count: 2
+  - curated_level: 5
+    legacy_level: 5
+    exercise_count: 3
+  - curated_level: 6
+    legacy_level: 6
+    exercise_count: 1
+  provenance_summary:
+    imported_directly: 13
+  unresolved_gap_count: 0
+- pool_id: exams.curated.exam01.v1
+  exam_group: exam01
+  public_exam_name: exam01
+  source_id: Exam01
+  source_pool_name: c-piscine-exam-01.yml
+  level_count: 10
+  per_level_counts:
+  - curated_level: 0
+    legacy_level: 0
+    exercise_count: 2
+  - curated_level: 1
+    legacy_level: 1
+    exercise_count: 2
+  - curated_level: 2
+    legacy_level: 2
+    exercise_count: 2
+  - curated_level: 3
+    legacy_level: 3
+    exercise_count: 2
+  - curated_level: 4
+    legacy_level: 4
+    exercise_count: 3
+  - curated_level: 5
+    legacy_level: 5
+    exercise_count: 2
+  - curated_level: 6
+    legacy_level: 6
+    exercise_count: 2
+  - curated_level: 7
+    legacy_level: 7
+    exercise_count: 2
+  - curated_level: 8
+    legacy_level: 8
+    exercise_count: 1
+  - curated_level: 9
+    legacy_level: 9
+    exercise_count: 1
+  provenance_summary:
+    imported_directly: 17
+    repaired_automatically: 2
+  unresolved_gap_count: 0
+- pool_id: exams.curated.exam02.v1
+  exam_group: exam02
+  public_exam_name: exam02
+  source_id: Exam02
+  source_pool_name: c-piscine-exam-02.yml
+  level_count: 10
+  per_level_counts:
+  - curated_level: 0
+    legacy_level: 0
+    exercise_count: 2
+  - curated_level: 1
+    legacy_level: 1
+    exercise_count: 2
+  - curated_level: 2
+    legacy_level: 2
+    exercise_count: 2
+  - curated_level: 3
+    legacy_level: 3
+    exercise_count: 2
+  - curated_level: 4
+    legacy_level: 4
+    exercise_count: 2
+  - curated_level: 5
+    legacy_level: 5
+    exercise_count: 2
+  - curated_level: 6
+    legacy_level: 6
+    exercise_count: 2
+  - curated_level: 7
+    legacy_level: 7
+    exercise_count: 2
+  - curated_level: 8
+    legacy_level: 8
+    exercise_count: 2
+  - curated_level: 9
+    legacy_level: 9
+    exercise_count: 2
+  provenance_summary:
+    imported_directly: 18
+    repaired_automatically: 2
+  unresolved_gap_count: 0
+- pool_id: exams.curated.exam_final.v1
+  exam_group: examfinal
+  public_exam_name: exam_final
+  source_id: ExamFinal
+  source_pool_name: c-piscine-exam-final.yml
+  level_count: 15
+  per_level_counts:
+  - curated_level: 0
+    legacy_level: 0
+    exercise_count: 2
+  - curated_level: 1
+    legacy_level: 1
+    exercise_count: 2
+  - curated_level: 2
+    legacy_level: 2
+    exercise_count: 2
+  - curated_level: 3
+    legacy_level: 3
+    exercise_count: 3
+  - curated_level: 4
+    legacy_level: 4
+    exercise_count: 2
+  - curated_level: 5
+    legacy_level: 5
+    exercise_count: 1
+  - curated_level: 6
+    legacy_level: 6
+    exercise_count: 2
+  - curated_level: 7
+    legacy_level: 7
+    exercise_count: 2
+  - curated_level: 8
+    legacy_level: 8
+    exercise_count: 4
+  - curated_level: 9
+    legacy_level: 10
+    exercise_count: 2
+  - curated_level: 10
+    legacy_level: 11
+    exercise_count: 2
+  - curated_level: 11
+    legacy_level: 12
+    exercise_count: 2
+  - curated_level: 12
+    legacy_level: 13
+    exercise_count: 2
+  - curated_level: 13
+    legacy_level: 14
+    exercise_count: 3
+  - curated_level: 14
+    legacy_level: 15
+    exercise_count: 1
+  provenance_summary:
+    imported_directly: 30
+    repaired_manually: 1
+    repaired_automatically: 1
+  unresolved_gap_count: 2
+unresolved_gaps:
+- exam_group: examfinal
+  source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  legacy_level: 9
+  legacy_assignment_name: naahio
+  reason: pool reference remains unresolved after manual curation for assignment 'naahio'
+- exam_group: examfinal
+  source_id: ExamFinal
+  pool_name: c-piscine-exam-final.yml
+  legacy_level: 9
+  legacy_assignment_name: null
+  reason: legacy level was excluded because all references were unresolved
+validation:
+  ok: true
+  exercise_count: 90
+  pool_count: 4
+  failure_count: 0
+  failures: []

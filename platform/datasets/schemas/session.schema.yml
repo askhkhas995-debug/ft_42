@@ -1,0 +1,11 @@
+schema_version: 1
+name: session
+description: Session lifecycle and active assignment state.
+required:
+  - schema_version
+  - session_id
+  - user_id
+  - mode
+  - state
+  - started_at
+  - analytics_policy

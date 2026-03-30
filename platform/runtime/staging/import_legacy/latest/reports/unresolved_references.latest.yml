@@ -1,0 +1,113 @@
+unresolved_references:
+- code: bad_pool_reference
+  severity: error
+  source_id: Exam01
+  location: /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: exam01
+  assignment: prev_character
+  pool_name: c-piscine-exam-01.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: Exam01
+  location: /home/xapet/Desktop/f/Exam01/pools/c-piscine-exam-01.yml
+  message: pool references unknown or rejected assignment 'ascii_character_v2'
+  exam_group: exam01
+  assignment: ascii_character_v2
+  pool_name: c-piscine-exam-01.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: Exam02
+  location: /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: exam02
+  assignment: prev_character
+  pool_name: c-piscine-exam-02.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: Exam02
+  location: /home/xapet/Desktop/f/Exam02/pools/c-piscine-exam-02.yml
+  message: pool references unknown or rejected assignment 'ascii_character_v2'
+  exam_group: exam02
+  assignment: ascii_character_v2
+  pool_name: c-piscine-exam-02.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'sum_n'
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: examfinal
+  assignment: prev_character
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamFinal
+  location: /home/xapet/Desktop/f/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'naahio'
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/pools/c-piscine-exam-01.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: exam01
+  assignment: prev_character
+  pool_name: c-piscine-exam-01.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/pools/c-piscine-exam-01.yml
+  message: pool references unknown or rejected assignment 'ascii_character_v2'
+  exam_group: exam01
+  assignment: ascii_character_v2
+  pool_name: c-piscine-exam-01.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/pools/c-piscine-exam-02.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: exam02
+  assignment: prev_character
+  pool_name: c-piscine-exam-02.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/pools/c-piscine-exam-02.yml
+  message: pool references unknown or rejected assignment 'ascii_character_v2'
+  exam_group: exam02
+  assignment: ascii_character_v2
+  pool_name: c-piscine-exam-02.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'sum_n'
+  exam_group: examfinal
+  assignment: sum_n
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'prev_character'
+  exam_group: examfinal
+  assignment: prev_character
+  pool_name: c-piscine-exam-final.yml
+- code: bad_pool_reference
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/pools/c-piscine-exam-final.yml
+  message: pool references unknown or rejected assignment 'naahio'
+  exam_group: examfinal
+  assignment: naahio
+  pool_name: c-piscine-exam-final.yml

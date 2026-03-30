@@ -1,0 +1,11 @@
+kind: exercise
+identifier: largest_number
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/largest_number
+exam_group: examfinal
+assignment: largest_number
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

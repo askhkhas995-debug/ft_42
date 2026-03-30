@@ -1,0 +1,41 @@
+schema_version: 1
+session_id: exam.exams-curated-exam01-v1.516fbde6
+user_id: integration.bounded
+mode: exam
+state: finished
+started_at: '2026-03-07T12:04:47Z'
+finished_at: '2026-03-07T12:05:11Z'
+pool_id: exams.curated.exam01.v1
+track: exams
+selection_strategy: random
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 9000
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+progress:
+  attempts_total: 4
+  passed_exercise_ids:
+  - exams.exam01.fix_z
+  - exams.exam01.triangle_perimeter
+  failed_attempts_total: 2
+  current_level: 2
+  highest_unlocked_level: 2
+  completed_levels:
+  - 0
+  - 1
+  finished_at: '2026-03-07T12:05:11Z'
+current_assignment: null
+cooldown:
+  enabled: false
+  scope: pool
+  seconds: 0
+  last_applied_at: '2026-03-07T12:05:11Z'
+  available_at: null
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

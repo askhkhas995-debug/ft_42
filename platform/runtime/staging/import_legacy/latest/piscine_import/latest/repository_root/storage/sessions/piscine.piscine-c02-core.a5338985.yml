@@ -1,0 +1,48 @@
+schema_version: 1
+session_id: piscine.piscine-c02-core.a5338985
+user_id: validation.runner
+mode: piscine
+state: completed
+started_at: '2026-03-07T18:25:51Z'
+updated_at: '2026-03-07T18:25:52Z'
+finished_at: null
+pool_id: piscine.c02.core
+track: piscine
+selection_strategy: ordered
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 3600
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: true
+    seconds: 30
+    scope: level
+progress:
+  attempts_total: 3
+  completed_exercise_ids:
+  - piscine.c02.repeat_alpha
+  - piscine.c02.search_and_replace
+  - piscine.c02.ulstr
+  passed_exercise_ids:
+  - piscine.c02.repeat_alpha
+  - piscine.c02.search_and_replace
+  - piscine.c02.ulstr
+  failed_attempts_total: 0
+  current_level: 2
+  highest_unlocked_level: 2
+  completed_levels:
+  - 0
+  - 1
+  - 2
+  available_exercise_ids: []
+  last_completed_exercise_id: piscine.c02.repeat_alpha
+  completion_ratio: 1.0
+  finished_at: '2026-03-07T18:25:52Z'
+current_assignment: null
+resume_policy:
+  reuse_active_session: true
+  resume_current_assignment_first: true
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

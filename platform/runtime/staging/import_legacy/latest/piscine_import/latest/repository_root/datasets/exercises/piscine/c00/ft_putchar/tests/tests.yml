@@ -1,0 +1,19 @@
+cases:
+  - id: lowercase_a
+    argv:
+      - a
+    expected_stdout: "a"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: uppercase_z
+    argv:
+      - Z
+    expected_stdout: "Z"
+    expected_stderr: ""
+    expected_exit_code: 0
+  - id: digit_five
+    argv:
+      - "5"
+    expected_stdout: "5"
+    expected_stderr: ""
+    expected_exit_code: 0

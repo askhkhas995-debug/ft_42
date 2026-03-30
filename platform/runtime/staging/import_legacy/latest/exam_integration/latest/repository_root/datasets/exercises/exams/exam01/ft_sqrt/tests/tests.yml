@@ -1,0 +1,7 @@
+cases:
+- id: smoke
+  argv: []
+  stdin: ''
+  expected_stdout: null
+  expected_stderr: ''
+  expected_exit_code: 0

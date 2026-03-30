@@ -1,0 +1,11 @@
+kind: exercise
+identifier: ft_mod
+source_id: ExamPoolRevanced-main/Exam00
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_mod
+exam_group: exam00
+assignment: ft_mod
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam00'

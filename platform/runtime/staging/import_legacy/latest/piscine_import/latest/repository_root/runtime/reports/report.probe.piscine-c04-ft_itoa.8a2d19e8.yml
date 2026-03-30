@@ -1,0 +1,89 @@
+schema_version: 1
+report_id: report.probe.piscine-c04-ft_itoa.8a2d19e8
+attempt_id: probe.piscine-c04-ft_itoa
+session_id: probe.session
+user_id: probe.user
+exercise_id: piscine.c04.ft_itoa
+variant_id: normal
+pool_id: piscine.c04.core
+mode: piscine
+started_at: '2026-03-07T18:25:42Z'
+finished_at: '2026-03-07T18:25:42Z'
+duration_ms: 304
+build_result:
+  status: failure
+  compiler: gcc
+  command: gcc -std=c11 -Wall -Wextra -Werror /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c04-ft_itoa/submission/ft_itoa.c
+    /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/datasets/exercises/piscine/c04/ft_itoa/tests/main.c
+    -o /home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/piscine_import/latest/repository_root/runtime/workspaces/probe.piscine-c04-ft_itoa/build/user.out
+  exit_code: 1
+  stdout_path: runtime/traces/probe.piscine-c04-ft_itoa/user.out.build.stdout
+  stderr_path: runtime/traces/probe.piscine-c04-ft_itoa/user.out.build.stderr
+  diagnostics:
+    errors: 1
+    warnings: 0
+run_result:
+  status: skipped
+  command: ''
+  exit_code: 0
+  signal: ''
+  timed_out: false
+  memory_limit_hit: false
+  stdout_path: ''
+  stderr_path: ''
+  trace_path: ''
+evaluation:
+  comparator_id: builtin.comparator.output_diff
+  passed: false
+  raw_score: 0.0
+  normalized_score: 0.0
+  pass_policy: all_tests
+  failure_class: compile_error
+  failed_test_ids: []
+  passed_test_ids: []
+  edge_case_summary:
+    total: 0
+    passed: 0
+    failed: 0
+rubric:
+  rubric_id: rubric.c.default
+  items:
+  - id: correctness
+    score: 0.0
+    max_score: 1.0
+    verdict: fail
+    note: Attempt failed with compile_error.
+feedback:
+  summary: Attempt failed with compile_error.
+  actionable_next_steps:
+  - Fix compiler errors and rebuild with the declared flags.
+  hint_ids: []
+  concept_gaps:
+  - strings
+  - formatting
+  - memory
+  - math
+artifacts:
+  workspace_snapshot_path: runtime/workspaces/probe.piscine-c04-ft_itoa
+  report_path: runtime/reports/report.probe.piscine-c04-ft_itoa.8a2d19e8.yml
+  diff_path: ''
+  exported_trace_path: ''
+analytics:
+  attempt_number_for_exercise: 1
+  cooldown_seconds_applied: 0
+  mastery_delta:
+    concepts:
+    - concept: strings
+      delta: -0.2
+    - concept: formatting
+      delta: -0.2
+    - concept: memory
+      delta: -0.2
+    - concept: math
+      delta: -0.2
+  productivity_tags: []
+prototype_debug:
+  copied_files:
+  - runtime/workspaces/probe.piscine-c04-ft_itoa/submission/ft_itoa.c
+  run_results: []
+  comparison_notes: []

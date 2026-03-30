@@ -1,0 +1,11 @@
+kind: exercise
+identifier: remove_duplicate
+source_id: ExamPoolRevanced-main/Exam01
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/remove_duplicate
+exam_group: exam01
+assignment: remove_duplicate
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam01'

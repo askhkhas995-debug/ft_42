@@ -1,0 +1,118 @@
+schema_version: 1
+id: piscine.c02.search_and_replace
+slug: search_and_replace
+title: search_and_replace
+summary: Write a program that replaces one character with another in a string.
+track: piscine
+group: c02
+source:
+  kind: legacy_import
+  origin_id: c02.search_and_replace
+  origin_path: grademe-main/.subjects/PISCINE_PART/exam_01/5/search_and_replace/search_and_replace.c
+  copyright_status: unknown
+language: c
+difficulty:
+  level: 2
+  category: beginner
+pedagogy:
+  modes:
+  - practice
+  - observation
+  concepts:
+  - strings
+  - conditionals
+  skills:
+  - char_comparison
+  - argv_handling
+  misconceptions:
+  - wrong_argc_check
+  - replacing_multichar_args
+  prerequisite_ids: []
+  followup_ids: []
+  estimated_minutes: 15
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+student_contract:
+  expected_files:
+  - search_and_replace.c
+  allowed_functions:
+  - write
+  - exit
+  forbidden_functions: []
+  required_headers:
+  - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+  - -Wall
+  - -Wextra
+  - -Werror
+  link_flags: []
+  compile_mode: standalone_program
+  entry_files:
+  - search_and_replace.c
+runtime:
+  argv_policy: allowed
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: piscine.c02.search_and_replace
+  analyzer_ids:
+  - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+  - id: normal
+    kind: normal
+    starter_dir: starter
+    reference_dir: reference
+    tests_dir: tests
+    description: Standard implementation path.
+learning:
+  visible_edge_cases:
+  - id: multi-char-args
+    prompt: If the 2nd or 3rd argument is longer than one character, print just a
+      newline.
+    reveal_before_submit: true
+  - id: char-not-found
+    prompt: If the search character is not in the string, print the original string
+      unchanged.
+    reveal_before_submit: true
+  hints:
+  - id: iterate-and-compare
+    prompt: Walk the string; if current char matches the search char, print the replacement
+      instead.
+    unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+    - Compare each output character against the expected replacement.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: true
+metadata:
+  author: platform.import_legacy
+  reviewers: []
+  created_at: '2026-03-07T18:25:36Z'
+  updated_at: '2026-03-07T18:25:36Z'
+  status: draft

@@ -1,0 +1,11 @@
+kind: exercise
+identifier: sort_words
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sort_words
+exam_group: examfinal
+assignment: sort_words
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'ExamFinal'

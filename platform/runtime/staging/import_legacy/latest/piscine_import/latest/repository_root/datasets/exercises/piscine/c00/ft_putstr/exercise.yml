@@ -1,0 +1,117 @@
+schema_version: 1
+id: piscine.c00.ft_putstr
+slug: ft_putstr
+title: ft_putstr
+summary: Write a function that outputs a string to stdout.
+track: piscine
+group: c00
+source:
+  kind: authored
+  origin_id: c00.ft_putstr
+  origin_path: Subjects/C 00.pdf
+  copyright_status: owned
+language: c
+difficulty:
+  level: 1
+  category: beginner
+pedagogy:
+  modes:
+    - practice
+  concepts:
+    - io
+    - strings
+  skills:
+    - stdout
+    - loops
+  misconceptions:
+    - forgetting_null_terminator
+  prerequisite_ids:
+    - piscine.c00.ft_putchar
+  followup_ids: []
+  estimated_minutes: 15
+files:
+  statement: statement.md
+  starter_dir: starter
+  reference_dir: reference
+  tests_dir: tests
+  fixtures_dir: fixtures
+  hints_dir: hints
+  assets_dir: assets
+student_contract:
+  expected_files:
+    - ft_putstr.c
+  allowed_functions:
+    - write
+  forbidden_functions: []
+  required_headers:
+    - unistd.h
+  output_contract:
+    channel: stdout
+    newline_policy: exact
+  norm:
+    enabled: true
+    profile: 42_norm_v1
+build:
+  compiler: gcc
+  standard: c11
+  flags:
+    - -Wall
+    - -Wextra
+    - -Werror
+  link_flags: []
+  compile_mode: function_with_harness
+  entry_files:
+    - ft_putstr.c
+runtime:
+  argv_policy: none
+  stdin_policy: none
+  timeout_seconds: 2
+  memory_limit_mb: 64
+  file_write_policy: deny
+  network_access: false
+grading:
+  strategy: output_diff
+  comparator: builtin.comparator.output_diff
+  rubric_id: rubric.c.default
+  pass_policy:
+    mode: all_tests
+    threshold: 1.0
+  edge_case_suite_id: c.stdout.strings
+  analyzer_ids:
+    - builtin.analyzer.failure_classifier
+variants:
+  default: normal
+  available:
+    - id: normal
+      kind: normal
+      starter_dir: starter
+      reference_dir: reference
+      tests_dir: tests
+      description: Standard implementation path.
+learning:
+  visible_edge_cases:
+    - id: empty-string
+      prompt: Verify the function handles an empty string without printing extra bytes.
+      reveal_before_submit: true
+    - id: stop-at-null
+      prompt: Observe that output must stop at the first null terminator.
+      reveal_before_submit: true
+  hints:
+    - id: null-terminator-loop
+      prompt: "Iterate until the current character is `\\0`, then stop writing."
+      unlock_after_attempts: 1
+  observation:
+    enabled: true
+    prompts:
+      - Compare the emitted bytes with the expected string length.
+      - Watch for off-by-one output caused by moving past the null terminator.
+    capture:
+      stdout_preview: true
+      stdin_echo: false
+      argv_echo: false
+metadata:
+  author: platform
+  reviewers: []
+  created_at: "2026-03-06T00:00:00Z"
+  updated_at: "2026-03-06T00:00:00Z"
+  status: draft

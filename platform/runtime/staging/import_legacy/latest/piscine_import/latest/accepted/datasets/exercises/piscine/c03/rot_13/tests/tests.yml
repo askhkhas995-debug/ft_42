@@ -1,0 +1,24 @@
+cases:
+- id: simple
+  argv:
+  - abc
+  expected_stdout: 'nop
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: sentence
+  argv:
+  - Hello World
+  expected_stdout: 'Uryyb Jbeyq
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0
+- id: no_args
+  argv: []
+  expected_stdout: '
+
+    '
+  expected_stderr: ''
+  expected_exit_code: 0

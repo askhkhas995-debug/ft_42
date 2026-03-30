@@ -1,0 +1,13 @@
+kind: exercise
+identifier: naahio
+source_id: ExamPoolRevanced-main/ExamFinal
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/subjects/naahio/subject.en.txt
+exam_group: examfinal
+assignment: naahio
+pool_name: null
+reasons:
+- naming_mismatch
+- missing_file
+messages:
+- subject exists without matching correction bundle
+- missing correction bundle for subject

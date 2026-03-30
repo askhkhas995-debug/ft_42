@@ -1,0 +1,11 @@
+kind: exercise
+identifier: ft_str_is_alpha
+source_id: ExamPoolRevanced-main/Exam02
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_str_is_alpha
+exam_group: exam02
+assignment: ft_str_is_alpha
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam02'

@@ -1,0 +1,44 @@
+schema_version: 1
+session_id: exam.exams-curated-exam02-v1.01571d61
+user_id: integration.runner
+mode: exam
+state: active
+started_at: '2026-03-07T12:18:07Z'
+finished_at: null
+pool_id: exams.curated.exam02.v1
+track: exams
+selection_strategy: random
+repeat_policy: avoid_passed
+timing:
+  total_time_seconds: 9000
+  per_level_time_seconds: 900
+  effective_level_time_seconds: 900
+  cooldown:
+    enabled: false
+    seconds: 0
+    scope: pool
+progress:
+  attempts_total: 74
+  passed_exercise_ids: []
+  failed_attempts_total: 74
+  current_level: 0
+  highest_unlocked_level: 0
+  completed_levels: []
+current_assignment:
+  exercise_id: exams.exam02.volume_cube
+  variant_id: normal
+  level: 0
+  assigned_at: '2026-03-07T12:18:07Z'
+  attempt_count: 74
+  failure_count: 74
+  last_attempt_id: exam.exams-curated-exam02-v1.01571d61.attempt.074
+  last_report_id: report.exam.exams-curated-exam02-v1.01571d61.attempt.074.405e1a30
+cooldown:
+  enabled: false
+  scope: pool
+  seconds: 0
+  last_applied_at: '2026-03-07T12:22:53Z'
+  available_at: null
+analytics_policy:
+  update_on_submission: true
+  update_on_grade: true

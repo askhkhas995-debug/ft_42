@@ -1,0 +1,25 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c: In function 'sub_Complex':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:10:14: error: 'num3' is a pointer; did you mean to use '->'?
+   10 |         *num3.real = num1.real - num2.real;
+      |              ^
+      |              ->
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:11:14: error: 'num3' is a pointer; did you mean to use '->'?
+   11 |         *num3.img = num1.img - num2.img;
+      |              ^
+      |              ->
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:8:55: error: parameter 'num3' set but not used [-Werror=unused-but-set-parameter]
+    8 | void sub_Complex(complex num1, complex num2, complex *num3)
+      |                                              ~~~~~~~~~^~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:23:18: error: implicit declaration of function 'atoi' [-Werror=implicit-function-declaration]
+   23 |         a.real = atoi(av[1]);
+      |                  ^~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:34:27: error: incompatible type for argument 3 of 'sub_Complex'
+   34 |         sub_Complex(a, b, sub);
+      |                           ^~~
+      |                           |
+      |                           complex {aka struct complexNumber}
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/exam_integration/bounded_probe/runtime/workspaces/probe.exams-curated-exam_final-v1.exams-examfinal-sub_complex/submission/sub_complex.c:8:55: note: expected 'complex *' {aka 'struct complexNumber *'} but argument is of type 'complex' {aka 'struct complexNumber'}
+    8 | void sub_Complex(complex num1, complex num2, complex *num3)
+      |                                              ~~~~~~~~~^~~~
+cc1: all warnings being treated as errors

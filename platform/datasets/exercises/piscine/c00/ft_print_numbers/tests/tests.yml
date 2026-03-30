@@ -1,0 +1,5 @@
+cases:
+- id: ascending_digits
+  expected_stdout: 0123456789
+  expected_stderr: ''
+  expected_exit_code: 0

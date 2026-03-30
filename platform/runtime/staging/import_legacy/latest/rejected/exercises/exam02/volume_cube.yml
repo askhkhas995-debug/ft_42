@@ -1,0 +1,11 @@
+kind: exercise
+identifier: volume_cube
+source_id: ExamPoolRevanced-main/Exam02
+location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/volume_cube
+exam_group: exam02
+assignment: volume_cube
+pool_name: null
+reasons:
+- duplicate_source_conflict
+messages:
+- duplicate assignment conflicts with earlier source 'Exam02'

@@ -1,0 +1,14 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_mod/runtime/workspaces/bundle-audit.exams-exam00-ft_mod/submission/ft_mod.c: In function 'ft_mod':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_mod/runtime/workspaces/bundle-audit.exams-exam00-ft_mod/submission/ft_mod.c:4:16: error: 'return' with a value, in function returning void [-Werror=return-type]
+    4 |         return 1;
+      |                ^
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_mod/runtime/workspaces/bundle-audit.exams-exam00-ft_mod/submission/ft_mod.c:1:6: note: declared here
+    1 | void ft_mod(int n1, int n2)
+      |      ^~~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_mod/runtime/workspaces/bundle-audit.exams-exam00-ft_mod/submission/ft_mod.c:5:16: error: 'return' with a value, in function returning void [-Werror=return-type]
+    5 |     return (n1 % n2);
+      |            ~~~~^~~~~
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_mod/runtime/workspaces/bundle-audit.exams-exam00-ft_mod/submission/ft_mod.c:1:6: note: declared here
+    1 | void ft_mod(int n1, int n2)
+      |      ^~~~~~
+cc1: all warnings being treated as errors

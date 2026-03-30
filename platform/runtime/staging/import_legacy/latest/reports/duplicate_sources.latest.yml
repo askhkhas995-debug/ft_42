@@ -1,0 +1,740 @@
+precedence:
+  canonical_source_of_truth:
+  - Exam00
+  - Exam01
+  - Exam02
+  - ExamFinal
+  alias_duplicate_source: ExamPoolRevanced-main/<ExamXX>
+  import_rule: prefer direct Exam00/Exam01/Exam02/ExamFinal trees; use ExamPoolRevanced-main
+    copies only as fallback when the direct tree is absent
+  conflict_rule: never merge conflicting duplicates; keep the higher-precedence source
+    and report the lower-precedence entry as a blocking conflict
+duplicates:
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ascii_character
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ascii_character
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/fix_a
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: fix_a
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/fix_z
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: fix_z
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/frequency_character
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: frequency_character
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_abs
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ft_abs
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_div
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ft_div
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_isdigit
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ft_isdigit
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_mod
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ft_mod
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/ft_pow
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: ft_pow
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/is_consonant
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: is_consonant
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/is_vowel
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: is_vowel
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/rectangle_area
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: rectangle_area
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/corrections/triangle_area
+  message: duplicate assignment conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: triangle_area
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ascii_charcater_v2
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ascii_charcater_v2
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/factorial_number
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: factorial_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/fix_a
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: fix_a
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/fix_z
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: fix_z
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_abs
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_abs
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_pow
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_pow
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_sqrt
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_sqrt
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_str_is_alpha
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_str_is_alpha
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strcat
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_strcat
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strdiff
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_strdiff
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/ft_strjoin
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: ft_strjoin
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/length_words
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: length_words
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/next_character
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: next_character
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/prev_charcter
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: prev_charcter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/rectangle_perimeter
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: rectangle_perimeter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/remove_duplicate
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: remove_duplicate
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/remove_vowels
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: remove_vowels
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/sum_n
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: sum_n
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam01
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam01/corrections/triangle_perimeter
+  message: duplicate assignment conflicts with earlier source 'Exam01'
+  exam_group: exam01
+  assignment: triangle_perimeter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ascii_charcater_v2
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ascii_charcater_v2
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/binary_to_decimal
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: binary_to_decimal
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/decimal_to_binary
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: decimal_to_binary
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/fix_parser
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: fix_parser
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/fix_result
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: fix_result
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_bubblesort
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_bubblesort
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_str_is_alpha
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_str_is_alpha
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strcat
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strcat
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strchr
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strchr
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strdel
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strdel
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strdiff
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strdiff
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strjoin
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strjoin
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strndup
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strndup
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/ft_strstr
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: ft_strstr
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/largest_number
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: largest_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/next_character
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: next_character
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/prev_charcter
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: prev_charcter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/size_variables
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: size_variables
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/smallest_number
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: smallest_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/sort_words
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: sort_words
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/volume_cube
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: volume_cube
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam02
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam02/corrections/volume_cuboid
+  message: duplicate assignment conflicts with earlier source 'Exam02'
+  exam_group: exam02
+  assignment: volume_cuboid
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/add_complex
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: add_complex
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ascii_charcater_v2
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ascii_charcater_v2
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/binary_to_decimal
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: binary_to_decimal
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/decimal_to_binary
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: decimal_to_binary
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/factorial_number
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: factorial_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_a
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: fix_a
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_loop
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: fix_loop
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/fix_z
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: fix_z
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_abs
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_abs
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_bubblesort
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_bubblesort
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_div
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_div
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_isdigit
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_isdigit
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_mod
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_mod
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_pow
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_pow
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_sqrt
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_sqrt
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_str_is_alpha
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_str_is_alpha
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strdiff
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_strdiff
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strjoin
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_strjoin
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strndup
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_strndup
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/ft_strstr
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: ft_strstr
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/is_consonant
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: is_consonant
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/is_vowel
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: is_vowel
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/largest_number
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: largest_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/list_trait
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: list_trait
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/mult_complex
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: mult_complex
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/next_character
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: next_character
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/prev_charcter
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: prev_charcter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/rectangle_perimeter
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: rectangle_perimeter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/remove_duplicate
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: remove_duplicate
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/remove_vowels
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: remove_vowels
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/smallest_number
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: smallest_number
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sort_words
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: sort_words
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/sub_complex
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: sub_complex
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/triangle_perimeter
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: triangle_perimeter
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/volume_cube
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: volume_cube
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/ExamFinal
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/ExamFinal/corrections/volume_cuboid
+  message: duplicate assignment conflicts with earlier source 'ExamFinal'
+  exam_group: examfinal
+  assignment: volume_cuboid
+  pool_name: null
+- code: duplicate_source_conflict
+  severity: error
+  source_id: ExamPoolRevanced-main/Exam00
+  location: /home/xapet/Desktop/f/ExamPoolRevanced-main/Exam00/pools/c-piscine-exam-00.yml
+  message: duplicate pool conflicts with earlier source 'Exam00'
+  exam_group: exam00
+  assignment: null
+  pool_name: c-piscine-exam-00.yml

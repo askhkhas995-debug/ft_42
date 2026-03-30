@@ -1,0 +1,7 @@
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_pow/datasets/exercises/exams/exam00/ft_pow/tests/main.c: In function 'main':
+/home/xapet/Desktop/f/platform/runtime/staging/import_legacy/latest/reference_bundle_audit/latest/repository_root/runtime/cache/bundle_audit/exams-exam00-ft_pow/datasets/exercises/exams/exam00/ft_pow/tests/main.c:10:21: error: expected ';' before 'return'
+   10 |         printf("\n")
+      |                     ^
+      |                     ;
+   11 |         return 1;
+      |         ~~~~~~       
