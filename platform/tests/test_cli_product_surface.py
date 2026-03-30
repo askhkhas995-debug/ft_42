@@ -69,3 +69,15 @@ def test_exam_start_and_submit_smoke(tmp_path: Path, monkeypatch, capsys) -> Non
 
     assert "Exam Submission" in output
     assert "Status: PASS" in output
+
+
+def test_exam_shell_shows_workspace_status(tmp_path: Path, monkeypatch, capsys) -> None:
+    workspace = tmp_path / "exam-shell"
+    _run_cli(monkeypatch, capsys, "exam", "start", "--workspace", str(workspace))
+
+    output = _run_cli(monkeypatch, capsys, "exam", "shell", str(workspace))
+
+    assert "Exam Shell" in output
+    assert "Expected files:" in output
+    assert "Workspace check:" in output
+    assert "missing" in output

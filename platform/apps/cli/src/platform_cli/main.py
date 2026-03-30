@@ -296,6 +296,12 @@ def _build_parser() -> argparse.ArgumentParser:
     exam_submit.add_argument(
         "workspace", nargs="?", default=".", help="Exam workspace directory."
     )
+    exam_shell = exam_subparsers.add_parser(
+        "shell", help="Show a local 42-style exam workspace helper."
+    )
+    exam_shell.add_argument(
+        "workspace", nargs="?", default=".", help="Exam workspace directory."
+    )
 
     list_exercises = subparsers.add_parser(
         "list-exercises", help="List canonical exercise bundles."
@@ -696,6 +702,47 @@ def _submit_exam_flow(platform_root: Path, workspace: str) -> int:
     return 0
 
 
+def _render_exam_shell(workspace: str) -> int:
+    workspace_root = Path(workspace).resolve()
+    local_session = _load_workspace_session(workspace_root)
+    if str(local_session.get("mode") or "") != "exam":
+        raise ValueError(
+            f"Workspace is not an exam session: {_workspace_session_path(workspace_root)}"
+        )
+    expected_files = [str(item) for item in local_session.get("expected_files", [])]
+    statement_path = Path(str(local_session.get("statement_path") or "")).resolve()
+    lines = [
+        "Exam Shell",
+        "==========",
+        f"Session: {local_session.get('session_id', 'n/a')}",
+        f"Pool: {local_session.get('pool_id', 'n/a')}",
+        f"Exercise: {local_session.get('exercise_id', 'n/a')}",
+        f"Level: {local_session.get('level', 'n/a')}",
+        f"Workspace: {workspace_root}",
+        f"Statement: {statement_path}",
+        "",
+        "Expected files:",
+    ]
+    if expected_files:
+        lines.extend(f"- {name}" for name in expected_files)
+    else:
+        lines.append("- none")
+    lines.extend(["", "Workspace check:"])
+    for name in expected_files:
+        file_status = "ready" if (workspace_root / name).exists() else "missing"
+        lines.append(f"- {name}: {file_status}")
+    lines.extend(
+        [
+            "",
+            "Suggested commands:",
+            f"- cat {statement_path}",
+            f"- python3 -m platform_cli.main exam submit {workspace_root}",
+        ]
+    )
+    _print_lines(lines)
+    return 0
+
+
 def main() -> int:
     parser = _build_parser()
     args = parser.parse_args()
@@ -731,6 +778,8 @@ def main() -> int:
             return _start_exam_flow(
                 platform_root, args.pool_id, args.workspace, args.user_id
             )
+        if args.exam_command == "shell":
+            return _render_exam_shell(args.workspace)
         return _submit_exam_flow(platform_root, args.workspace)
 
     if args.command == "list-exercises":
